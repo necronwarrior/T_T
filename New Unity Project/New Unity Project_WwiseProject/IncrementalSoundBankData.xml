@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="6" Flags="878078161">
+	<Platform GUID="{E6BA517B-EC17-42B0-B915-848E7A35F78A}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="1115419274" Timestamp="131636172507898996"/>
+				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172503836344"/>
+				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172507742689"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="400060773" Timestamp="131636172508055713"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{9E937D77-BDB7-453A-B9D6-ACE0C5B83D28}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="3668624804" Timestamp="131636172481023614"/>
+				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172478368058"/>
+				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172480711043"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="257869139" Timestamp="131636172481336037"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{0449AFD7-FB54-4542-BD49-78F7E7839439}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="2377394000" Timestamp="131636172460085704"/>
+				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172456335657"/>
+				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172459929491"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="2352246341" Timestamp="131636172460241998"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{50B50A3D-5ED7-4CE5-8B09-6F1F2BC98F94}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="1906111642" Timestamp="131636172438366638"/>
+				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172434617094"/>
+				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172438054113"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="2955002023" Timestamp="131636172438522966"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+</IncrementalBankBuild>

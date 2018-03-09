@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F25992AC-2931-495F-B599-50EAD44EB8DA}" SchemaVersion="80">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{F25992AC-2931-495F-B599-50EAD44EB8DA}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Music Testing" ID="{448A506B-870D-4F97-BDF8-E6358A94F9B7}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Level_Loop" ID="{AA464279-001F-4EF4-9654-C44797528FFB}" WorkUnitID="{F63C755F-7584-4049-A316-165B84283D79}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="ThemeMusicFade" ID="{7806378C-401B-4742-9287-07BF8AEB5FC8}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ambient_Fade" ID="{FECE5E88-0D3D-4B77-BB80-80B513C78400}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

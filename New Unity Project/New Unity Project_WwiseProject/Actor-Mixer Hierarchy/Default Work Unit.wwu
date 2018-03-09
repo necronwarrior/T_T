@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}" SchemaVersion="80">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="FX_Human_Contraction" ID="{EA3E2612-AD87-4836-B8B1-29334450E34A}" ShortID="546441812">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4AE9FBD6-6B3E-4D47-9D90-9356E8D3D951}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FX_Human_Contraction" ID="{9C3BED19-C364-49AE-B64D-F4189E44BE08}" ShortID="620228929">
+							<Language>SFX</Language>
+							<AudioFile>FX_Human_Contraction.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FX_Human_Contraction" ID="{9C3BED19-C364-49AE-B64D-F4189E44BE08}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="FX_Human_Explosion" ID="{E6D493BA-5875-4131-94A1-08880578CDA4}" ShortID="393235753">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{071739BE-35FE-490E-A6FD-4DEB83CC9168}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FX_Human_Explosion" ID="{D769DA01-DC80-48F3-8D25-BC4FB6F695D7}" ShortID="857736666">
+							<Language>SFX</Language>
+							<AudioFile>FX_Human_Explosion.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FX_Human_Explosion" ID="{D769DA01-DC80-48F3-8D25-BC4FB6F695D7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="FX_Machine_Contraction" ID="{54894BF1-10E9-4223-9CB0-A15E63C3CC26}" ShortID="915204708">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F13B04ED-1521-4347-8962-0A6DE3DC8A7E}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FX_Machine_Contraction" ID="{7140AAD5-A58C-4CF5-BAAE-0888997F215B}" ShortID="432947213">
+							<Language>SFX</Language>
+							<AudioFile>FX_Machine_Contraction.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FX_Machine_Contraction" ID="{7140AAD5-A58C-4CF5-BAAE-0888997F215B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TerminalTransmissionUI_Back" ID="{E407D4B7-4FE5-4B54-AD90-6807A628EE3A}" ShortID="4135585">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{24D080BD-F622-46D3-AB0F-C93CD5AE1D9E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TerminalTransmissionUI_Back" ID="{4D24F59A-49EF-43E7-BCBB-A2A9229709A4}" ShortID="1105394">
+							<Language>SFX</Language>
+							<AudioFile>TerminalTransmissionUI_Back.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TerminalTransmissionUI_Back" ID="{4D24F59A-49EF-43E7-BCBB-A2A9229709A4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TerminalTransmissionUI_Select" ID="{C4F2CB86-CBF0-424D-BD38-099998D53F19}" ShortID="211179046">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{8D3BBBAB-6DD1-4BFC-BE57-851646D6825D}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TerminalTransmissionUI_Select" ID="{12A309F4-99F2-4F0C-9A0D-E7022CCF2153}" ShortID="577882451">
+							<Language>SFX</Language>
+							<AudioFile>TerminalTransmissionUI_Select.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TerminalTransmissionUI_Select" ID="{12A309F4-99F2-4F0C-9A0D-E7022CCF2153}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<BlendContainer Name="Machine_Explosion" ID="{B5CC1FB8-1C21-4E7C-B590-048109E6EFE1}" ShortID="85336147">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BD695BAA-B628-44C9-B7AB-56A73A03D72A}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Boom" ID="{DA53163E-AB7A-45B2-8290-CFF1F168D4DD}" ShortID="852340252">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{85C04009-63CB-4372-81D4-C9BD21333ECA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FX_Machine_Explosion_Boom" ID="{D1F4723E-779C-4AEE-BC3F-268706A8FF27}" ShortID="331949055">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Machine_Explosion_Boom" ID="{22C23AB9-ACDD-4041-BAA3-0769CC16A7C8}" ShortID="579611518">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.277879464285714"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Machine_Explosion_Boom.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Machine_Explosion_Boom" ID="{22C23AB9-ACDD-4041-BAA3-0769CC16A7C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Machine_Explosion_Boom_1" ID="{0DB6CD04-E8A1-4DC5-91BF-6AB2C0FEFF7F}" ShortID="731491496">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Machine_Explosion_Boom_1" ID="{A1DB6FF4-C687-4AE7-8B43-6B17B1794883}" ShortID="828946055">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.389140625"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Machine_Explosion_Boom_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Machine_Explosion_Boom_1" ID="{A1DB6FF4-C687-4AE7-8B43-6B17B1794883}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Machine_Explosion_Boom_2" ID="{5A63A1C5-B15A-4E3F-9ED9-E3D196A85146}" ShortID="82441072">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Machine_Explosion_Boom_2" ID="{1CE79303-5E51-40CD-9C8D-DF995689E52D}" ShortID="936582882">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.373203125"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Machine_Explosion_Boom_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Machine_Explosion_Boom_2" ID="{1CE79303-5E51-40CD-9C8D-DF995689E52D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="FX_Machine_Explosion_Thud" ID="{06F7A64C-872E-41C7-BCED-DB87781AFC58}" ShortID="225654753">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{62550B55-433F-4871-A37F-4E24ECFE41D9}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FX_Machine_Explosion_Thud" ID="{AE6881B5-D069-4A3A-A666-4CA3BB4605F9}" ShortID="730427893">
+									<Language>SFX</Language>
+									<AudioFile>FX_Machine_Explosion_Thud.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FX_Machine_Explosion_Thud" ID="{AE6881B5-D069-4A3A-A666-4CA3BB4605F9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Glass" ID="{87CDD687-DC0F-4256-85FB-97D3F81D4F5D}" ShortID="30846298">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B3124022-D1B8-44BD-BB22-EA6B33B03F6D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FX_Machine_Explosion_DigitalGlass" ID="{F2E2417C-0452-4C9B-92FD-F12B11942571}" ShortID="916235458">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Machine_Explosion_DigitalGlass" ID="{54F132A5-1829-475C-960C-2D4C7DDF4AB4}" ShortID="858514961">
+											<Language>SFX</Language>
+											<AudioFile>FX_Machine_Explosion_DigitalGlass.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Machine_Explosion_DigitalGlass" ID="{54F132A5-1829-475C-960C-2D4C7DDF4AB4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Machine_Explosion_DigitalGlass_2" ID="{94F31FDB-4DF7-4BAC-A77D-D7F9410BE673}" ShortID="752485438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Machine_Explosion_DigitalGlass_2" ID="{86A6AA23-E1F0-4750-AEEC-E40898390BDB}" ShortID="861326939">
+											<Language>SFX</Language>
+											<AudioFile>FX_Machine_Explosion_DigitalGlass_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Machine_Explosion_DigitalGlass_2" ID="{86A6AA23-E1F0-4750-AEEC-E40898390BDB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="HumanNoise" ID="{A40C12E5-C396-4688-9516-DA76E022D270}" ShortID="250950980">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{706F76A2-5A85-44A6-9099-5B2E62F07FA3}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FX_Machine_Explosion" ID="{2BE2DB26-9379-43CD-99DE-372EDE64C6A4}" ShortID="1056480371">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{86DA940A-CA75-4A79-8B38-E235475B0058}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>75</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+											<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Machine_Explosion" ID="{14BB58CB-F600-4491-AB8C-A26848E5AC09}" ShortID="893006405">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.681496193715581"/>
+												<Property Name="FadeOutShape" Type="int16" Value="0"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.681496193715581"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Machine_Explosion.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Machine_Explosion" ID="{14BB58CB-F600-4491-AB8C-A26848E5AC09}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence" ID="{14DFCBE8-8F6E-4043-997B-4033184B761A}" ShortID="572581978">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DF32603A-EA39-42A0-B74D-7227191801BB}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{68A935F6-CD1B-4E09-91F8-6B6118FABCF7}" ShortID="103551099" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{68A935F6-CD1B-4E09-91F8-6B6118FABCF7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="Human_Contraction" ID="{27EFB9C8-03FE-4B7A-BF9B-EB285E6BD3AC}" ShortID="453798990">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9EC88D00-3E85-40A7-900A-7EF7154CCE30}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Crush" ID="{956AAE0D-DB38-4204-9EB7-6C6763D8E1A8}" ShortID="679380981">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C81BC0BD-F6E6-4686-B006-474D9F174A34}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FX_Crush" ID="{17F67308-14E6-4E5B-88B4-30FE123D4D85}" ShortID="819067037">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7CB1C22A-7C9F-435A-ADA6-61B84AB04E53}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Crush" ID="{C0E51009-A861-450D-A5A3-CDAE2942BA40}" ShortID="942036279">
+											<Language>SFX</Language>
+											<AudioFile>FX_Crush.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Crush" ID="{C0E51009-A861-450D-A5A3-CDAE2942BA40}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Crush_1" ID="{3DC88027-62DC-4D49-B235-6C89ABE9FC61}" ShortID="369542180">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9DD72971-DBA6-43DF-9577-F426B2AE0F33}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Crush_1" ID="{E827260E-5A33-46B1-B24E-0DA3D9CBD325}" ShortID="527295018">
+											<Language>SFX</Language>
+											<AudioFile>FX_Crush_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Crush_1" ID="{E827260E-5A33-46B1-B24E-0DA3D9CBD325}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Glitch" ID="{55742B04-DCC1-42CA-973C-1C016A28CA31}" ShortID="667599143">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{157BEA0C-EAAB-4AE9-B77E-91FE02B19EA8}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FX_Electricity_Glitch" ID="{6DF584AB-C980-4E63-921B-67CEEEB124F0}" ShortID="458085002">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4F8A9398-4BB7-4D69-9102-274D6E40AD72}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Electricity_Glitch" ID="{80E9B7CC-477F-4BFD-926D-BE8E7A93DE90}" ShortID="19248964">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.492071236232588"/>
+												<Property Name="FadeOutShape" Type="int16" Value="3"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Electricity_Glitch.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Electricity_Glitch" ID="{80E9B7CC-477F-4BFD-926D-BE8E7A93DE90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Electricity_Glitch_1" ID="{796C4DEF-334C-49A3-ACAB-96A4572AF39B}" ShortID="754300585">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{26E68716-0131-41FE-BE82-2B586710643F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Electricity_Glitch_1" ID="{FFBE55AF-2E3E-42EA-822B-E89905122015}" ShortID="481235395">
+											<Language>SFX</Language>
+											<AudioFile>FX_Electricity_Glitch_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Electricity_Glitch_1" ID="{FFBE55AF-2E3E-42EA-822B-E89905122015}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Electricity_Glitch_2" ID="{4148289B-D49D-4BC8-A3D3-23D5C44AE4E1}" ShortID="776505802">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3D644323-0950-4224-81D4-EB7043534369}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Electricity_Glitch_2" ID="{D2E2AC2B-BC8A-4354-B288-323573FAF2AB}" ShortID="150507278">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="6.56933309037901E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Electricity_Glitch_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Electricity_Glitch_2" ID="{D2E2AC2B-BC8A-4354-B288-323573FAF2AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Spark" ID="{132D0EFC-14FC-48D1-A20D-C29664B27F47}" ShortID="590817545">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C292FF5A-2602-47EC-9906-101F09BC8F8C}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FX_Electricity_Spark" ID="{8854951E-2B9A-4DB0-896B-558E5495A8F0}" ShortID="451367088">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7C4078D1-62AD-4422-9F61-AA32286CB3D0}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Electricity_Spark" ID="{8F23DD20-A6C7-42F5-8570-4BC7D5BC81A5}" ShortID="680213851">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.677365970197603"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Electricity_Spark.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Electricity_Spark" ID="{8F23DD20-A6C7-42F5-8570-4BC7D5BC81A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Electricity_Spark_2" ID="{615DD8E4-78A8-41BE-8315-14288C2F2F8D}" ShortID="263004011">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6BF84C48-A7E0-47E9-94A9-38EADAE04E4D}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Electricity_Spark_2" ID="{1D6AD446-9C95-4C1D-AE91-F1EB8C770123}" ShortID="375130664">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.501033315111759"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Electricity_Spark_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Electricity_Spark_2" ID="{1D6AD446-9C95-4C1D-AE91-F1EB8C770123}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FX_Electricity_Spark_1" ID="{371A95A4-7C92-4600-8071-80BC608E0D30}" ShortID="95368500">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BCC2FCC7-2A15-4C0A-B90C-7EBF9875E803}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FX_Electricity_Spark_1" ID="{178B07E3-1DCF-4CB5-BEDF-B4A70F9D71ED}" ShortID="279186119">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.435782464771623"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FX_Electricity_Spark_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FX_Electricity_Spark_1" ID="{178B07E3-1DCF-4CB5-BEDF-B4A70F9D71ED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Scream" ID="{F02BB82B-8009-462B-A581-17BBFD3C4274}" ShortID="1045138694">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8899A057-A18F-4058-ADC3-20EF9C6B9426}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+								</Reference>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Dialog_Too_Quiet" ID="{F9C77BF1-1CCC-415B-B93F-B048979CA620}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Dialog_Too_Quiet" ID="{F9C77BF1-1CCC-415B-B93F-B048979CA620}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Vox_Scream_Female" ID="{FD941700-CF47-4AEC-AE3E-652AE58B2D54}" ShortID="309959313">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BD52E59B-9066-4DEA-977E-E840B8E5340C}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vox_Scream_Female" ID="{CD3F6458-75CD-4932-8616-2B0FA9519184}" ShortID="1015136542">
+											<Language>SFX</Language>
+											<AudioFile>Vox_Scream_Female.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vox_Scream_Female" ID="{CD3F6458-75CD-4932-8616-2B0FA9519184}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vox_Scream_Male" ID="{6FE69837-B9E6-4B23-9527-F03758D8FB6C}" ShortID="452950930">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DB171E21-F4C1-4F1F-B547-2B211ED2BB14}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vox_Scream_Male" ID="{02553956-A7BC-4B71-8970-6959E7E922C5}" ShortID="788998490">
+											<Language>SFX</Language>
+											<AudioFile>Vox_Scream_Male.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vox_Scream_Male" ID="{02553956-A7BC-4B71-8970-6959E7E922C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vox_Scream_Male_1" ID="{55648818-6802-47DF-9472-F8587193F797}" ShortID="510331697">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{05D5174F-23D9-4F49-85CB-2F6CDC50C224}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vox_Scream_Male_1" ID="{B146BAF2-C487-4AFD-8091-4139F3654183}" ShortID="938190122">
+											<Language>SFX</Language>
+											<AudioFile>Vox_Scream_Male_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vox_Scream_Male_1" ID="{B146BAF2-C487-4AFD-8091-4139F3654183}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vox_Scream_Male_3" ID="{C93AF6BE-3567-42C1-9632-04D0C09ED568}" ShortID="344989035">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4EAC109E-CA91-4C6F-B49B-B56D63A965F3}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vox_Scream_Male_3" ID="{2E6E4F1F-B064-474B-B83E-58DDA271B750}" ShortID="16967664">
+											<Language>SFX</Language>
+											<AudioFile>Vox_Scream_Male_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vox_Scream_Male_3" ID="{2E6E4F1F-B064-474B-B83E-58DDA271B750}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vox_Scream_Female_2" ID="{1399F305-C7A7-470C-88D1-41B84B906435}" ShortID="759765010">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D0A18CAD-1F42-444F-AE46-E48C45FE3A9D}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vox_Scream_Female_2" ID="{E2361184-7BEE-4F9D-913E-6D6772E38107}" ShortID="1061907403">
+											<Language>SFX</Language>
+											<AudioFile>Vox_Scream_Female_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vox_Scream_Female_2" ID="{E2361184-7BEE-4F9D-913E-6D6772E38107}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vox_Scream_Male_2" ID="{25012B54-55C3-4C92-8199-2EA1355744F0}" ShortID="365335308">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CF5F8556-F2C9-4FF8-BDAB-186665098877}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vox_Scream_Male_2" ID="{0A2E37F1-5F17-4DC8-AE55-D2D2926DE5A5}" ShortID="169179554">
+											<Language>SFX</Language>
+											<AudioFile>Vox_Scream_Male_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vox_Scream_Male_2" ID="{0A2E37F1-5F17-4DC8-AE55-D2D2926DE5A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<Sound Name="FX_Electric_Buzz" ID="{5B588A83-C519-47CE-889B-165A671D03C5}" ShortID="382246732">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{56200C8C-0CA6-46EF-97BA-2C24DAE5CBC7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="25"/>
+											<Property Name="Min" Type="Real64" Value="-25"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{00AD80E0-007B-4118-BE38-204B0CC0E1EB}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="25"/>
+											<Property Name="Min" Type="Real64" Value="-25"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{25A55ABD-FA8B-42F9-B6F4-FF3C75E1C666}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{7E149902-B9C2-4430-8E77-AAFF8E5E0E26}" ShortID="842898181">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<Custom>
+												<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E126B39D-BB34-437F-9BB4-082B1B6F30CE}" ShortID="353729187">
+													<PropertyList>
+														<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.1">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BB88FB2E-D0F8-4E94-9F7C-791F184568DD}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="0.2"/>
+																			<Property Name="Min" Type="Real64" Value="-0.1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.2">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2799C1AF-E4C5-4861-8F71-CC6F29D83D64}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="0.1"/>
+																			<Property Name="Min" Type="Real64" Value="-0.1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+												</ModulatorEnvelope>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{0C19CCD9-A83E-42B3-A2E9-38B299C51AB5}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FX_Electric_Buzz" ID="{6C7EE2EF-C239-4954-9903-C8550DEDB0AE}" ShortID="929055870">
+							<Language>SFX</Language>
+							<AudioFile>FX_Electric_Buzz.wav</AudioFile>
+						</AudioFileSource>
+						<AudioFileSource Name="FX_Human_Explosion" ID="{9783F7F5-A774-4C64-AF40-0F1A69236559}" ShortID="25664537">
+							<Language>SFX</Language>
+							<AudioFile>FX_Human_Explosion.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="857736666"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FX_Electric_Buzz" ID="{6C7EE2EF-C239-4954-9903-C8550DEDB0AE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="FX_Stinger_1" ID="{28FC287A-92A9-4DC1-8913-CCE1C2CFE98A}" ShortID="502266777">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FX_Stinger_1" ID="{9778D1A8-E76C-4425-A6DC-9226AA265270}" ShortID="683035457">
+							<Language>SFX</Language>
+							<AudioFile>FX_Stinger_1.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FX_Stinger_1" ID="{9778D1A8-E76C-4425-A6DC-9226AA265270}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="FX_Human_Explosion (1)" ID="{3707BFCA-E68B-4F5D-B14F-F9A58617A865}" ShortID="577650016">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FX_Human_Explosion (1)" ID="{DE764BA6-161B-452B-974B-BF812468872D}" ShortID="594685120">
+							<Language>SFX</Language>
+							<AudioFile>FX_Human_Explosion (1).wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FX_Human_Explosion (1)" ID="{DE764BA6-161B-452B-974B-BF812468872D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

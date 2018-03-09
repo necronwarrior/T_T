@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8E69FEAA-B9D2-4730-870A-9A801B896377}" SchemaVersion="80">
+	<Triggers>
+		<WorkUnit Name="Default Work Unit" ID="{8E69FEAA-B9D2-4730-870A-9A801B896377}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="ScreenTapped" ID="{42E19517-AECC-472D-ABB3-7FA4BB5C33B8}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

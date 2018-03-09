@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="80">
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1868340342" DateHigh="30648824"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="4246522709" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="4246542763" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="486505473" DateHigh="30644736"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="4246590923" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="4246610973" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="4246552788" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Effects\Default Work Unit.wwu" DateLow="4246631029" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Effects\Factory Effects.wwu" DateLow="2463886095" DateHigh="30648817"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Events\Default Work Unit.wwu" DateLow="1868360398" DateHigh="30648824"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1868380458" DateHigh="30648824"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1868305248" DateHigh="30648824"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4246671138" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="4246422448" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="4246691179" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\New Unity Project_WwiseProject.User.wsettings" DateLow="3295251879" DateHigh="30648826"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\New Unity Project_WwiseProject.wproj" DateLow="4246392369" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Presets\Default Work Unit.wwu" DateLow="4249682853" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Queries\Default Work Unit.wwu" DateLow="4246751354" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Queries\Factory Queries.wwu" DateLow="4249672816" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3540136171" DateHigh="30648819"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="4249712940" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\States\Default Work Unit.wwu" DateLow="4249722953" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Switches\Default Work Unit.wwu" DateLow="4246701220" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="4246711243" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project\New Unity Project_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="4249732986" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3662743452" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="3662924154" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="3663124449" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="3663014147" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="3663104395" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="2557827555" DateHigh="30644728"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3663134477" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Effects\Default Work Unit.wwu" DateLow="3662974047" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Effects\Factory Effects.wwu" DateLow="2557862649" DateHigh="30644728"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Events\Default Work Unit.wwu" DateLow="3662873786" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="3662994096" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3663044235" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3662893936" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="3662933941" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="3663054261" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\New Unity Project_WwiseProject.wproj" DateLow="3662713364" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Presets\Default Work Unit.wwu" DateLow="3662953997" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Queries\Default Work Unit.wwu" DateLow="3662984075" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Queries\Factory Queries.wwu" DateLow="2557897741" DateHigh="30644728"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3662853974" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3663024175" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\States\Default Work Unit.wwu" DateLow="3662833954" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Switches\Default Work Unit.wwu" DateLow="3662783547" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="3662903862" DateHigh="30644733"/>
+	<ValidationCacheItem File="D:\Game Jam\New Unity Project_WwiseIntegrationTemp\New Unity Project_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="3663074307" DateHigh="30644733"/>
+</ValidationCache>

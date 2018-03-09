@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BB34C5B9-E87E-4611-93FD-9DC04933AEF4}" SchemaVersion="80">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{BB34C5B9-E87E-4611-93FD-9DC04933AEF4}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="ThemeMusicFade" ID="{7806378C-401B-4742-9287-07BF8AEB5FC8}"/>
+				<GameParameter Name="Ambient_Fade" ID="{FECE5E88-0D3D-4B77-BB80-80B513C78400}"/>
+				<GameParameter Name="Dance_Fade" ID="{7E341B3E-ABFC-444B-8791-6F5E9A37A41F}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

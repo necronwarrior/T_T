@@ -1,0 +1,646 @@
+fileFormatVersion: 2
+guid: 7561293c874166342b4a83dd50ff6824
+timeCreated: 1517138322
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ALTHumanInfectionSpritesheet_0
+    21300002: ALTHumanInfectionSpritesheet_1
+    21300004: ALTHumanInfectionSpritesheet_2
+    21300006: ALTHumanInfectionSpritesheet_3
+    21300008: ALTHumanInfectionSpritesheet_4
+    21300010: ALTHumanInfectionSpritesheet_5
+    21300012: ALTHumanInfectionSpritesheet_6
+    21300014: ALTHumanInfectionSpritesheet_7
+    21300016: ALTHumanInfectionSpritesheet_8
+    21300018: ALTHumanInfectionSpritesheet_9
+    21300020: ALTHumanInfectionSpritesheet_10
+    21300022: ALTHumanInfectionSpritesheet_11
+    21300024: ALTHumanInfectionSpritesheet_12
+    21300026: ALTHumanInfectionSpritesheet_13
+    21300028: ALTHumanInfectionSpritesheet_14
+    21300030: ALTHumanInfectionSpritesheet_15
+    21300032: ALTHumanInfectionSpritesheet_16
+    21300034: ALTHumanInfectionSpritesheet_17
+    21300036: ALTHumanInfectionSpritesheet_18
+    21300038: ALTHumanInfectionSpritesheet_19
+    21300040: ALTHumanInfectionSpritesheet_20
+    21300042: ALTHumanInfectionSpritesheet_21
+    21300044: ALTHumanInfectionSpritesheet_22
+    21300046: ALTHumanInfectionSpritesheet_23
+    21300048: ALTHumanInfectionSpritesheet_24
+    21300050: ALTHumanInfectionSpritesheet_25
+    21300052: ALTHumanInfectionSpritesheet_26
+    21300054: ALTHumanInfectionSpritesheet_27
+    21300056: ALTHumanInfectionSpritesheet_28
+    21300058: ALTHumanInfectionSpritesheet_29
+    21300060: ALTHumanInfectionSpritesheet_30
+    21300062: ALTHumanInfectionSpritesheet_31
+    21300064: ALTHumanInfectionSpritesheet_32
+    21300066: ALTHumanInfectionSpritesheet_33
+    21300068: ALTHumanInfectionSpritesheet_34
+    21300070: ALTHumanInfectionSpritesheet_35
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1440
+        width: 60
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1440
+        width: 60
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1440
+        width: 60
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1440
+        width: 80
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1260
+        width: 80
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1260
+        width: 80
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1260
+        width: 84
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1260
+        width: 84
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1080
+        width: 87
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1080
+        width: 87
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1080
+        width: 91
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1080
+        width: 91
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 900
+        width: 75
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 900
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 900
+        width: 68
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 900
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 720
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 720
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 720
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 720
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 540
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 540
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 540
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 540
+        width: 80
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 360
+        width: 80
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 360
+        width: 80
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 360
+        width: 80
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 360
+        width: 83
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 180
+        width: 83
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 180
+        width: 86
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 180
+        width: 86
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 180
+        width: 78
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 78
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 0
+        width: 78
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 0
+        width: 78
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ALTHumanInfectionSpritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 0
+        width: 78
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

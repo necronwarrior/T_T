@@ -1,0 +1,54 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1033885944	Click_Other			\Default Work Unit\Click_Other	
+	1221751492	Human_Explosion			\Default Work Unit\Human_Explosion	
+	1562304622	Play_Ambient			\Default Work Unit\Play_Ambient	
+	2996780470	Click_Start			\Default Work Unit\Click_Start	
+	3126511263	VirusTap			\Default Work Unit\VirusTap	
+	3213995980	Machine_Explosion			\Default Work Unit\Machine_Explosion	
+	3654422659	Play_Dance			\Default Work Unit\Play_Dance	
+	3663096569	Human_Contraction			\Default Work Unit\Human_Contraction	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2970210140	Ambient_Fade			\Default Work Unit\Ambient_Fade	
+	3710358763	Dance_Fade			\Default Work Unit\Dance_Fade	
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	724142543	ScreenTapped			\Default Work Unit\ScreenTapped	
+
+Effect plug-ins	ID	Name	Type				Notes
+	59662939	Dialog_Too_Quiet	Wwise Compressor			
+	1990128658	Room_Medium	Wwise RoomVerb			
+	2652646462	Dialog_Leveler_Soft	Wwise Compressor			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	103551099	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\HumanNoise\Silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1105394	TerminalTransmissionUI_Back	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TerminalTransmissionUI_Back_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Back		176464
+	16967664	Vox_Scream_Male_3	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_3		132540
+	19248964	FX_Electricity_Glitch	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_88149D53.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch		48132
+	150507278	FX_Electricity_Glitch_2	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_2_1BFCB0FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch_2		42340
+	169179554	Vox_Scream_Male_2	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_2		132540
+	279186119	FX_Electricity_Spark_1	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_1_6B493127.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark_1		61452
+	375130664	FX_Electricity_Spark_2	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_2_A42C6024.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark_2		61452
+	481235395	FX_Electricity_Glitch_1	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch_1		48134
+	527295018	FX_Crush_1	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Crush_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Crush\FX_Crush_1		82618
+	577882451	TerminalTransmissionUI_Select	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TerminalTransmissionUI_Select_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Select		176464
+	579611518	FX_Machine_Explosion_Boom	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Explosion_Boom_31D30C00.wem		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\Boom\FX_Machine_Explosion_Boom		104140
+	594685120	FX_Human_Explosion (1)	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Human_Explosion (1)_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX_Human_Explosion (1)		88264
+	680213851	FX_Electricity_Spark	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_1030B142.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark		61452
+	683035457	FX_Stinger_1	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Stinger_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX_Stinger_1		290596
+	730427893	FX_Machine_Explosion_Thud	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Explosion_Thud_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\FX_Machine_Explosion_Thud		22114
+	788998490	Vox_Scream_Male	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male		132540
+	828946055	FX_Machine_Explosion_Boom_1	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Explosion_Boom_1_1947D78F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\Boom\FX_Machine_Explosion_Boom_1		105022
+	858514961	FX_Machine_Explosion_DigitalGlass	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Explosion_DigitalGlass_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\Glass\FX_Machine_Explosion_DigitalGlass		99730
+	861326939	FX_Machine_Explosion_DigitalGlass_2	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Explosion_DigitalGlass_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\Glass\FX_Machine_Explosion_DigitalGlass_2		99730
+	893006405	FX_Machine_Explosion	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Explosion_94FB5525.wem		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\HumanNoise\FX_Machine_Explosion		60172
+	936187152	Music_Ambient_Loop	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Ambient_Loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Loop\Music_Ambient_Loop\Music_Ambient_Loop		10936864
+	936582882	FX_Machine_Explosion_Boom_2	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Explosion_Boom_2_C02CE707.wem		\Actor-Mixer Hierarchy\Default Work Unit\Machine_Explosion\Boom\FX_Machine_Explosion_Boom_2		105022
+	938190122	Vox_Scream_Male_1	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_1		132540
+	942036279	FX_Crush	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Crush_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Crush\FX_Crush		83500
+	987468052	Music_Level_Dance	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Level_Dance_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Dance\Music_Level_Dance\Music_Level_Dance		5806144
+	1015136542	Vox_Scream_Female	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Female_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Female		132540
+	1061907403	Vox_Scream_Female_2	M:\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Female_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Female_2		132540
+
