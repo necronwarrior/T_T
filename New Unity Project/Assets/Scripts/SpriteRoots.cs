@@ -29,6 +29,16 @@ public class SpriteRoots : MonoBehaviour {
 			return new IntVector2 (c1.x - c2.x, c1.y - c2.y);
 		}
 
+		public void SetX(int newX)
+		{
+			x = newX;
+		}
+
+		public void SetY(int newY)
+		{
+			y = newY;
+		}
+
 
 	}
 
@@ -105,6 +115,19 @@ public class SpriteRoots : MonoBehaviour {
 			if (PixelThreshold > 0) {
 				for (int i = 0; i < currCoords.Count; i++) {
 					currCoords [i] = Branch (currCoords [i]);
+					if (currCoords [i].x <= 0) {
+						currCoords [i].SetX(0);
+					}
+					if (currCoords [i].y <= 0) {
+						currCoords [i].SetY(0);
+					}
+					if (currCoords [i].x >= MyTex.width) {
+						currCoords [i].SetX(MyTex.width);
+					}
+					if (currCoords [i].y >= MyTex.height) {
+						currCoords [i].SetY(MyTex.height);
+					}
+
 				}
 
 				if (Random.Range (0, 11) > 9) {
@@ -113,6 +136,7 @@ public class SpriteRoots : MonoBehaviour {
 
 				MyTex.Apply ();
 
+			
 			
 				GetComponent<SpriteRenderer> ().sprite = Sprite.Create (MyTex,
 					new Rect (0, 0, MyTex.width, MyTex.height),
@@ -138,7 +162,8 @@ public class SpriteRoots : MonoBehaviour {
 				MyTex.SetPixel (Curr.x, Curr.y, Color.green);
 				PixelThreshold--;
 			} else {
-				Curr -= (TempDir+TempDir);
+				TempDir = directionAlgo ();
+				Curr += TempDir;
 				if (MyTex.GetPixel (Curr.x, Curr.y) == Color.black) {
 					MyTex.SetPixel (Curr.x, Curr.y, Color.green);
 					PixelThreshold--;
