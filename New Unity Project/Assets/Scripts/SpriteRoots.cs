@@ -44,6 +44,7 @@ public class SpriteRoots : MonoBehaviour {
 
 	public float InputDegrees = 0; 	//Default until collision supplies this
 	public Vector2 branchLength;	//Default options for branch distances
+	public Color PlayerColor = Color.green;
 	Texture2D MyTex;				//Container for the altered, updating texture
 	List<IntVector2> currCoords;	//list of current branching points
 	int PixelThreshold;
@@ -52,6 +53,7 @@ public class SpriteRoots : MonoBehaviour {
 		//Initialise: texture, list of branch spawning points, and colouring limit before finishing
 		MyTex = Instantiate (GetComponent<SpriteRenderer> ().sprite.texture); 	
 		currCoords = new List<IntVector2>();	
+
 		PixelThreshold = (int)((MyTex.width * MyTex.height)*0.4f);
 	}
 
@@ -93,92 +95,103 @@ public class SpriteRoots : MonoBehaviour {
 			Quadrant++;
 		}
 			
+
+		//calculate direction of infection
 		switch (Quadrant) {
-		case 0:
-			StartPoint=new IntVector2(0,(int)((InputDegrees / 90) * MyTex.height)); break;
-		case 1:
-			StartPoint=new IntVector2((int)((InputDegrees / 90) * MyTex.width),MyTex.height); break;
-		case 2:
-			StartPoint=new IntVector2(MyTex.width,(int)((InputDegrees / 90) * MyTex.height)); break;
-		case 3:
-			StartPoint=new IntVector2((int)((InputDegrees / 90) * MyTex.width),0); break;
+		case 0: StartPoint=new IntVector2(0,(int)((InputDegrees / 90) * MyTex.height)); break;
+		case 1: StartPoint=new IntVector2((int)((InputDegrees / 90) * MyTex.width),MyTex.height);break;
+		case 2: StartPoint=new IntVector2(MyTex.width,(int)((InputDegrees / 90) * MyTex.height));break;
+		case 3: StartPoint=new IntVector2((int)((InputDegrees / 90) * MyTex.width),0);break;
 		default: 
 			StartPoint = new IntVector2 ((int)(MyTex.width * 0.5), (int)(MyTex.height * 0.5));break;
 		}
 
+		int CheckLevel = 1;
+		bool Escape = true;
+		while (Escape) {
+			for (int X = -1 * CheckLevel; X <= 1 * CheckLevel; ++X) {
+				for (int Y = -1 * CheckLevel; Y <= 1 * CheckLevel; ++Y) {
+					if (StartPoint.x + X >= 0 &&
+						StartPoint.x + X < MyTex.width &&
+						StartPoint.y + Y >= 0 &&
+						StartPoint.y + Y < MyTex.height) {
+						if (MyTex.GetPixel (StartPoint.x + X, StartPoint.y + Y).Equals (Color.black)) {
+							StartPoint = new IntVector2 (StartPoint.x + X, StartPoint.y + Y);
+							Escape = false;
+						}
+					}
+				}
+			}
+			CheckLevel++;
+		}
 		currCoords.Add (StartPoint);
 		StartCoroutine (StartRoot ());
 	}
 		
+
+
+
 	IEnumerator StartRoot () {
 		while (true) {
 			if (PixelThreshold > 0) {
 				for (int i = 0; i < currCoords.Count; i++) {
 					currCoords [i] = Branch (currCoords [i]);
-					if (currCoords [i].x <= 0) {
-						currCoords [i].SetX(0);
-					}
-					if (currCoords [i].y <= 0) {
-						currCoords [i].SetY(0);
-					}
-					if (currCoords [i].x >= MyTex.width) {
-						currCoords [i].SetX(MyTex.width);
-					}
-					if (currCoords [i].y >= MyTex.height) {
-						currCoords [i].SetY(MyTex.height);
-					}
-
 				}
 
-				if (Random.Range (0, 11) > 9) {
+				/*if (Random.Range (0, 11) > 9) {
 					currCoords.Add (currCoords [Random.Range (0, currCoords.Count)]);
-				}
+				}*/
 
 				MyTex.Apply ();
-
-			
 			
 				GetComponent<SpriteRenderer> ().sprite = Sprite.Create (MyTex,
 					new Rect (0, 0, MyTex.width, MyTex.height),
 					new Vector2 (0.0f, 0.0f), 12f);
-				yield return new WaitForSeconds (0.03f);
+				yield return new WaitForSeconds (0.01f);
 			} else {
 				break;
 			}
 		}
 	}
 
+	//directions and rules for branching
 	IntVector2 Branch(IntVector2 Curr){
-		
-		IntVector2 TempDir;
-		TempDir = directionAlgo ();
-		if (MyTex.GetPixel (Curr.x, Curr.y) == Color.black) {
-			MyTex.SetPixel (Curr.x, Curr.y, Color.green);
+
+		List<IntVector2> TempVals = new List<IntVector2> ();
+		TempVals = PixelListTest (Curr, Color.black);
+		if (TempVals.Count == 0) {
+			TempVals = PixelListTest (Curr, PlayerColor);
 		}
 
-		for (int i = 0; i < Random.Range(branchLength.x, branchLength.y); ++i) {
-			Curr += TempDir;
-			if (MyTex.GetPixel (Curr.x, Curr.y) == Color.black) {
-				MyTex.SetPixel (Curr.x, Curr.y, Color.green);
-				PixelThreshold--;
-			} else {
-				TempDir = directionAlgo ();
-				Curr += TempDir;
-				if (MyTex.GetPixel (Curr.x, Curr.y) == Color.black) {
-					MyTex.SetPixel (Curr.x, Curr.y, Color.green);
-					PixelThreshold--;
-				}
-			}
+		IntVector2 NextPix;
+		if (TempVals.Count != 0) {
+			NextPix = TempVals [Random.Range (0, TempVals.Count)];
+		
+			MyTex.SetPixel (NextPix.x, NextPix.y, PlayerColor);
+			PixelThreshold--;
+			Curr = NextPix;
 		}
 		return Curr;
 	}
 
-	IntVector2 directionAlgo()
+	List<IntVector2> PixelListTest(IntVector2 Curr, Color TestingVal)
 	{
-		IntVector2 Dir = new IntVector2();
-		Dir.x = Random.Range (Dir.x-1, Dir.x + 2);
-		Dir.y = Random.Range (Dir.y-1, Dir.y + 2);
+		List<IntVector2> SucceededVals = new List<IntVector2> ();
 
-		return Dir;
+		for (int X = -1; X <= 1; ++X) {
+			for (int Y = -1; Y <= 1; ++Y) {
+				if(Curr.x+X>=0 &&
+					Curr.x+X<MyTex.width &&
+					Curr.y+Y>=0 &&
+					Curr.y+Y<MyTex.height)
+				{
+					if (MyTex.GetPixel (Curr.x + X, Curr.y + Y).Equals (TestingVal)) {
+						SucceededVals.Add (Curr + (new IntVector2 (X, Y)));
+					}
+				}
+			}
+		}
+		return SucceededVals;
 	}
+
 }

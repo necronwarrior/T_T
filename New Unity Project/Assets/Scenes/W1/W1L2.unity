@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -1364,7 +1364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42af9910d71058b4c996b27db5d17f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputDegrees: 0
   branchLength: {x: 1, y: 3}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &131403161 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1542746588489246, guid: acd210f525a56034dacb8aa11435e383,
@@ -5684,6 +5686,11 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
       value: 0.31759548
       objectReference: {fileID: 0}
+    - target: {fileID: 114341875411896434, guid: 91f6b3e972c891a4fab7ca506992b8b6,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91f6b3e972c891a4fab7ca506992b8b6, type: 2}
   m_IsPrefabParent: 0
@@ -6221,6 +6228,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114438069063182874, guid: 2c632e815b095a746a0ce5e49e657c1b,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332776327765000, guid: 2c632e815b095a746a0ce5e49e657c1b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c632e815b095a746a0ce5e49e657c1b, type: 2}
   m_IsPrefabParent: 0
@@ -6613,6 +6629,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4656681236184320, guid: 3baf15df812d53342b8f454533d02125, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114861123808026870, guid: 3baf15df812d53342b8f454533d02125,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085053729798914, guid: 3baf15df812d53342b8f454533d02125, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7573,7 +7598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42af9910d71058b4c996b27db5d17f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputDegrees: 0
   branchLength: {x: 0, y: 0}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &844190130
 Prefab:
   m_ObjectHideFlags: 0
@@ -8188,6 +8215,45 @@ Prefab:
     - target: {fileID: 4466628943486564, guid: 72a90e897814fd746a1788de108ce9a0, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114316241674799760, guid: 72a90e897814fd746a1788de108ce9a0,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627477272274494, guid: 72a90e897814fd746a1788de108ce9a0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 60871112749381054, guid: 72a90e897814fd746a1788de108ce9a0,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 0.20216846
+      objectReference: {fileID: 0}
+    - target: {fileID: 60871112749381054, guid: 72a90e897814fd746a1788de108ce9a0,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: 4.4592123
+      objectReference: {fileID: 0}
+    - target: {fileID: 60871112749381054, guid: 72a90e897814fd746a1788de108ce9a0,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: 1.811409
+      objectReference: {fileID: 0}
+    - target: {fileID: 60871112749381054, guid: 72a90e897814fd746a1788de108ce9a0,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.48238373
+      objectReference: {fileID: 0}
+    - target: {fileID: 60871112749381054, guid: 72a90e897814fd746a1788de108ce9a0,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 0.9563389
+      objectReference: {fileID: 0}
+    - target: {fileID: 60871112749381054, guid: 72a90e897814fd746a1788de108ce9a0,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 2.315896
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72a90e897814fd746a1788de108ce9a0, type: 2}
@@ -10034,6 +10100,11 @@ Prefab:
       propertyPath: m_Size.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114443430254263374, guid: 0050df4f266c1c348a330c284af2bf84,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0050df4f266c1c348a330c284af2bf84, type: 2}
   m_IsPrefabParent: 0
@@ -10275,6 +10346,11 @@ Prefab:
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
       value: 2.7652469
+      objectReference: {fileID: 0}
+    - target: {fileID: 114443430254263374, guid: 0050df4f266c1c348a330c284af2bf84,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0050df4f266c1c348a330c284af2bf84, type: 2}
@@ -11063,6 +11139,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114615119800656934, guid: 1418a4df92f943c42969b3d26dd87024,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1402089053719172, guid: 1418a4df92f943c42969b3d26dd87024, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1418a4df92f943c42969b3d26dd87024, type: 2}
   m_IsPrefabParent: 0
@@ -11724,6 +11809,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114241888249286178, guid: 31f9fddb845e1b144b31ebee587f9e05,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31f9fddb845e1b144b31ebee587f9e05, type: 2}
   m_IsPrefabParent: 0
@@ -12231,6 +12321,11 @@ Prefab:
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -1.1723251
+      objectReference: {fileID: 0}
+    - target: {fileID: 114933407579487722, guid: 11cffa958c053fe4399d3f4b8a13129e,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11cffa958c053fe4399d3f4b8a13129e, type: 2}
@@ -14273,6 +14368,11 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
       value: 0.20524502
       objectReference: {fileID: 0}
+    - target: {fileID: 114123904967009044, guid: c61fa38910e6fe245827efc90b3d95af,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c61fa38910e6fe245827efc90b3d95af, type: 2}
   m_IsPrefabParent: 0
@@ -14409,6 +14509,11 @@ Prefab:
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: 0.48107243
+      objectReference: {fileID: 0}
+    - target: {fileID: 114380254395265196, guid: e2eebb5d0223f2b478872f4578df8d70,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2eebb5d0223f2b478872f4578df8d70, type: 2}
@@ -16358,6 +16463,11 @@ Prefab:
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
       value: 2.7527876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323582997092638, guid: 96dbc520ca3c1f646a3dcc78b8c8eb47,
+        type: 2}
+      propertyPath: IncubationPeriod
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96dbc520ca3c1f646a3dcc78b8c8eb47, type: 2}

@@ -14,7 +14,7 @@ public class InfectionTriggerChild : MonoBehaviour {
 			AkSoundEngine.PostEvent("Human_Explosion",gameObject);
 		}
 		if (tag == "TechExplosion") {
-			AkSoundEngine.PostEvent("Machine_Explosion",gameObject);
+			//AkSoundEngine.PostEvent("Machine_Explosion",gameObject);
 		}
 		//explode
 		//Potential for differing colliders

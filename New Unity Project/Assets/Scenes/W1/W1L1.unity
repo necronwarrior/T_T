@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 1
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -870,6 +870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &99834366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -1273,6 +1274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &122551264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,7 +1402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 1
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -1463,6 +1465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!114 &141725753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,7 +1956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -2016,6 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &223924004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,7 +2468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 1
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -2527,6 +2531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &317414918
 Prefab:
   m_ObjectHideFlags: 0
@@ -3581,7 +3586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -3644,6 +3649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &505870934 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -3743,7 +3749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -3806,6 +3812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &538609723 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -4083,7 +4090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -4146,6 +4153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &621243875
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,7 +4223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -4278,6 +4286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &621738606 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -5073,7 +5082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -5136,6 +5145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &769135340
 Prefab:
   m_ObjectHideFlags: 0
@@ -5415,7 +5425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -5478,6 +5488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &816611849
 GameObject:
   m_ObjectHideFlags: 0
@@ -5547,7 +5558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 1
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -5610,6 +5621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &839590949
 GameObject:
   m_ObjectHideFlags: 0
@@ -5695,6 +5707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 0, y: 0}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &844190130
 Prefab:
   m_ObjectHideFlags: 0
@@ -5829,7 +5842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -5892,6 +5905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &870521782 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -6233,7 +6247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -6296,6 +6310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &949634552
 Prefab:
   m_ObjectHideFlags: 0
@@ -6797,7 +6812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -6860,6 +6875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &1028001206
 Prefab:
   m_ObjectHideFlags: 0
@@ -6994,7 +7010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -7057,6 +7073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &1043696213 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -7641,7 +7658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -7704,6 +7721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &1175426403
 Prefab:
   m_ObjectHideFlags: 0
@@ -8039,7 +8057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -8102,6 +8120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &1244173359
 Prefab:
   m_ObjectHideFlags: 0
@@ -8426,7 +8445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 1
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -8489,6 +8508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &1301977399
 Prefab:
   m_ObjectHideFlags: 0
@@ -9189,6 +9209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1390287344
 GameObject:
   m_ObjectHideFlags: 0
@@ -9258,7 +9279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -9321,6 +9342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1399643887
 GameObject:
   m_ObjectHideFlags: 0
@@ -9796,7 +9818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -9859,6 +9881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &1472918656 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -10171,7 +10194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 1
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -10234,6 +10257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &1509659290
 Prefab:
   m_ObjectHideFlags: 0
@@ -11002,7 +11026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 1
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -11065,6 +11089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &1708641748 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -12295,7 +12320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
+  IncubationPeriod: 0.5
   Radius: 1
   InfectionSpritesheet: NULL
   ScoreValue: 13
@@ -12358,6 +12383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &2092725181 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,

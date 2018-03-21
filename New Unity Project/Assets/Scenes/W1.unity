@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requirements:
-  - W1L1
+  - W1L2
   UnlockType: 0
 --- !u!1 &838440094
 GameObject:
@@ -1054,7 +1054,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requirements:
   - W1L2
-  - W1L3
   UnlockType: 0
 --- !u!1 &1370739527
 GameObject:

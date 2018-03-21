@@ -171,7 +171,7 @@ public class Infected : MonoBehaviour
 		}
 		if (gameObject.tag == "Technology") {
 
-			AkSoundEngine.PostEvent("Buzz",gameObject);
+			//AkSoundEngine.PostEvent("Buzz",gameObject);
 
 			if (InfectionSpritesheet != "NULL") {
 				gameObject.GetComponent<SpriteRenderer> ().sprite = InfectedSpritesheet [InfectedSpritesheet.Length - 1];
@@ -182,9 +182,9 @@ public class Infected : MonoBehaviour
 			if (GetComponentInChildren<PolygonCollider2D> () == true) {
 				TExplosion.GetComponent<InfectionTriggerChild> ().Explode (GetComponentInChildren<PolygonCollider2D> ());
 			} else {
-				CircleCollider2D newCircle = gameObject.AddComponent<CircleCollider2D> ();
-				newCircle.radius = Radius;
-				TExplosion.GetComponent<InfectionTriggerChild> ().Explode (newCircle);
+				//CircleCollider2D newCircle = gameObject.AddComponent<CircleCollider2D> ();
+				//newCircle.radius = Radius;
+				TExplosion.GetComponent<InfectionTriggerChild> ().Explode (transform.GetChild(0).GetComponent<CircleCollider2D>());
 			}
 
 
@@ -198,12 +198,12 @@ public class Infected : MonoBehaviour
 		{
 			SetInfected (new Vector2(0,0));
 			Scorepoints.firstTouch = true;
-			GameObject.FindGameObjectWithTag ("LIGHTNING").GetComponent<Animator> ().enabled = true;
+			//GameObject.FindGameObjectWithTag ("LIGHTNING").GetComponent<Animator> ().enabled = true;
 
 //			Camera.main.GetComponent<AudioSource> ().clip = ((AudioClip)Resources.Load ("FX_Lightning_Click") as AudioClip);
 //			Camera.main.GetComponent<AudioSource> ().Play ();
-			AkSoundEngine.StopAll ();
-			AkSoundEngine.PostEvent ("VirusTap", gameObject);
+			//AkSoundEngine.StopAll ();
+			//AkSoundEngine.PostEvent ("VirusTap", gameObject);
 
 	//		Camera.main.GetComponent<AudioSource> ().clip = ((AudioClip)Resources.Load ("Music_Intense") as AudioClip);
 	//		Camera.main.GetComponent<AudioSource> ().Play ();
