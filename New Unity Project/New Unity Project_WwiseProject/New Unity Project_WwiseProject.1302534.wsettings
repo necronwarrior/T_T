@@ -32,7 +32,7 @@
 					</ValueList>
 				</Property>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Android"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="PQq1UNde5UyLCW8fK8mPlNevSQRU+0JFvUl49+eDlDl3fZOet706RbnWrODFuD0oe1G65hfssEK5FYSOejX3ig=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="cVjAnnfzsUSVllGH0pR37ilhU7Fxnj1Khuv2w7htdIk="/>
@@ -77,7 +77,7 @@
 				<Property Name="RTPC\GameParameterSimValue\{7806378C-401B-4742-9287-07BF8AEB5FC8}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{7E341B3E-ABFC-444B-8791-6F5E9A37A41F}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{FECE5E88-0D3D-4B77-BB80-80B513C78400}" Type="Real64" Value="50"/>
-				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
+				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="a3YOOWmKDkuLjm523aZgRA=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>

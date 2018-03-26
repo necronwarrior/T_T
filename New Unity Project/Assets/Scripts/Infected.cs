@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This class deals with the infection of all objects. It contains:
+ * >Reticle placement of currently infected
+ * >Animation calls to SpriteRoots
+ * >Creation of explosions (infectors of other objects)
+ * >Passing of points gained to Scorepoints
+ * >Handling of initial click/touch to start game.
+ * */
+
 public class Infected : MonoBehaviour 
 {
 	public float IncubationPeriod;
