@@ -11,8 +11,8 @@ public class ActivateChild : MonoBehaviour {
 
 	void Update()
 	{
-		if (GetComponent<Infected> ().isInfected == true) {
-			transform.GetChild (0).transform.gameObject.SetActive (true);
-		}
+//		if (GetComponent<Infected> ().isInfected == true) {
+		//	transform.GetChild (0).transform.gameObject.SetActive (true);
+		//}
 	}
 }
