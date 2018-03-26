@@ -34,6 +34,104 @@ public class Infected : MonoBehaviour
 		if(InfectionSpritesheet!="NULL"){
 			InfectedSpritesheet = Resources.LoadAll<Sprite> (InfectionSpritesheet);
 		}
+
+		//And Create reticle 
+		if (InfectionSpritesheet == "NULL") { 
+
+			//Origin at (0,0)
+			StartCoroutine (ReticleHover (0.0f, 1.0f));
+		} else {
+
+			//Spritesheet has its origin at (0.5,0.5) 						// FIXME todo
+			StartCoroutine (ReticleHover (-0.5f,0.5f));
+		}
+	}
+
+	IEnumerator ReticleHover(float LowerBounds, float UpperBounds){
+
+		//Create and place 'Bottom Right' reticle
+		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
+		BR_new.transform.parent = gameObject.transform;
+		BR_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds,	//Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds,	//Bottom
+			0.0f);
+
+		//Create and place 'Bottom Left' reticle
+		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
+		BL_new.transform.parent = gameObject.transform;
+		BL_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds, //Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds, //Bottom
+			0.0f);
+
+		//Create and place 'Top Right' reticle
+		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
+		TR_new.transform.parent = gameObject.transform;
+		TR_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds, //Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds, //Top
+			0.0f);
+
+		//Create and place 'Top Left' reticle
+		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
+		TL_new.transform.parent = gameObject.transform;
+		TL_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds,	//Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds,	//Top
+			0.0f);
+
+		//Values to make the reticle pulse in and out
+		int IncrementerVal = 60;
+		float IncrementVal = -0.004f;
+
+		//until the first tap has completed, pulse 
+		while (Scorepoints.firstTouch == false) {
+
+			//move based on up and downs
+			BR_new.transform.localPosition = new Vector3( 
+				BR_new.transform.localPosition.x + IncrementVal,	//Right
+				BR_new.transform.localPosition.y - IncrementVal,	//Bottom
+				-1.0f);
+
+			BL_new.transform.localPosition = new Vector3( 
+				BL_new.transform.localPosition.x - IncrementVal,	//Left
+				BL_new.transform.localPosition.y - IncrementVal,	//Bottom
+				-1.0f);
+
+			TR_new.transform.localPosition = new Vector3( 
+				TR_new.transform.localPosition.x + IncrementVal,	//Right
+				TR_new.transform.localPosition.y + IncrementVal,	//Top
+				-1.0f);
+
+			TL_new.transform.localPosition = new Vector3( 
+				TL_new.transform.localPosition.x - IncrementVal,	//Left
+				TL_new.transform.localPosition.y + IncrementVal,	//Top
+				-1.0f);
+
+			//count up and down
+			if (IncrementVal > 0) {
+				IncrementerVal++;
+			} else {
+				IncrementerVal--;
+			}
+
+			//magic numbers OwO counting based on value for up and down
+			if (IncrementerVal > 60) {
+				IncrementVal = -0.004f;
+			}
+			if (IncrementerVal < 0) {
+				IncrementVal = 0.004f;
+			}
+
+			yield return new WaitForSeconds(0.012f);
+		}
+
+		//Remove reticles
+		Destroy (BR_new);
+		Destroy (BL_new);
+		Destroy (TR_new);
+		Destroy (TL_new);
 	}
 
 	//Called externally to begin multiple infection processes
@@ -177,7 +275,9 @@ public class Infected : MonoBehaviour
 
 			//machine explosion is invisible but required for spreading infection
 			GameObject TExplosion = (GameObject)Instantiate ((Object)Resources.Load ("Prefabs/InfectedTechExplosion"));
-			TExplosion.transform.position = transform.position;
+			TExplosion.transform.position = new Vector3(transform.position.x + (gameObject.GetComponent<SpriteRenderer> ().bounds.size.x* 0.5f), 
+				transform.position.y + (gameObject.GetComponent<SpriteRenderer> ().bounds.size.y* 0.5f), 
+				transform.position.z);
 
 			//Machine noises of death zap
 			AkSoundEngine.PostEvent("Buzz",gameObject);
