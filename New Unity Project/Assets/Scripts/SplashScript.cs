@@ -40,7 +40,7 @@ public class SplashScript : MonoBehaviour
 	{
 		AkSoundEngine.PostEvent ("Click_Other", gameObject);
 		AkSoundEngine.StopAll ();
-		Application.LoadLevel(Application.loadedLevel);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
 	IEnumerator NextScene(string SceneToOpen)

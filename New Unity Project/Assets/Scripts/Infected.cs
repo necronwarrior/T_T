@@ -2,211 +2,311 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This class deals with the infection of all objects. It contains:
+ * >Reticle placement of currently infected
+ * >Animation calls to SpriteRoots
+ * >Creation of explosions (infectors of other objects)
+ * >Passing of points gained to Scorepoints
+ * >Handling of initial click/touch to start game.
+ * */
+
 public class Infected : MonoBehaviour 
 {
-	public float IncubationPeriod;
-	public float Radius;
-	public string InfectionSpritesheet;
+	ScoreManager Scorepoints;						//Reference to the overall score held in the UI 
+	public int ScoreValue = 0;						//Score granted by infecting this object
 
-	public int ScoreValue;
+	public float ExplosionRadius = 1.0f;			//Size of the infection explosion (if there is no polygon collider)
+	public float IncubationPeriod = 1.0f;			//How long until the infection explosion is called
 
-	Vector2 OldInfectorPos;
-	Sprite[] InfectedSpritesheet;
-	ScoreManager Scorepoints;
+	Vector2 OldInfectorPos;							//Position of the object infection the current one.
 
+	//Spritesheet is mainly used for human infectees
+	public string InfectionSpritesheet = "NULL";	//file location of spritesheet to be used. - This is defaulted to NULL if there is none, in which case SpriteRoots happens.
+	Sprite[] InfectedSpritesheet;					//actual spritesheet file
 
-	public AudioClip soundHumanInfected;
-	public AudioClip soundMachineInfected;
-
-	public bool isInfected;
-	private AudioSource source;
-
-	// Use this for initialization
 	void Start () 
 	{
-		isInfected = false;
+		//Get reference to the UI element that contains the score
 		Scorepoints = GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ();
-		//set player to the 'healthy'sprite
+
+		//Fill the spritesheet with data, if it exists
 		if(InfectionSpritesheet!="NULL"){
-		InfectedSpritesheet = Resources.LoadAll<Sprite> (InfectionSpritesheet);
+			InfectedSpritesheet = Resources.LoadAll<Sprite> (InfectionSpritesheet);
 		}
 
-		source = GetComponent<AudioSource> ();
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		
+		//And Create reticle 
+		if (InfectionSpritesheet == "NULL") { 
+
+			//Origin at (0,0)
+			StartCoroutine (ReticleHover (0.0f, 1.0f));
+		} else {
+
+			//Spritesheet has its origin at (0.5,0.5) 						// FIXME todo
+			StartCoroutine (ReticleHover (-0.5f,0.5f));
+		}
 	}
 
+	IEnumerator ReticleHover(float LowerBounds, float UpperBounds){
+
+		//Create and place 'Bottom Right' reticle
+		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
+		BR_new.transform.parent = gameObject.transform;
+		BR_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds,	//Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds,	//Bottom
+			0.0f);
+
+		//Create and place 'Bottom Left' reticle
+		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
+		BL_new.transform.parent = gameObject.transform;
+		BL_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds, //Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds, //Bottom
+			0.0f);
+
+		//Create and place 'Top Right' reticle
+		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
+		TR_new.transform.parent = gameObject.transform;
+		TR_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds, //Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds, //Top
+			0.0f);
+
+		//Create and place 'Top Left' reticle
+		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
+		TL_new.transform.parent = gameObject.transform;
+		TL_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds,	//Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds,	//Top
+			0.0f);
+
+		//Values to make the reticle pulse in and out
+		int IncrementerVal = 60;
+		float IncrementVal = -0.004f;
+
+		//until the first tap has completed, pulse 
+		while (Scorepoints.firstTouch == false) {
+
+			//move based on up and downs
+			BR_new.transform.localPosition = new Vector3( 
+				BR_new.transform.localPosition.x + IncrementVal,	//Right
+				BR_new.transform.localPosition.y - IncrementVal,	//Bottom
+				-1.0f);
+
+			BL_new.transform.localPosition = new Vector3( 
+				BL_new.transform.localPosition.x - IncrementVal,	//Left
+				BL_new.transform.localPosition.y - IncrementVal,	//Bottom
+				-1.0f);
+
+			TR_new.transform.localPosition = new Vector3( 
+				TR_new.transform.localPosition.x + IncrementVal,	//Right
+				TR_new.transform.localPosition.y + IncrementVal,	//Top
+				-1.0f);
+
+			TL_new.transform.localPosition = new Vector3( 
+				TL_new.transform.localPosition.x - IncrementVal,	//Left
+				TL_new.transform.localPosition.y + IncrementVal,	//Top
+				-1.0f);
+
+			//count up and down
+			if (IncrementVal > 0) {
+				IncrementerVal++;
+			} else {
+				IncrementerVal--;
+			}
+
+			//magic numbers OwO counting based on value for up and down
+			if (IncrementerVal > 60) {
+				IncrementVal = -0.004f;
+			}
+			if (IncrementerVal < 0) {
+				IncrementVal = 0.004f;
+			}
+
+			yield return new WaitForSeconds(0.012f);
+		}
+
+		//Remove reticles
+		Destroy (BR_new);
+		Destroy (BL_new);
+		Destroy (TR_new);
+		Destroy (TL_new);
+	}
+
+	//Called externally to begin multiple infection processes
 	public void SetInfected(Vector2 InfectorPos)
 	{
-		OldInfectorPos = InfectorPos;
-		isInfected = true;
-		//disable movement
+		//Disable movement and animation
 		if (gameObject.tag =="Human") {
 			GetComponent<Move> ().enabled = false;
-			source.PlayOneShot (soundHumanInfected);
 			GetComponent<Animator> ().enabled = false;
 		}
-		if (gameObject.tag == "Technology") {
-			GetComponent<BoxCollider2D> ().enabled = false;
-		}
+
+		//Disable own boxcollider to prevent accidental collisions.
+		GetComponent<BoxCollider2D> ().enabled = false;
+
 		//begin the infection countdown
 		StartCoroutine (Infection());	
-		//and animate reticle
-		if (InfectionSpritesheet != "NULL") { 
-			StartCoroutine (ReticleCountdown ());
+
+		//And Create reticle 
+		if (InfectionSpritesheet == "NULL") { 
+			
+			//Get data of prior infector for SpriteRoots
+			OldInfectorPos = InfectorPos;
+
+			//Origin at (0,0)
+			StartCoroutine (ReticleCountdown (0.0f, 1.0f));
 		} else {
-			StartCoroutine (ReticleCountdown2 ());
+			
+			//Spritesheet has its origin at (0.5,0.5) 						// FIXME todo
+			StartCoroutine (ReticleCountdown (-0.5f,0.5f));
 		}
 	}
 
-	IEnumerator ReticleCountdown2()
+	/*Placement of reticle 													/*FIXME for
+	* flipped sprites
+	* design descisons as to whether this exists at the start of the game
+	* cleanup for lack of repeated code
+	* animations?
+	**/
+	IEnumerator ReticleCountdown(float LowerBounds, float UpperBounds)
 	{
+		//Create and place 'Bottom Right' reticle
 		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
 		BR_new.transform.parent = gameObject.transform;
-		BR_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * 1.0f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * 0.0f,
+		BR_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds,	//Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds,	//Bottom
 			0.0f);
 
+		//Create and place 'Bottom Left' reticle
 		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
 		BL_new.transform.parent = gameObject.transform;
-		BL_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * 0.0f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * 0.0f,
+		BL_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds, //Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds, //Bottom
 			0.0f);
 
+		//Create and place 'Top Right' reticle
 		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
 		TR_new.transform.parent = gameObject.transform;
-		TR_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * 1.0f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * 1.0f,
+		TR_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds, //Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds, //Top
 			0.0f);
 
+		//Create and place 'Top Left' reticle
 		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
 		TL_new.transform.parent = gameObject.transform;
-		TL_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * 0.0f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * 1.0f,
+		TL_new.transform.localPosition = new Vector3( 
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds,	//Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds,	//Top
 			0.0f);
 
+		//Time until explosion
 		yield return new WaitForSeconds (IncubationPeriod);
 
+		//Remove reticles
 		Destroy (BR_new);
 		Destroy (BL_new);
 		Destroy (TR_new);
 		Destroy (TL_new);
 	}
 
-	IEnumerator ReticleCountdown()
-	{
-		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
-		BR_new.transform.parent = gameObject.transform;
-		BR_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * 0.5f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * -0.5f,
-			0.0f);
-
-		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
-		BL_new.transform.parent = gameObject.transform;
-		BL_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * -0.5f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * -0.5f,
-			0.0f);
-
-		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
-		TR_new.transform.parent = gameObject.transform;
-		TR_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * 0.5f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * 0.5f,
-			0.0f);
-
-		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
-		TL_new.transform.parent = gameObject.transform;
-		TL_new.transform.localPosition = new Vector3( gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * -0.5f,
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * 0.5f,
-			0.0f);
-
-		yield return new WaitForSeconds (IncubationPeriod);
-
-		Destroy (BR_new);
-		Destroy (BL_new);
-		Destroy (TR_new);
-		Destroy (TL_new);
-	}
-
+	/* Main messenger for exposion
+	 * >it *feels* like there might be a more efficient way to do this. Still not the happiest with changing polygon shapes on a per-item basis
+	 * */
 	IEnumerator Infection()
 	{
 
+		//Determine whether to animate on a spritesheet or not
+		if (InfectionSpritesheet == "NULL") {
+			
+			//Begin SpriteRoots with data of infector
+			GetComponent<SpriteRoots>().Begin(OldInfectorPos);
+			//wait the overall infection time before exploding
+			yield return new WaitForSeconds ((float)IncubationPeriod);
+		} else {
 
-		//animate over a specified period of time 
-		if (InfectionSpritesheet != "NULL") {
+			//Run through all frames at a speed determined by the length of infectiontime
 			for (int i = 0; i < InfectedSpritesheet.Length; ++i) {
+				//wait the proportianal amount of time for each frame of anmation 
 				yield return new WaitForSeconds ((float)(IncubationPeriod / InfectedSpritesheet.Length));
 				gameObject.GetComponent<SpriteRenderer> ().sprite = InfectedSpritesheet [i];
 			}
-		} else {
-			GetComponent<SpriteRoots>().Begin(OldInfectorPos);
-			yield return new WaitForSeconds ((float)IncubationPeriod);
 		}
 
+		//increment the score by this objects value
 		Scorepoints.AddScore (ScoreValue, transform.position);
 
+		//Determine if the explosion should be human (for graphical sakes)
 		if (gameObject.tag == "Human") {
+
+			//Create and centre explosion
 			GameObject Explosion = (GameObject)Instantiate ((Object)Resources.Load ("Prefabs/InfectedExplosion"));
 			Explosion.transform.position = transform.position;
 
-			AkSoundEngine.PostEvent("Human_Contraction",gameObject);
-
-			if (GetComponentInChildren<PolygonCollider2D> () == true) {
-				Explosion.GetComponent<InfectionTriggerChild> ().Explode (GetComponentInChildren<PolygonCollider2D> ());
-			} else {
-				CircleCollider2D newCircle = gameObject.AddComponent<CircleCollider2D> ();
-				newCircle.isTrigger = true;
-				newCircle.radius = Radius;
-				Explosion.GetComponent<InfectionTriggerChild> ().Explode (newCircle );
-			}
+			//green explosion for flavour
 			GameObject GExplosion = (GameObject)Instantiate ((Object)Resources.Load ("Prefabs/GreenExplosion"));
 			GExplosion.transform.position = transform.position;
 
+			//Play horrible screamng sound
+			AkSoundEngine.PostEvent("Human_Contraction",gameObject);
 
-
-			Destroy (gameObject);
-		}
-		if (gameObject.tag == "Technology") {
-
-			//AkSoundEngine.PostEvent("Buzz",gameObject);
-
-			if (InfectionSpritesheet != "NULL") {
-				gameObject.GetComponent<SpriteRenderer> ().sprite = InfectedSpritesheet [InfectedSpritesheet.Length - 1];
+			//Determine how to handle explosion shape 
+			if (GetComponentInChildren<PolygonCollider2D> () == true) {
+				//For obscure polygons
+				Explosion.GetComponent<InfectionTriggerChild> ().Explode (GetComponentInChildren<PolygonCollider2D> ());
+			} else {
+				//Generate circle collider for default explosion
+				CircleCollider2D newCircle = gameObject.AddComponent<CircleCollider2D> ();
+				newCircle.isTrigger = true;
+				newCircle.radius = ExplosionRadius;
+				Explosion.GetComponent<InfectionTriggerChild> ().Explode (newCircle );
 			}
 
+			//destroy the object
+			Destroy (gameObject);
+		}
+
+		//same determination for tech
+		if (gameObject.tag == "Technology") {
+
+			//machine explosion is invisible but required for spreading infection
 			GameObject TExplosion = (GameObject)Instantiate ((Object)Resources.Load ("Prefabs/InfectedTechExplosion"));
-			TExplosion.transform.position = transform.position;
+			TExplosion.transform.position = new Vector3(transform.position.x + (gameObject.GetComponent<SpriteRenderer> ().bounds.size.x* 0.5f), 
+				transform.position.y + (gameObject.GetComponent<SpriteRenderer> ().bounds.size.y* 0.5f), 
+				transform.position.z);
+
+			//Machine noises of death zap
+			AkSoundEngine.PostEvent("Buzz",gameObject);
+
+			//determine explosion shape, similarly
 			if (GetComponentInChildren<PolygonCollider2D> () == true) {
 				TExplosion.GetComponent<InfectionTriggerChild> ().Explode (GetComponentInChildren<PolygonCollider2D> ());
 			} else {
-				//CircleCollider2D newCircle = gameObject.AddComponent<CircleCollider2D> ();
-				//newCircle.radius = Radius;
-				TExplosion.GetComponent<InfectionTriggerChild> ().Explode (transform.GetChild(0).GetComponent<CircleCollider2D>());
+				CircleCollider2D newCircle = gameObject.AddComponent<CircleCollider2D> ();
+				newCircle.isTrigger = true;
+				newCircle.radius = ExplosionRadius;
+				TExplosion.GetComponent<InfectionTriggerChild> ().Explode (newCircle);
 			}
-
-
 		}
-
 	}
 
+	//initial infection 
 	void OnMouseDown()
 	{
+		//bool for determining first touch
 		if (Scorepoints.firstTouch == false)
 		{
+			//spawn in center of object
 			SetInfected (new Vector2(0,0));
+			//set bool
 			Scorepoints.firstTouch = true;
-			//GameObject.FindGameObjectWithTag ("LIGHTNING").GetComponent<Animator> ().enabled = true;
-
-//			Camera.main.GetComponent<AudioSource> ().clip = ((AudioClip)Resources.Load ("FX_Lightning_Click") as AudioClip);
-//			Camera.main.GetComponent<AudioSource> ().Play ();
-			//AkSoundEngine.StopAll ();
-			//AkSoundEngine.PostEvent ("VirusTap", gameObject);
-
-	//		Camera.main.GetComponent<AudioSource> ().clip = ((AudioClip)Resources.Load ("Music_Intense") as AudioClip);
-	//		Camera.main.GetComponent<AudioSource> ().Play ();
+			//play dynamic action music
+			AkSoundEngine.StopAll ();
+			AkSoundEngine.PostEvent ("VirusTap", gameObject);
 		}
 	}
 }
