@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* This class contains the code for procedurally animating the infection
+ * It alters current graphic memory and assigns a copy of the curent texture to objects being used
+ * */
 public class SpriteRoots : MonoBehaviour {
 
 	//Custom vector2 framework because pixel texture coordinates need to be absolute (there is no '0.2' of a pixel)

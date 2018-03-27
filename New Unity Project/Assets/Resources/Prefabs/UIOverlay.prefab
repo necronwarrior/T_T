@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 114994296858506752}
   - component: {fileID: 114758919576380664}
   - component: {fileID: 114971029402442554}
-  - component: {fileID: 114659861481757700}
   m_Layer: 5
   m_Name: UIOverlay
   m_TagString: ScoreManagerTag
@@ -312,7 +311,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114659861481757700}
+      - m_Target: {fileID: 0}
         m_MethodName: restartLevelButton
         m_Mode: 1
         m_Arguments:
@@ -451,7 +450,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114659861481757700}
+      - m_Target: {fileID: 0}
         m_MethodName: restartLevelButton
         m_Mode: 1
         m_Arguments:
@@ -536,7 +535,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114659861481757700}
+      - m_Target: {fileID: 0}
         m_MethodName: returnToSplash
         m_Mode: 1
         m_Arguments:
@@ -576,17 +575,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114659861481757700
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1047126974756844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 535da94c00e4d2f4da8f610fc4c60231, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114758919576380664
 MonoBehaviour:
   m_ObjectHideFlags: 1
