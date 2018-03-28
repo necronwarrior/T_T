@@ -49,38 +49,49 @@ public class Infected : MonoBehaviour
 
 	IEnumerator ReticleHover(float LowerBounds, float UpperBounds){
 
+		float widthoffset = 0;
+		float heightoffset = 0;
+
+		if (gameObject.GetComponent<SpriteRenderer> ().flipX == true) {
+			widthoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.x;
+		}
+		if (gameObject.GetComponent<SpriteRenderer> ().flipY == true) {
+			heightoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.y;
+		}
+
 		//Create and place 'Bottom Right' reticle
 		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
 		BR_new.transform.parent = gameObject.transform;
 		BR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds,	//Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds,	//Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset,	//Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset,	//Bottom
 			0.0f);
 
 		//Create and place 'Bottom Left' reticle
 		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
 		BL_new.transform.parent = gameObject.transform;
 		BL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds, //Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds, //Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset, //Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset, //Bottom
 			0.0f);
 
 		//Create and place 'Top Right' reticle
 		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
 		TR_new.transform.parent = gameObject.transform;
 		TR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds, //Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds, //Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset, //Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset, //Top
 			0.0f);
 
 		//Create and place 'Top Left' reticle
 		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
 		TL_new.transform.parent = gameObject.transform;
 		TL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds,	//Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds,	//Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset,	//Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset,	//Top
 			0.0f);
-
+		
+		
 		//Values to make the reticle pulse in and out
 		int IncrementerVal = 60;
 		float IncrementVal = -0.004f;
@@ -172,36 +183,46 @@ public class Infected : MonoBehaviour
 	**/
 	IEnumerator ReticleCountdown(float LowerBounds, float UpperBounds)
 	{
+		float widthoffset = 0;
+		float heightoffset = 0;
+
+		if (gameObject.GetComponent<SpriteRenderer> ().flipX == true) {
+			widthoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.x;
+		}
+		if (gameObject.GetComponent<SpriteRenderer> ().flipY == true) {
+			heightoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.y;
+		}
+
 		//Create and place 'Bottom Right' reticle
 		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
 		BR_new.transform.parent = gameObject.transform;
 		BR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds,	//Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds,	//Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset,	//Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset,	//Bottom
 			0.0f);
 
 		//Create and place 'Bottom Left' reticle
 		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
 		BL_new.transform.parent = gameObject.transform;
 		BL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds, //Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds, //Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset, //Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset, //Bottom
 			0.0f);
 
 		//Create and place 'Top Right' reticle
 		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
 		TR_new.transform.parent = gameObject.transform;
 		TR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds, //Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds, //Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset, //Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset, //Top
 			0.0f);
 
 		//Create and place 'Top Left' reticle
 		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
 		TL_new.transform.parent = gameObject.transform;
 		TL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds,	//Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds,	//Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset,	//Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset,	//Top
 			0.0f);
 
 		//Time until explosion
