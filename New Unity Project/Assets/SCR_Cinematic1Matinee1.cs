@@ -9,6 +9,7 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 	public GameObject JetBike;
 	public GameObject VirusContainer;
 	public GameObject Level1Position;
+	public GameObject Splatman;
 
 	private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 	private Vector3 TempVec;
@@ -47,7 +48,7 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 			JetBike.transform.position += Vector3.left * 0.3f;
 			// Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
 
-			Camera.main.transform.position = Vector3.Lerp(TempVec, JetBike.transform.position + offset,((TimingDeltatime-timings[0]))) ;
+			Camera.main.transform.position = Vector3.Lerp(TempVec, JetBike.transform.position + offset,(TimingDeltatime-timings[0])*5);
 			break;
 		case 2:
 			if(Camera.main.transform.position == JetBike.transform.position + offset){
@@ -64,6 +65,7 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 			}
 			VirusContainer.transform.position = new Vector3 (-160.0f, VirusContainer.transform.position.y, VirusContainer.transform.position.z);
 			Destroy (JetBike);
+			Splatman.SetActive (true);
 			Camera.main.transform.position = Vector3.Lerp(TempVec, new Vector3(Level1Position.transform.position.x, Level1Position.transform.position.y, offset.z),TimingDeltatime-timings[2]) ;
 			break;
 		case 4:
