@@ -25,6 +25,8 @@ public class Infected : MonoBehaviour
 	public string InfectionSpritesheet = "NULL";	//file location of spritesheet to be used. - This is defaulted to NULL if there is none, in which case SpriteRoots happens.
 	Sprite[] InfectedSpritesheet;					//actual spritesheet file
 
+	public bool objectInfected = false;
+
 	void Start () 
 	{
 		//Get reference to the UI element that contains the score
@@ -240,7 +242,7 @@ public class Infected : MonoBehaviour
 	 * */
 	IEnumerator Infection()
 	{
-
+		objectInfected = true;
 		//Determine whether to animate on a spritesheet or not
 		if (InfectionSpritesheet == "NULL") {
 			
@@ -273,7 +275,7 @@ public class Infected : MonoBehaviour
 			GExplosion.transform.position = transform.position;
 
 			//Play horrible screamng sound
-			AkSoundEngine.PostEvent("Human_Contraction",gameObject);
+			//AkSoundEngine.PostEvent("Human_Contraction",gameObject);
 
 			//Determine how to handle explosion shape 
 			if (GetComponentInChildren<PolygonCollider2D> () == true) {
@@ -301,7 +303,7 @@ public class Infected : MonoBehaviour
 				transform.position.z);
 
 			//Machine noises of death zap
-			AkSoundEngine.PostEvent("Buzz",gameObject);
+			//AkSoundEngine.PostEvent("Buzz",gameObject);
 
 			//determine explosion shape, similarly
 			if (GetComponentInChildren<PolygonCollider2D> () == true) {
@@ -326,8 +328,8 @@ public class Infected : MonoBehaviour
 			//set bool
 			Scorepoints.firstTouch = true;
 			//play dynamic action music
-			AkSoundEngine.StopAll ();
-			AkSoundEngine.PostEvent ("VirusTap", gameObject);
+			//AkSoundEngine.StopAll ();
+			//AkSoundEngine.PostEvent ("VirusTap", gameObject);
 		}
 	}
 }
