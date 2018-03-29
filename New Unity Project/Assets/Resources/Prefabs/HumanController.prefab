@@ -127,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709395660771858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -2.5, z: 0}
+  m_LocalPosition: {x: 0.5, y: 1.96, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4998016073621622}
@@ -186,10 +186,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.80121136, y: 1.5261}
-      - {x: -0.9562342, y: 1.5476589}
-      - {x: -0.9582262, y: -1.4191332}
-      - {x: 0.8019161, y: -1.4332511}
+    - - {x: 1.388856, y: -0.2729205}
+      - {x: 0.98153454, y: 1.5661721}
+      - {x: 0.20371594, y: 2.8798845}
+      - {x: -0.41526508, y: 1.5476589}
+      - {x: -1.3881106, y: -0.24372734}
+      - {x: -0.71779513, y: -1.4191333}
+      - {x: 0.6015565, y: -1.4332509}
 --- !u!61 &61116322782510806
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -327,13 +330,14 @@ MonoBehaviour:
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: Human/HumanInfectionSpritesheet
+  objectInfected: 0
 --- !u!114 &114861322662629896
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1310282368613290}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f97a6843e6fa5047bacf94c20c70b89, type: 3}
   m_Name: 
