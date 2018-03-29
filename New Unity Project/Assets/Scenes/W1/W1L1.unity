@@ -807,14 +807,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &98495242
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1211,14 +1208,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &120134988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1402,14 +1396,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &141725751
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1956,14 +1947,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &220570148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2468,14 +2456,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &316100515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3391,6 +3376,112 @@ Prefab:
     - {fileID: 114489576733372322, guid: acd210f525a56034dacb8aa11435e383, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: acd210f525a56034dacb8aa11435e383, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &457541290
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1927752556}
+    m_Modifications:
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000026703
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 221.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 43.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114320983643760302, guid: 784708b8186259b4a9ac798a4a9f417f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 61dd35a407ef15348b5d5937887df341,
+        type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 784708b8186259b4a9ac798a4a9f417f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &475110769
 Prefab:
   m_ObjectHideFlags: 0
@@ -3586,14 +3677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &497101575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3749,14 +3837,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &536744417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4090,14 +4175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &600736916
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4223,14 +4305,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &621243879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5082,14 +5161,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &744343535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5211,6 +5287,12 @@ Prefab:
     - {fileID: 114489576733372322, guid: acd210f525a56034dacb8aa11435e383, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: acd210f525a56034dacb8aa11435e383, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &769140748 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114728263798366384, guid: 784708b8186259b4a9ac798a4a9f417f,
+    type: 2}
+  m_PrefabInternal: {fileID: 457541290}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &770756123 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
@@ -5425,14 +5507,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &797412739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5558,14 +5637,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &816611853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5842,14 +5918,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &859163927
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6247,14 +6320,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &942676705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6812,14 +6882,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1012663622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7010,14 +7077,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1043111365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7658,14 +7722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1155768861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8057,14 +8118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1243296869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8445,14 +8503,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1297706087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8682,6 +8737,7 @@ MonoBehaviour:
   firstTouch: 0
   endTimer: 0
   endLevelImage: {fileID: 701221504}
+  scoreAdded: 0
 --- !u!114 &1324103971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9146,14 +9202,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1380635550
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9210,6 +9263,11 @@ MonoBehaviour:
   InputDegrees: 0
   branchLength: {x: 1, y: 4}
   PlayerColor: {r: 0, g: 1, b: 0, a: 1}
+--- !u!224 &1388914052 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224373140982150188, guid: 784708b8186259b4a9ac798a4a9f417f,
+    type: 2}
+  m_PrefabInternal: {fileID: 457541290}
 --- !u!1 &1390287344
 GameObject:
   m_ObjectHideFlags: 0
@@ -9279,14 +9337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1390287348
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9818,14 +9873,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1469850515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10194,14 +10246,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1507737644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11026,14 +11075,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &1687844125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11604,6 +11650,7 @@ RectTransform:
   - {fileID: 88195713}
   - {fileID: 1535208890}
   - {fileID: 1985717681}
+  - {fileID: 1388914052}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11685,6 +11732,7 @@ GameObject:
   - component: {fileID: 1973701595}
   - component: {fileID: 1973701594}
   - component: {fileID: 1973701593}
+  - component: {fileID: 1973701596}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -11737,6 +11785,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973701596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973701592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048737cc065f79c499f988a0ba5fb3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCompletionPercentage: 50
+  progressUiBar: {fileID: 769140748}
+  progressIndicator: {fileID: 2126871383}
+  objectList: []
 --- !u!1 &1985717680
 GameObject:
   m_ObjectHideFlags: 0
@@ -12320,14 +12383,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
+  objectInfected: 0
 --- !u!212 &2083653776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12404,6 +12464,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4449043114781190, guid: acd210f525a56034dacb8aa11435e383,
     type: 2}
   m_PrefabInternal: {fileID: 154573037}
+--- !u!1 &2126871383 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1751768920014546, guid: 784708b8186259b4a9ac798a4a9f417f,
+    type: 2}
+  m_PrefabInternal: {fileID: 457541290}
 --- !u!1001 &2130108622
 Prefab:
   m_ObjectHideFlags: 0

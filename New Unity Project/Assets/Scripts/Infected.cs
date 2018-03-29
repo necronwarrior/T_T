@@ -25,6 +25,8 @@ public class Infected : MonoBehaviour
 	public string InfectionSpritesheet = "NULL";	//file location of spritesheet to be used. - This is defaulted to NULL if there is none, in which case SpriteRoots happens.
 	Sprite[] InfectedSpritesheet;					//actual spritesheet file
 
+	public bool objectInfected = false;
+
 	void Start () 
 	{
 		//Get reference to the UI element that contains the score
@@ -49,38 +51,49 @@ public class Infected : MonoBehaviour
 
 	IEnumerator ReticleHover(float LowerBounds, float UpperBounds){
 
+		float widthoffset = 0;
+		float heightoffset = 0;
+
+		if (gameObject.GetComponent<SpriteRenderer> ().flipX == true) {
+			widthoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.x;
+		}
+		if (gameObject.GetComponent<SpriteRenderer> ().flipY == true) {
+			heightoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.y;
+		}
+
 		//Create and place 'Bottom Right' reticle
 		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
 		BR_new.transform.parent = gameObject.transform;
 		BR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds,	//Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds,	//Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset,	//Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset,	//Bottom
 			0.0f);
 
 		//Create and place 'Bottom Left' reticle
 		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
 		BL_new.transform.parent = gameObject.transform;
 		BL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds, //Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds, //Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset, //Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset, //Bottom
 			0.0f);
 
 		//Create and place 'Top Right' reticle
 		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
 		TR_new.transform.parent = gameObject.transform;
 		TR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds, //Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds, //Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset, //Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset, //Top
 			0.0f);
 
 		//Create and place 'Top Left' reticle
 		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
 		TL_new.transform.parent = gameObject.transform;
 		TL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds,	//Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds,	//Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset,	//Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset,	//Top
 			0.0f);
-
+		
+		
 		//Values to make the reticle pulse in and out
 		int IncrementerVal = 60;
 		float IncrementVal = -0.004f;
@@ -172,36 +185,46 @@ public class Infected : MonoBehaviour
 	**/
 	IEnumerator ReticleCountdown(float LowerBounds, float UpperBounds)
 	{
+		float widthoffset = 0;
+		float heightoffset = 0;
+
+		if (gameObject.GetComponent<SpriteRenderer> ().flipX == true) {
+			widthoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.x;
+		}
+		if (gameObject.GetComponent<SpriteRenderer> ().flipY == true) {
+			heightoffset = gameObject.GetComponent<SpriteRenderer> ().bounds.size.y;
+		}
+
 		//Create and place 'Bottom Right' reticle
 		GameObject BR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BR"));
 		BR_new.transform.parent = gameObject.transform;
 		BR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds,	//Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds,	//Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset,	//Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset,	//Bottom
 			0.0f);
 
 		//Create and place 'Bottom Left' reticle
 		GameObject BL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/BL"));
 		BL_new.transform.parent = gameObject.transform;
 		BL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds, //Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds, //Bottom
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset, //Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * LowerBounds - heightoffset, //Bottom
 			0.0f);
 
 		//Create and place 'Top Right' reticle
 		GameObject TR_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TR"));
 		TR_new.transform.parent = gameObject.transform;
 		TR_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds, //Right
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds, //Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * UpperBounds - widthoffset, //Right
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset, //Top
 			0.0f);
 
 		//Create and place 'Top Left' reticle
 		GameObject TL_new = (GameObject)Instantiate((Object)Resources.Load ("Reticle/TL"));
 		TL_new.transform.parent = gameObject.transform;
 		TL_new.transform.localPosition = new Vector3( 
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds,	//Left
-			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds,	//Top
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.x * LowerBounds - widthoffset,	//Left
+			gameObject.GetComponent<SpriteRenderer> ().bounds.size.y * UpperBounds - heightoffset,	//Top
 			0.0f);
 
 		//Time until explosion
@@ -219,7 +242,7 @@ public class Infected : MonoBehaviour
 	 * */
 	IEnumerator Infection()
 	{
-
+		objectInfected = true;
 		//Determine whether to animate on a spritesheet or not
 		if (InfectionSpritesheet == "NULL") {
 			
@@ -252,7 +275,7 @@ public class Infected : MonoBehaviour
 			GExplosion.transform.position = transform.position;
 
 			//Play horrible screamng sound
-			AkSoundEngine.PostEvent("Human_Contraction",gameObject);
+			//AkSoundEngine.PostEvent("Human_Contraction",gameObject);
 
 			//Determine how to handle explosion shape 
 			if (GetComponentInChildren<PolygonCollider2D> () == true) {
@@ -280,7 +303,7 @@ public class Infected : MonoBehaviour
 				transform.position.z);
 
 			//Machine noises of death zap
-			AkSoundEngine.PostEvent("Buzz",gameObject);
+			//AkSoundEngine.PostEvent("Buzz",gameObject);
 
 			//determine explosion shape, similarly
 			if (GetComponentInChildren<PolygonCollider2D> () == true) {
@@ -305,8 +328,8 @@ public class Infected : MonoBehaviour
 			//set bool
 			Scorepoints.firstTouch = true;
 			//play dynamic action music
-			AkSoundEngine.StopAll ();
-			AkSoundEngine.PostEvent ("VirusTap", gameObject);
+			//AkSoundEngine.StopAll ();
+			//AkSoundEngine.PostEvent ("VirusTap", gameObject);
 		}
 	}
 }

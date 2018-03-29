@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4865412681588026}
   - component: {fileID: 60452080263587974}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Colliderdetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1355504435901024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4570108787592418}
@@ -114,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 1310282368613290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 1}
   m_Children:
   - {fileID: 4865412681588026}
   m_Father: {fileID: 4570108787592418}
@@ -127,8 +127,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709395660771858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5, y: -2.5, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4998016073621622}
   - {fileID: 4430121191788044}
@@ -156,7 +156,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1339925608273764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 0, z: 0}
+  m_LocalPosition: {x: -1.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4570108787592418}
@@ -186,14 +186,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.05937618, y: 0.97031194}
-      - {x: -0.096227944, y: 0.10388476}
-      - {x: -0.7748041, y: 0.1354056}
-      - {x: -0.08505601, y: 0.10088676}
-      - {x: -0.08557445, y: 0.08573717}
-      - {x: -0.05439025, y: 0.098977506}
-      - {x: 0.73622596, y: 0.15584713}
-      - {x: -0.08901745, y: 0.099910915}
+    - - {x: 0.80121136, y: 1.5261}
+      - {x: -0.9562342, y: 1.5476589}
+      - {x: -0.9582262, y: -1.4191332}
+      - {x: 0.8019161, y: -1.4332511}
 --- !u!61 &61116322782510806
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -210,7 +206,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 1.44}
+    oldSize: {x: 0.64, y: 1.48}
     newSize: {x: 0.6, y: 1.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
@@ -327,12 +323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1.5
-  Radius: 1.2
-  InfectionSpritesheet: Human/HumanInfectionSpritesheet
   ScoreValue: 666
-  soundHumanInfected: {fileID: 8300000, guid: 4f0998e4b4c07ed48bbb3105a721fc17, type: 3}
-  soundMachineInfected: {fileID: 0}
+  ExplosionRadius: 1
+  IncubationPeriod: 1.5
+  InfectionSpritesheet: Human/HumanInfectionSpritesheet
 --- !u!114 &114861322662629896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -380,7 +374,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 689d38de139102c43810cd362492fd48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3c054f1416e70614cbb574e279ce9347, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

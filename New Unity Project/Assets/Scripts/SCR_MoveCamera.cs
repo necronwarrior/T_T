@@ -18,13 +18,14 @@ public class SCR_MoveCamera : MonoBehaviour
 	//we define this end position in the scene maybe?
 	public Vector3 EndPositionCamera;
 
-	float timeTakenDuringLerp = 1.0f;
+	public float timeTakenDuringLerp = 1.0f;
 	bool _isLerping;
 	Vector3 _startPosition;
 	Vector3 _endPosition;
+
 	float _timeStartedLerping;
 
-	void StartLerping()
+	public void StartLerping()
 	{
 		_isLerping = true;
 		_timeStartedLerping = Time.time;
@@ -41,7 +42,7 @@ public class SCR_MoveCamera : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		
+		//StartLerping ();
 	}
 	
 	// Update is called once per frame
@@ -59,9 +60,10 @@ public class SCR_MoveCamera : MonoBehaviour
 	{
 		if (_isLerping)
 		{
+			
+
 			float timeSinceStarted = Time.time - _timeStartedLerping;
 			float percentageComplete = timeSinceStarted / timeTakenDuringLerp;
-
 
 			Camera.main.transform.position = Vector3.Lerp (_startPosition, _endPosition, percentageComplete);
 

@@ -1647,14 +1647,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
 --- !u!212 &220570148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1991,14 +1987,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
 --- !u!212 &276926064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3841,14 +3833,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
 --- !u!212 &536744417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4223,14 +4211,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
 --- !u!212 &594249823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6250,14 +6234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
 --- !u!212 &942676705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6863,12 +6843,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4273685004795996, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.3
+      value: 1.285
       objectReference: {fileID: 0}
     - target: {fileID: 114861322662629896, guid: 65eac892337ef3440a572067e2bb44cf,
         type: 2}
       propertyPath: smooth
-      value: 0.8
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 212371077352591842, guid: 65eac892337ef3440a572067e2bb44cf,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c054f1416e70614cbb574e279ce9347,
+        type: 3}
+    - target: {fileID: 4998016073621622, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.739
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
@@ -7212,14 +7202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
 --- !u!212 &1012663622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11275,11 +11261,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4570108787592418, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -11312,143 +11293,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 4570108787592418, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4570108787592418, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 0.80121136
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 1.5261
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
-      value: -0.08901745
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.099910915
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: -0.9582262
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -1.4191332
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: 0.8019161
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: -1.4332511
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: 0.8019161
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: -1.4332511
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
-      value: -0.08901745
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.099910915
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].x
-      value: -0.08901745
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.099910915
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: -0.9562342
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: 1.5476589
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_AutoTiling
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865412681588026, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1643842793462908, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1709395660771858, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
       propertyPath: m_Name
       value: HumanController (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4998016073621622, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4273685004795996, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 114861322662629896, guid: 65eac892337ef3440a572067e2bb44cf,
         type: 2}
       propertyPath: smooth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 60452080263587974, guid: 65eac892337ef3440a572067e2bb44cf,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65eac892337ef3440a572067e2bb44cf, type: 2}
@@ -11994,14 +11846,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
 --- !u!212 &1687844125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13915,14 +13763,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 1
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 1
+  InfectionSpritesheet: NULL
 --- !u!212 &2027908369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14359,14 +14203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncubationPeriod: 0.5
-  Radius: 1
-  InfectionSpritesheet: NULL
   ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  ExplosionRadius: 1
+  IncubationPeriod: 0.5
+  InfectionSpritesheet: NULL
 --- !u!212 &2096503522
 SpriteRenderer:
   m_ObjectHideFlags: 0
