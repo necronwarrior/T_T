@@ -37,6 +37,10 @@ public class Infected : MonoBehaviour
 			InfectedSpritesheet = Resources.LoadAll<Sprite> (InfectionSpritesheet);
 		}
 
+	}
+
+	public void StartHover()
+	{
 		//And Create reticle 
 		if (InfectionSpritesheet == "NULL") { 
 
@@ -328,8 +332,8 @@ public class Infected : MonoBehaviour
 			//set bool
 			Scorepoints.firstTouch = true;
 			//play dynamic action music
-			//AkSoundEngine.StopAll ();
-			//AkSoundEngine.PostEvent ("VirusTap", gameObject);
+			AkSoundEngine.StopAll ();
+			AkSoundEngine.PostEvent ("VirusTap", gameObject);
 		}
 	}
 }
