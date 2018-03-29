@@ -38,8 +38,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224508335392786332}
   - component: {fileID: 223047358834042360}
-  - component: {fileID: 114994296858506752}
-  - component: {fileID: 114758919576380664}
   - component: {fileID: 114971029402442554}
   - component: {fileID: 114135488612469256}
   m_Layer: 5
@@ -381,7 +379,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 10916, guid: 0000000000000000f000000000000000, type: 0}
+  m_Texture: {fileID: 10916, guid: 0000000000000000f000000000000000, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -473,7 +471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7ffd9f398666e4a9263325086460cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseOverlay: {fileID: 1481139680839052}
 --- !u!114 &114142456088283786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1282,22 +1279,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &114758919576380664
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1047126974756844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &114811134374741914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1434,27 +1415,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114994296858506752
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1047126974756844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!222 &222118555527331382
 CanvasRenderer:
   m_ObjectHideFlags: 1
