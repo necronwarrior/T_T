@@ -1157,13 +1157,6 @@
 							<Language>SFX</Language>
 							<AudioFile>FX_Electric_Buzz.wav</AudioFile>
 						</AudioFileSource>
-						<AudioFileSource Name="FX_Human_Explosion" ID="{9783F7F5-A774-4C64-AF40-0F1A69236559}" ShortID="25664537">
-							<Language>SFX</Language>
-							<AudioFile>FX_Human_Explosion.wav</AudioFile>
-							<ConvertedFileIDList>
-								<File ID="857736666"/>
-							</ConvertedFileIDList>
-						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="FX_Electric_Buzz" ID="{6C7EE2EF-C239-4954-9903-C8550DEDB0AE}" Platform="Linked"/>

@@ -3,56 +3,56 @@
 	<Platform GUID="{E6BA517B-EC17-42B0-B915-848E7A35F78A}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1115419274" Timestamp="131636172507898996"/>
-				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172503836344"/>
-				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172507742689"/>
+				<File Name="Init" Hash="1115419274" Timestamp="131667025463160072"/>
+				<File Name="Main_Game" Hash="3420580140" Timestamp="131667025462691292"/>
+				<File Name="Start_Screen" Hash="2294987802" Timestamp="131667025455191185"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4199474983" Timestamp="131665337235950342"/>
+				<File Name="" Hash="852851839" Timestamp="131667025463316375"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{9E937D77-BDB7-453A-B9D6-ACE0C5B83D28}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="3668624804" Timestamp="131636172481023614"/>
-				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172478368058"/>
-				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172480711043"/>
+				<File Name="Init" Hash="3668624804" Timestamp="131667025441440963"/>
+				<File Name="Main_Game" Hash="3420580140" Timestamp="131667025441128481"/>
+				<File Name="Start_Screen" Hash="2294987802" Timestamp="131667025433784618"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3387133109" Timestamp="131665337233606611"/>
+				<File Name="" Hash="3619792569" Timestamp="131667025441597411"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{0449AFD7-FB54-4542-BD49-78F7E7839439}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2377394000" Timestamp="131636172460085704"/>
-				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172456335657"/>
-				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172459929491"/>
+				<File Name="Init" Hash="2377394000" Timestamp="131667025420503185"/>
+				<File Name="Main_Game" Hash="3420580140" Timestamp="131667025420190728"/>
+				<File Name="Start_Screen" Hash="2294987802" Timestamp="131667025412221824"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2686098047" Timestamp="131665337229856525"/>
+				<File Name="" Hash="1840560887" Timestamp="131667025420659496"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{50B50A3D-5ED7-4CE5-8B09-6F1F2BC98F94}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1906111642" Timestamp="131636172438366638"/>
-				<File Name="Main_Game" Hash="1295338740" Timestamp="131636172434617094"/>
-				<File Name="Start_Screen" Hash="3566979969" Timestamp="131636172438054113"/>
+				<File Name="Init" Hash="1906111642" Timestamp="131667025391440306"/>
+				<File Name="Main_Game" Hash="3420580140" Timestamp="131667025390815351"/>
+				<File Name="Start_Screen" Hash="2294987802" Timestamp="131667025383471415"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2964410297" Timestamp="131665337226262717"/>
+				<File Name="" Hash="1814671389" Timestamp="131667025391596536"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>\\StuHome\HomeDrive4$\1302534\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>\\StuHome\HomeDrive4$\1302534\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>\\StuHome\HomeDrive4$\1302534\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>\\StuHome\HomeDrive4$\1302534\JameGamGGJ2018\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
