@@ -35,7 +35,8 @@ public class SCR_ProgressBar : MonoBehaviour
 	void Start () 
 	{
 		setupUiComponents ();
-		populateObjectList ();
+		//populateObjectList ();
+		AddDescendantsWithTag(transform, "Technology", objectList);
 	}
 	
 	// Update is called once per frame
@@ -55,19 +56,27 @@ public class SCR_ProgressBar : MonoBehaviour
 		//get a temp array of all the tech in the level
 		GameObject[] tempList = GameObject.FindGameObjectsWithTag ("Technology");
 
+
 		GameObject[] tempList2 = GameObject.FindGameObjectsWithTag ("Human");
-	
-		//loop through the array and add eac object to the list
-		for (int i = 0; i < tempList.Length; i++)
-		{
-			objectList.Add (tempList [i]);
 
-		}
 
-		for (int i = 0; i < tempList2.Length; i++)
-		{
-			objectList.Add (tempList2 [i]);
-		}
+
+				for (int i = 0; i < tempList.Length; i++)
+				{
+					objectList.Add (tempList [i]);
+
+				}
+			
+
+
+				for (int i = 0; i < tempList2.Length; i++)
+				{
+					objectList.Add (tempList2 [i]);
+				}
+			
+
+
+
 	}
 
 
@@ -136,4 +145,42 @@ public class SCR_ProgressBar : MonoBehaviour
 		return Mathf.Round (infectedPercentage);
 	
 	}
+
+
+
+
+	private void AddDescendantsWithTag(Transform parent, string tag, List<GameObject> list)
+	{
+
+		//get a temp array of all the tech in the level
+		//GameObject[] tempList = GameObject.FindGameObjectsWithTag ("Technology");
+
+
+		//GameObject[] tempList2 = GameObject.FindGameObjectsWithTag ("Human");
+
+
+		foreach (Transform child in parent)
+		{
+			if (child.gameObject.tag == tag)
+			{
+
+				list.Add (child.gameObject);
+//				//loop through the array and add eac object to the list
+//				for (int i = 0; i < List.Length; i++)
+//				{
+//					objectList.Add (tempList [i]);
+//				}
+//
+//				for (int i = 0; i < tempList2.Length; i++)
+//				{
+//					objectList.Add (tempList2 [i]);
+//				}
+
+
+			}
+			AddDescendantsWithTag (child, tag, list);
+		}
+
+	}
+
 }
