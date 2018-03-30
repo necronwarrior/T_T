@@ -27,7 +27,7 @@ public class SCR_ProgressBar : MonoBehaviour
 
 	public List<GameObject> objectList;
 
-	bool levelComplete;
+	public bool levelComplete;
 
 
 
@@ -37,6 +37,7 @@ public class SCR_ProgressBar : MonoBehaviour
 		setupUiComponents ();
 		//populateObjectList ();
 		AddDescendantsWithTag(transform, "Technology", objectList);
+		AddDescendantsWithTag (transform, "Human", objectList);
 	}
 	
 	// Update is called once per frame
@@ -59,24 +60,17 @@ public class SCR_ProgressBar : MonoBehaviour
 
 		GameObject[] tempList2 = GameObject.FindGameObjectsWithTag ("Human");
 
+		for (int i = 0; i < tempList.Length; i++)
+		{
+			objectList.Add (tempList [i]);
 
+		}
+	
 
-				for (int i = 0; i < tempList.Length; i++)
-				{
-					objectList.Add (tempList [i]);
-
-				}
-			
-
-
-				for (int i = 0; i < tempList2.Length; i++)
-				{
-					objectList.Add (tempList2 [i]);
-				}
-			
-
-
-
+		for (int i = 0; i < tempList2.Length; i++)
+		{
+			objectList.Add (tempList2 [i]);
+		}
 	}
 
 
@@ -89,31 +83,39 @@ public class SCR_ProgressBar : MonoBehaviour
 			if(objectList[i].GetComponent<Infected>().objectInfected) // when score is added 
 			{
 				infectedObject += 1;
-				Debug.Log ("stuff:" + infectedObject);
+				//Debug.Log ("stuff:" + infectedObject);
 			}
 
 		}
 
-		//calculate the percentage of objects infected
-		float infectedPercentage = ((float)infectedObject / objectList.Count) *100.0f;
+		if (levelComplete == false)
+		{
+			//calculate the percentage of objects infected
+			float infectedPercentage = ((float)infectedObject / objectList.Count) *100.0f;
 
-		//update the UI text colour to illustrare if a goal has been met
-		if (infectedPercentage < levelCompletionPercentage)
-		{
-			progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
-			levelComplete = false;
-		} else if (infectedPercentage < 100.0f)
-		{
-			progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
-			levelComplete = true;
-		} 
-		else
-		{
-			progressUiBar.color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
+			//update the UI text colour to illustrare if a goal has been met
+			if (infectedPercentage < levelCompletionPercentage)
+			{
+				progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+				levelComplete = false;
+			} else if (infectedPercentage < 100.0f)
+			{
+				progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+
+			} 
+			else
+			{
+				progressUiBar.color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
+				Debug.Log ("level finished");
+				levelComplete = true;
+				GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
+			}
+
+			//update the progress ui bar
+			progressUiBar.fillAmount = (infectedPercentage / 100.0f);
 		}
 
-		//update the progress ui bar
-		progressUiBar.fillAmount = (infectedPercentage / 100.0f);
+
 
 
 	}
@@ -123,6 +125,7 @@ public class SCR_ProgressBar : MonoBehaviour
 		if (levelComplete)
 		{
 			//next level or whatever
+			progressUiBar.fillAmount = 0.0f;
 		}
 	}
 

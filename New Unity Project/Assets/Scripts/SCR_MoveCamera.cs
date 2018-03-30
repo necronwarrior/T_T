@@ -26,7 +26,8 @@ public class SCR_MoveCamera : MonoBehaviour
 
 
 	//public GameObject scrollPanel;
-
+	public GameObject[] LevelList;
+	int LevelCounter;
 	public GameObject level1;
 	public GameObject level2;
 
@@ -39,6 +40,7 @@ public class SCR_MoveCamera : MonoBehaviour
 
 	void StartLerping()
 	{
+		LevelCounter = 0;
 		_isLerping = true;
 		_timeStartedLerping = Time.time;
 
@@ -70,7 +72,7 @@ public class SCR_MoveCamera : MonoBehaviour
 			//_endPosition = _level1Pos;
 			GetNextLevel(1);
 
-			Debug.Log ("b0ss");
+			//Debug.Log ("b0ss");
 			StartLerping ();
 		}
 
@@ -88,25 +90,32 @@ public class SCR_MoveCamera : MonoBehaviour
 		//i.e if i beat level one and i want to go to level 2 then
 
 		//levelCount = next level to go to
+		LevelCounter++;
+		LevelList [LevelCounter].SetActive (true);
+		LevelList [LevelCounter-1].SetActive (false);
+		_endPosition = LevelList [LevelCounter].transform.position + (Vector3.back*10);
+		StartLerping ();
 
-		switch (levelCount)
-		{
-		case 0:
-			_endPosition = _level1Pos;
-			break;
-
-		case 1:
-			_endPosition = _level2Pos;
-			break;
-
-		case 2:
-			break;
-
-		default:
-			Debug.Log ("Broke inside levelCount switch");
-			break;
-
-		}
+//		switch (levelCount)
+//		{
+//		case 0:
+//			_endPosition = _level1Pos;
+//			StartLerping ();
+//			break;
+//
+//		case 1:
+//			_endPosition = _level2Pos;
+//			StartLerping ();
+//			break;
+//
+//		case 2:
+//			break;
+//
+//		default:
+//			Debug.Log ("Broke inside levelCount switch");
+//			break;
+//
+//		}
 
 	}
 

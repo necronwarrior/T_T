@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class ScoreManager : MonoBehaviour {
 
@@ -18,6 +19,8 @@ public class ScoreManager : MonoBehaviour {
 	public float endTimer;
 
 	public RawImage endLevelImage;
+
+
 
 	//determination of whether the level has been completed
 	public void SetLevelUnlock(int value){
@@ -44,7 +47,7 @@ public class ScoreManager : MonoBehaviour {
 
 		if (endTimer >= 2.2)
 		{
-			EndLevel ();
+			//EndLevel ();
 		}
 	}
 
@@ -78,6 +81,9 @@ public class ScoreManager : MonoBehaviour {
 
 	public void EndLevel()
 	{
+
+
+
 		//endLevelImage.GetComponent<RawImage> ().enabled = true;
 		for (int i = 0; i < 5; ++i) {
 			if (int.Parse (ScoreNumber.text) >= ScoreArrayBestToWorst [i]) {
@@ -86,7 +92,23 @@ public class ScoreManager : MonoBehaviour {
 			} 
 		}
 
-		endLevelImage.gameObject.SetActive (true);
+		//no longer needed?
+		//endLevelImage.gameObject.SetActive (true);
+
+		GameObject progress = GameObject.FindGameObjectWithTag ("WorldObjects");
+
+		//if (progress.GetComponent<SCR_ProgressBar> ().levelComplete == true)
+		//{
+			Debug.Log ("helllllllllllllllllllll yes");
+			//testing, will need to add a check to see what level is currently active
+
+			EventSystem.current.GetComponent<SCR_MoveCamera> ().GetNextLevel (1);
+
+			firstTouch = false;
+
+			//gameObject.GetComponent<SCR_MoveCamera> ().GetNextLevel (1);
+
+		//}
 	}
 
 }

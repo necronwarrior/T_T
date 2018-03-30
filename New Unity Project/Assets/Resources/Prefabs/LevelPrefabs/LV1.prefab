@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 114533589433453516}
   m_Layer: 8
   m_Name: WorldObjects
-  m_TagString: Untagged
+  m_TagString: WorldObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5925,6 +5925,7 @@ MonoBehaviour:
   progressUiBar: {fileID: 0}
   progressIndicator: {fileID: 0}
   objectList: []
+  levelComplete: 0
 --- !u!114 &114578992642694482
 MonoBehaviour:
   m_ObjectHideFlags: 1
