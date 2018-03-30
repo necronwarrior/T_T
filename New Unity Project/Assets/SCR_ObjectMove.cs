@@ -24,7 +24,8 @@ public class SCR_ObjectMove : MonoBehaviour {
 
 		CountingTimeHolder += Time.deltaTime;
 
-		if (transform.position == new Vector3(WaypointList [NextPoint].transform.position.x -1.0f, WaypointList [NextPoint].transform.position.y -1.0f,  WaypointList [NextPoint].transform.position.z )) {
+		if (transform.position == new Vector3(WaypointList [NextPoint].transform.position.x -1.0f, WaypointList [NextPoint].transform.position.y -1.0f,  WaypointList [NextPoint].transform.position.z ) &&
+			CountingTimeHolder/TimeToLerp[NextPoint]>1.0f) {
 			
 			LastPoint = NextPoint;
 
