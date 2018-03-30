@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class SCR_InGameObjectToggler : MonoBehaviour {
 
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.gameObject.tag.Equals ("Human")) {
 			transform.position += Vector3.down;
 		}
 	}
 
-	void OnCollisionExit(Collision collision)
+	void OnTriggerExit2D(Collider2D collision)
 	{
 		if (collision.gameObject.tag.Equals ("Human")) {
 			transform.position += Vector3.up;
