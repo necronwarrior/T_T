@@ -26,6 +26,7 @@ public class Infected : MonoBehaviour
 	Sprite[] InfectedSpritesheet;					//actual spritesheet file
 
 	public bool objectInfected = false;
+	public bool awareOfInfected = false;
 
 	void Start () 
 	{
@@ -246,6 +247,31 @@ public class Infected : MonoBehaviour
 	 * */
 	IEnumerator Infection()
 	{
+		ContactFilter2D noContactFilter = new ContactFilter2D();
+		noContactFilter.NoFilter ();
+
+		RaycastHit2D[] HitResults = Physics2D.RaycastAll (new Vector2 (transform.position.x, transform.position.y),
+			(new Vector2 (transform.position.x, transform.position.y) + Vector2.left));
+
+		for(int i=0; i<HitResults.Length;i++)
+		{
+			if (HitResults [i].collider.tag == "Human") {
+				HitResults [i].collider.gameObject.GetComponent<Infected> ().awareOfInfected = true;
+				HitResults [i].collider.gameObject.GetComponent<Move> ().startWalking ();
+			}
+		}
+
+		HitResults = Physics2D.RaycastAll (new Vector2 (transform.position.x, transform.position.y),
+			(new Vector2 (transform.position.x, transform.position.y) + Vector2.right));
+
+		for(int i=0; i<HitResults.Length;i++)
+		{
+			if (HitResults [i].collider.tag == "Human") {
+				HitResults [i].collider.gameObject.GetComponent<Infected> ().awareOfInfected = true;
+				HitResults [i].collider.gameObject.GetComponent<Move> ().startWalking ();
+			}
+		}
+
 		objectInfected = true;
 		//Determine whether to animate on a spritesheet or not
 		if (InfectionSpritesheet == "NULL") {

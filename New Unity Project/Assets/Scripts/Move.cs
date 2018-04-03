@@ -30,11 +30,29 @@ public class Move : MonoBehaviour
 			timeralterer = Time.deltaTime * smooth;
 		}
 	}
-	
+
+	public void startWalking()
+	{
+		GetComponent<Move> ().enabled = true;
+		IdleOnly = false;
+		WalkingAnimator.SetBool ("IsWalking", true);
+		WalkingAnimator.SetBool ("LeftFacing", true);
+		timeralterer = Time.deltaTime * smooth;
+	}
+
 	// Update is called once per frame
 	void Update () 
 	{
-		PositionChanging ();
+		if (IdleOnly == false) {
+			PositionChanging ();
+		}
+
+		if (timerlerp >= 1 && GetComponent<Infected> ().awareOfInfected == true) {
+		
+			WalkingAnimator.SetBool ("IsWalking", false);
+			GetComponent<Move> ().enabled = false;
+		}
+
 	}
 
 	void PositionChanging()
@@ -61,11 +79,12 @@ public class Move : MonoBehaviour
 			transform.localScale = new Vector3(-1.0f,1.0f,1.0f);
 		}
 		//if at position B move towards position A (From 1 to 0)
-		if (timerlerp >=1 )
+		if (timerlerp >=1 && GetComponent<Infected>().awareOfInfected==false)
 		{
 			timeralterer = -1*Time.deltaTime* smooth;
 			WalkingAnimator.SetBool("LeftFacing",true);
 			transform.localScale = new Vector3(1.0f,1.0f,1.0f);
+
 		}
 
 		//change the value along the line
