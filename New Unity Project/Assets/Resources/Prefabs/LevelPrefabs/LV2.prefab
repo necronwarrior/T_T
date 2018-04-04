@@ -1740,7 +1740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1708150241754738
 GameObject:
   m_ObjectHideFlags: 1
@@ -7822,6 +7822,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114054958979980246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7838,6 +7839,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114108886434581982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7854,6 +7856,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114112001246419536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7912,6 +7915,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114257287209243380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7928,6 +7932,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114257922180513626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7944,6 +7949,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114329080542356696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7974,6 +7980,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114342179213706504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7990,6 +7997,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114376487197169318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8034,6 +8042,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114456913917918668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8050,6 +8059,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114484174538582506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8066,6 +8076,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114490874277813176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8082,6 +8093,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114497779457163710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8098,6 +8110,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114592122466290638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8114,6 +8127,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114592208357456226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8200,6 +8214,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114784969472622420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8230,6 +8245,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114794212822261576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8255,7 +8271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCompletionPercentage: 50
+  levelCompletionPercentage: 5
   progressUiBar: {fileID: 0}
   progressIndicator: {fileID: 0}
   objectList: []
@@ -8349,6 +8365,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114934397322218926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8393,6 +8410,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!212 &212007988471871866
 SpriteRenderer:
   m_ObjectHideFlags: 1

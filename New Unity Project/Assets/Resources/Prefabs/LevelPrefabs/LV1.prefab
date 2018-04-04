@@ -5476,6 +5476,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114024742372583766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5506,6 +5507,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114071494472089094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5536,6 +5538,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114095506333898104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5552,6 +5555,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114107149490155404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5568,6 +5572,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114117606869466546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5598,6 +5603,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114128884791540498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5656,6 +5662,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114191408585844186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5686,6 +5693,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114250665340170908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5716,6 +5724,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114318262857056254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5788,6 +5797,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114405357105898302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5804,6 +5814,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114434476201148234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5820,6 +5831,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114450782637952670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5850,6 +5862,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114506378407100950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5866,6 +5879,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114522438839586116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5896,6 +5910,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114531009573454566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5942,6 +5957,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114590929370112614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5986,6 +6002,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114609382125053026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6002,6 +6019,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114610096490775388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6018,6 +6036,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114616223940228732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6034,6 +6053,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114626948553904228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6050,6 +6070,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114629947205524030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6108,6 +6129,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114744268995450862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6191,6 +6213,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114923730027231088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6207,6 +6230,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114927987385054074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6223,6 +6247,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114982713422891400
 MonoBehaviour:
   m_ObjectHideFlags: 1

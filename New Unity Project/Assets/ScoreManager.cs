@@ -99,10 +99,11 @@ public class ScoreManager : MonoBehaviour {
 
 		//if (progress.GetComponent<SCR_ProgressBar> ().levelComplete == true)
 		//{
-			Debug.Log ("helllllllllllllllllllll yes");
+//			Debug.Log ("helllllllllllllllllllll yes");
 			//testing, will need to add a check to see what level is currently active
 
-			EventSystem.current.GetComponent<SCR_MoveCamera> ().GetNextLevel (1);
+		EventSystem.current.GetComponent<SCR_MoveCamera> ().GetNextLevel (
+			EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelCounter);
 
 			firstTouch = false;
 
