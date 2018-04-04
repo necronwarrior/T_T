@@ -6,21 +6,79 @@
 				<SoundcasterSession Name="Music Testing" ID="{448A506B-870D-4F97-BDF8-E6358A94F9B7}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Level_Loop" ID="{AA464279-001F-4EF4-9654-C44797528FFB}" WorkUnitID="{F63C755F-7584-4049-A316-165B84283D79}"/>
+							<ObjectRef Name="Play_Music" ID="{C6EDBD79-B23F-4608-BE22-BE0A7F083685}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Open_Menu" ID="{EEC08077-A208-439E-B9C4-43AEBDDE2CFA}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
 							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_Contraction" ID="{27EFB9C8-03FE-4B7A-BF9B-EB285E6BD3AC}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Dance" ID="{F2DA64F7-0768-4A31-B0A7-04FBF21D45C4}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Menu_Option_Open" ID="{15B8E2F4-9DDE-41CA-B0E9-471FE752A6F6}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_Explosion" ID="{6A54A173-601C-4853-A3C6-77EB8597117F}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="VirusTap" ID="{0BBDBEF7-29B4-4373-9778-C0850427D501}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Menu_Option_Back" ID="{5CF7C3CE-C4B3-42BF-8DFA-4C0A97100565}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Machine_Explosion" ID="{D0BC9324-7A85-45E0-A338-29785FF494D9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Transition" ID="{4C3BF94F-58A2-4984-BF86-BA4951258A22}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Close_Menu" ID="{C0422EA6-E6A9-4618-8BA1-C4975E759BE9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Critical_Effect_Volume" ID="{2E5168C7-8455-41B2-8D5A-59EEA5647FC4}"/>
+							<Value>-14.6067415730337</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}"/>
+							<Value>1</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ThemeMusicFade" ID="{7806378C-401B-4742-9287-07BF8AEB5FC8}"/>
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="BuzzPitch" ID="{603CA9EC-5645-4824-815A-B9210ECED8F2}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Ambient_Fade" ID="{FECE5E88-0D3D-4B77-BB80-80B513C78400}"/>
-							<Value>50</Value>
+							<Value>49</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Menu" ID="{CBFB496E-F436-4F7B-9277-54CDE77E783A}"/>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

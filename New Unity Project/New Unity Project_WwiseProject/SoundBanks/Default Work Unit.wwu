@@ -15,14 +15,19 @@
 				</SoundBank>
 				<SoundBank Name="Main_Game" ID="{9EC05871-F377-44B1-9596-5187D29477EE}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Menu_Option_Open" ID="{15B8E2F4-9DDE-41CA-B0E9-471FE752A6F6}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Menu_Option_Back" ID="{5CF7C3CE-C4B3-42BF-8DFA-4C0A97100565}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VirusTap" ID="{0BBDBEF7-29B4-4373-9778-C0850427D501}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Open_Menu" ID="{EEC08077-A208-439E-B9C4-43AEBDDE2CFA}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Human_Contraction" ID="{B357CEAD-72ED-4585-81B9-F1E275DCC9DA}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Machine_Explosion" ID="{D0BC9324-7A85-45E0-A338-29785FF494D9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Ambient" ID="{C6EDBD79-B23F-4608-BE22-BE0A7F083685}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Music" ID="{C6EDBD79-B23F-4608-BE22-BE0A7F083685}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Click_Start" ID="{BD3D59D7-D21D-4700-A2EB-D1E54D68BD25}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Click_Other" ID="{70E003A4-0817-4806-89BB-937E924384E7}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Human_Explosion" ID="{6A54A173-601C-4853-A3C6-77EB8597117F}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Transition" ID="{4C3BF94F-58A2-4984-BF86-BA4951258A22}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dance" ID="{F2DA64F7-0768-4A31-B0A7-04FBF21D45C4}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Cutscene_audio" ID="{EE089EC7-D614-4F7E-A5C2-9A45DD9C631D}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

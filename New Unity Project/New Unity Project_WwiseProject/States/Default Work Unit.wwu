@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{93E8A01C-2BC2-4D24-87C0-D98900162F40}" SchemaVersion="80">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{93E8A01C-2BC2-4D24-87C0-D98900162F40}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{93E8A01C-2BC2-4D24-87C0-D98900162F40}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Intensity" ID="{69D9705F-18EA-49A3-8A76-BD2A79BE8B8F}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{82F9BED4-04AD-4CAE-B87C-D9E23ABC6B25}"/>
+						<State Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
+						<State Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+						<State Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+							<EndState Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+							<EndState Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
+							<EndState Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
+							<EndState Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
+							<EndState Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
+							<EndState Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

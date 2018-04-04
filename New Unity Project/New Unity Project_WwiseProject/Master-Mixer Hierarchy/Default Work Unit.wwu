@@ -3,7 +3,106 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{60FF7F50-F037-4B34-9CD1-62B378C47611}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{2DE34AF7-ECA1-4FE7-B9D6-49BCC29CF6AB}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{5709BC8D-1011-4E61-B8E1-B3310F241A0D}" ShortID="864050087">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Critical_Effect_Volume" ID="{2E5168C7-8455-41B2-8D5A-59EEA5647FC4}" WorkUnitID="{BB34C5B9-E87E-4611-93FD-9DC04933AEF4}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{4CB75710-8D4C-40E8-AE89-433930C003E3}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-10</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-27</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="Effects" ID="{A138F0AB-2055-4261-B920-F32407538031}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{A7470577-D085-4A7C-BD0E-D6A318B3775C}" ShortID="173735246" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+												<Property Name="MeterMode" Type="int32" Value="1"/>
+												<Property Name="MeterScope" Type="int32" Value="1"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="1"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Critical_Effect_Volume" ID="{2E5168C7-8455-41B2-8D5A-59EEA5647FC4}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<AuxBus Name="SideChain" ID="{88E1B45B-C7DA-4C58-8CFD-ACB4BE9088E9}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{D44F5A34-3AE6-4E0F-AE70-39D341A3BF00}" ShortID="686307607" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+												<Property Name="MeterMode" Type="int32" Value="1"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect3">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{9014307F-3B8C-4DBC-B43E-EA622AA18FA0}" ShortID="782592323" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+											<PropertyList>
+												<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+												<Property Name="LFEGain" Type="Real32" Value="-96.3"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+					</ChildrenList>
+				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
 			</ChildrenList>

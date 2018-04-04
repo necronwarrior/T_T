@@ -6,6 +6,31 @@
 				<GameParameter Name="ThemeMusicFade" ID="{7806378C-401B-4742-9287-07BF8AEB5FC8}"/>
 				<GameParameter Name="Ambient_Fade" ID="{FECE5E88-0D3D-4B77-BB80-80B513C78400}"/>
 				<GameParameter Name="Dance_Fade" ID="{7E341B3E-ABFC-444B-8791-6F5E9A37A41F}"/>
+				<GameParameter Name="Critical_Effect_Volume" ID="{2E5168C7-8455-41B2-8D5A-59EEA5647FC4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Menu" ID="{CBFB496E-F436-4F7B-9277-54CDE77E783A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BuzzPitch" ID="{603CA9EC-5645-4824-815A-B9210ECED8F2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="12"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -8,8 +8,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	581648943	ThemeMusicFade			\Default Work Unit\ThemeMusicFade	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1105394	TerminalTransmissionUI_Back	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\TerminalTransmissionUI_Back_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Back		176464
-	391832207	Music_Theme_Loop	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\Music_Theme_Loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Music_Theme_Loop\Music_Theme_Loop		5644864
-	577882451	TerminalTransmissionUI_Select	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\TerminalTransmissionUI_Select_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Select		176464
-	879813829	Music_Theme_Intro	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\Music_Theme_Intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Music_Theme_Intro\Music_Theme_Intro		352864
+	1105394	TerminalTransmissionUI_Back	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\TerminalTransmissionUI_Back_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Back		176464
+	391832207	Music_Theme_Loop	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\Music_Theme_Loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Music_Theme_Loop\Music_Theme_Loop		5644864
+	577882451	TerminalTransmissionUI_Select	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\TerminalTransmissionUI_Select_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Select		176464
+	879813829	Music_Theme_Intro	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\SFX\Music_Theme_Intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Music_Theme_Intro\Music_Theme_Intro		352864
 

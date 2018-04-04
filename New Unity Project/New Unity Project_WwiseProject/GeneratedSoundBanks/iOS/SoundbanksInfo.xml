@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\</SourceFilesRoot>
-		<SoundBanksRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\iOS\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\iOS\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\iOS\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\iOS\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\iOS\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,8 +21,10 @@
 				<Event Id="3663096569" Name="Human_Contraction" ObjectPath="\Events\Default Work Unit\Human_Contraction"/>
 				<Event Id="1221751492" Name="Human_Explosion" ObjectPath="\Events\Default Work Unit\Human_Explosion"/>
 				<Event Id="3213995980" Name="Machine_Explosion" ObjectPath="\Events\Default Work Unit\Machine_Explosion"/>
-				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Play_Ambient"/>
+				<Event Id="2747536169" Name="Open_Menu" ObjectPath="\Events\Default Work Unit\Open_Menu"/>
 				<Event Id="3654422659" Name="Play_Dance" ObjectPath="\Events\Default Work Unit\Play_Dance"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="895718239" Name="Play_Transition" ObjectPath="\Events\Default Work Unit\Play_Transition"/>
 				<Event Id="3126511263" Name="VirusTap" ObjectPath="\Events\Default Work Unit\VirusTap"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -46,6 +48,14 @@
 					<ShortName>Vox_Scream_Male_2.wav</ShortName>
 					<Path>SFX\Vox_Scream_Male_2_1C9C67B2.wem</Path>
 				</File>
+				<File Id="199326064" Language="SFX">
+					<ShortName>Fx_Infection_Trigger_3.wav</ShortName>
+					<Path>SFX\Fx_Infection_Trigger_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="203821308" Language="SFX">
+					<ShortName>Music_Pulse.wav</ShortName>
+					<Path>SFX\Music_Pulse_F17FB28C.wem</Path>
+				</File>
 				<File Id="279186119" Language="SFX">
 					<ShortName>FX_Electricity_Spark_1.wav</ShortName>
 					<Path>SFX\FX_Electricity_Spark_1_6B493127.wem</Path>
@@ -53,6 +63,14 @@
 				<File Id="375130664" Language="SFX">
 					<ShortName>FX_Electricity_Spark_2.wav</ShortName>
 					<Path>SFX\FX_Electricity_Spark_2_A42C6024.wem</Path>
+				</File>
+				<File Id="413381470" Language="SFX">
+					<ShortName>FX_UI_Open_1.wav</ShortName>
+					<Path>SFX\FX_UI_Open_1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="473504590" Language="SFX">
+					<ShortName>TTx_Evolution_StringsArp.wav</ShortName>
+					<Path>SFX\TTx_Evolution_StringsArp_F17FB28C.wem</Path>
 				</File>
 				<File Id="481235395" Language="SFX">
 					<ShortName>FX_Electricity_Glitch_1.wav</ShortName>
@@ -66,9 +84,9 @@
 					<ShortName>TerminalTransmissionUI_Select.wav</ShortName>
 					<Path>SFX\TerminalTransmissionUI_Select_1C9C67B2.wem</Path>
 				</File>
-				<File Id="579611518" Language="SFX">
-					<ShortName>FX_Machine_Explosion_Boom.wav</ShortName>
-					<Path>SFX\FX_Machine_Explosion_Boom_31D30C00.wem</Path>
+				<File Id="582402812" Language="SFX">
+					<ShortName>TTx_Evolution_DistoBass.wav</ShortName>
+					<Path>SFX\TTx_Evolution_DistoBass_F17FB28C.wem</Path>
 				</File>
 				<File Id="594685120" Language="SFX">
 					<ShortName>FX_Human_Explosion (1).wav</ShortName>
@@ -78,41 +96,41 @@
 					<ShortName>FX_Electricity_Spark.wav</ShortName>
 					<Path>SFX\FX_Electricity_Spark_1030B142.wem</Path>
 				</File>
-				<File Id="683035457" Language="SFX">
-					<ShortName>FX_Stinger_1.wav</ShortName>
-					<Path>SFX\FX_Stinger_1_1C9C67B2.wem</Path>
+				<File Id="695436660" Language="SFX">
+					<ShortName>Fx_Machine_Explosion.wav</ShortName>
+					<Path>SFX\Fx_Machine_Explosion_B3001A13.wem</Path>
 				</File>
-				<File Id="730427893" Language="SFX">
-					<ShortName>FX_Machine_Explosion_Thud.wav</ShortName>
-					<Path>SFX\FX_Machine_Explosion_Thud_1C9C67B2.wem</Path>
+				<File Id="705553081" Language="SFX">
+					<ShortName>Music_DrumBus.wav</ShortName>
+					<Path>SFX\Music_DrumBus_F17FB28C.wem</Path>
+				</File>
+				<File Id="716758116" Language="SFX">
+					<ShortName>TTx_Evolution_HeavyKit.wav</ShortName>
+					<Path>SFX\TTx_Evolution_HeavyKit_F17FB28C.wem</Path>
+				</File>
+				<File Id="722227667" Language="SFX">
+					<ShortName>Music_Arp.wav</ShortName>
+					<Path>SFX\Music_Arp_F17FB28C.wem</Path>
 				</File>
 				<File Id="788998490" Language="SFX">
 					<ShortName>Vox_Scream_Male.wav</ShortName>
 					<Path>SFX\Vox_Scream_Male_1C9C67B2.wem</Path>
 				</File>
-				<File Id="828946055" Language="SFX">
-					<ShortName>FX_Machine_Explosion_Boom_1.wav</ShortName>
-					<Path>SFX\FX_Machine_Explosion_Boom_1_1947D78F.wem</Path>
+				<File Id="792414014" Language="SFX">
+					<ShortName>Music_Hats.wav</ShortName>
+					<Path>SFX\Music_Hats_F17FB28C.wem</Path>
 				</File>
-				<File Id="858514961" Language="SFX">
-					<ShortName>FX_Machine_Explosion_DigitalGlass.wav</ShortName>
-					<Path>SFX\FX_Machine_Explosion_DigitalGlass_1C9C67B2.wem</Path>
+				<File Id="857399479" Language="SFX">
+					<ShortName>TTx_Evolution_DamageKit.wav</ShortName>
+					<Path>SFX\TTx_Evolution_DamageKit_F17FB28C.wem</Path>
 				</File>
-				<File Id="861326939" Language="SFX">
-					<ShortName>FX_Machine_Explosion_DigitalGlass_2.wav</ShortName>
-					<Path>SFX\FX_Machine_Explosion_DigitalGlass_2_1C9C67B2.wem</Path>
-				</File>
-				<File Id="893006405" Language="SFX">
-					<ShortName>FX_Machine_Explosion.wav</ShortName>
-					<Path>SFX\FX_Machine_Explosion_94FB5525.wem</Path>
+				<File Id="918395920" Language="SFX">
+					<ShortName>Music_SlowBass.wav</ShortName>
+					<Path>SFX\Music_SlowBass_F17FB28C.wem</Path>
 				</File>
 				<File Id="936187152" Language="SFX">
 					<ShortName>Music_Ambient_Loop.wav</ShortName>
 					<Path>SFX\Music_Ambient_Loop_F17FB28C.wem</Path>
-				</File>
-				<File Id="936582882" Language="SFX">
-					<ShortName>FX_Machine_Explosion_Boom_2.wav</ShortName>
-					<Path>SFX\FX_Machine_Explosion_Boom_2_C02CE707.wem</Path>
 				</File>
 				<File Id="938190122" Language="SFX">
 					<ShortName>Vox_Scream_Male_1.wav</ShortName>
@@ -121,6 +139,10 @@
 				<File Id="942036279" Language="SFX">
 					<ShortName>FX_Crush.wav</ShortName>
 					<Path>SFX\FX_Crush_1C9C67B2.wem</Path>
+				</File>
+				<File Id="983936804" Language="SFX">
+					<ShortName>Fx_Building_Transition.wav</ShortName>
+					<Path>SFX\Fx_Building_Transition_6BB3D881.wem</Path>
 				</File>
 				<File Id="987468052" Language="SFX">
 					<ShortName>Music_Level_Dance.wav</ShortName>
