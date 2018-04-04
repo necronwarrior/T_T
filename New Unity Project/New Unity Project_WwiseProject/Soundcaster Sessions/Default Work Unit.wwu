@@ -57,7 +57,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}"/>
-							<Value>1</Value>
+							<Value>9.1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ThemeMusicFade" ID="{7806378C-401B-4742-9287-07BF8AEB5FC8}"/>

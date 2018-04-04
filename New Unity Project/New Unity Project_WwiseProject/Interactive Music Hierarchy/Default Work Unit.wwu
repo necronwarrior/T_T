@@ -781,6 +781,81 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
+										<MusicTrack Name="TTx_Evolution_DarkPulse" ID="{F00AA216-AFD1-44ED-A7D3-88A5CD191D89}" ShortID="523485314">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{154DF966-42E0-401E-A391-B6403FC64543}" ShortID="750368256">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}" WorkUnitID="{BB34C5B9-E87E-4611-93FD-9DC04933AEF4}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{7FF86DC9-BBD9-4E19-84CB-9DA11758E212}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.9</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TTx_Evolution_DarkPulse" ID="{36EB7B1D-643D-4A74-B09F-AD46118B3414}" ShortID="133896715">
+													<Language>SFX</Language>
+													<AudioFile>TTx_Evolution_DarkPulse.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{133D1364-F076-47CB-ADB5-EE60DC51C4C0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{8535F0AE-AC03-4F1E-A77F-DECE1D8E3357}">
+													<ClipList>
+														<MusicClip Name="TTx_Evolution_DarkPulse" ID="{4B4C44DA-6663-4C66-ACD2-5210B415E1C9}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="21333.3333333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TTx_Evolution_DarkPulse" ID="{36EB7B1D-643D-4A74-B09F-AD46118B3414}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
 									</ChildrenList>
 									<CueList>
 										<MusicCue Name="Entry Cue" ID="{85D32A0C-E1AC-490E-AAAB-DE56338FE2E2}"/>
@@ -881,7 +956,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>8</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -956,7 +1031,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>6</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1326,7 +1401,7 @@
 						<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>6</Value>
+								<Value>12</Value>
 							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{68277D33-2C07-48BC-92C2-4ACC2812BB09}" ShortID="120353876">
