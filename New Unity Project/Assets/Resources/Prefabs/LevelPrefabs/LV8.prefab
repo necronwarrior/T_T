@@ -381,6 +381,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4200081127809428}
+  - component: {fileID: 114935628698333022}
   m_Layer: 8
   m_Name: WorldObjects
   m_TagString: Untagged
@@ -1189,7 +1190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1568898890201928
 GameObject:
   m_ObjectHideFlags: 1
@@ -3348,7 +3349,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1543609165526514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 487, y: -26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4621890009669234}
@@ -7494,6 +7495,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114098840990850668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7539,6 +7541,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114160324028499082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7600,6 +7603,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114410384729902030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7643,6 +7647,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114571948440640130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7673,6 +7678,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114586792424445474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7734,6 +7740,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: Human/HumanInfectionSpritesheet
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114665406831827238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7750,6 +7757,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114689104860014464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7813,6 +7821,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114779084875824218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7829,6 +7838,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114797372637814480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7860,6 +7870,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114847379516268162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7876,6 +7887,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: Human/HumanInfectionSpritesheet
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114847443675163006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7892,6 +7904,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114852647410401678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7908,6 +7921,23 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
+--- !u!114 &114935628698333022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1213210981474604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCompletionPercentage: 10
+  progressUiBar: {fileID: 0}
+  progressIndicator: {fileID: 0}
+  objectList: []
+  levelComplete: 0
 --- !u!114 &114973341914675714
 MonoBehaviour:
   m_ObjectHideFlags: 1

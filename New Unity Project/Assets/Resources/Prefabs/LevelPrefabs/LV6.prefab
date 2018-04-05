@@ -190,6 +190,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4561428286209984}
+  - component: {fileID: 114263313679679492}
   m_Layer: 8
   m_Name: WorldObjects
   m_TagString: Untagged
@@ -383,7 +384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1124985395989848
 GameObject:
   m_ObjectHideFlags: 1
@@ -859,7 +860,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1340504585214724
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -1912,7 +1913,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1841885388140458
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -2899,14 +2900,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340504585214724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 3.5, z: 0}
+  m_LocalPosition: {x: -1.5, y: 2.5, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4109393124451644}
   - {fileID: 4498635090321620}
   - {fileID: 4887505807771508}
-  m_Father: {fileID: 4892180074484592}
-  m_RootOrder: 7
+  m_Father: {fileID: 4561428286209984}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4213192146361276
 Transform:
@@ -3505,14 +3506,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1841885388140458}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -2.5, z: 0}
+  m_LocalPosition: {x: 2.5, y: -3.5, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4818662358193354}
   - {fileID: 4207706183291300}
   - {fileID: 4248877982359336}
-  m_Father: {fileID: 4892180074484592}
-  m_RootOrder: 6
+  m_Father: {fileID: 4561428286209984}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4553365440406432
 Transform:
@@ -3572,6 +3573,8 @@ Transform:
   - {fileID: 4729630425073010}
   - {fileID: 4451134125226710}
   - {fileID: 4385964617825560}
+  - {fileID: 4543832077492714}
+  - {fileID: 4212350083944894}
   m_Father: {fileID: 4892180074484592}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4064,7 +4067,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121336157833090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 358, y: -65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4867696451574094}
@@ -4073,8 +4076,6 @@ Transform:
   - {fileID: 4246530730352040}
   - {fileID: 4333703960580720}
   - {fileID: 4561428286209984}
-  - {fileID: 4543832077492714}
-  - {fileID: 4212350083944894}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7445,6 +7446,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114136401310326386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7532,6 +7534,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114258009608484950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7547,6 +7550,22 @@ MonoBehaviour:
   leftPoint: {fileID: 1157273393114274}
   rightPoint: {fileID: 1664807896242834}
   smooth: 0.7
+--- !u!114 &114263313679679492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066517563767520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCompletionPercentage: 10
+  progressUiBar: {fileID: 0}
+  progressIndicator: {fileID: 0}
+  objectList: []
+  levelComplete: 0
 --- !u!114 &114309569827005818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7563,6 +7582,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: Human/HumanInfectionSpritesheet
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114338889039715112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7579,6 +7599,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114407242639681682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7623,6 +7644,7 @@ MonoBehaviour:
   IncubationPeriod: 1.5
   InfectionSpritesheet: Human/HumanInfectionSpritesheet
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114594026630437590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7667,6 +7689,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114863156513659654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7683,6 +7706,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114900650063276628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7699,6 +7723,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114943041687905972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7715,6 +7740,7 @@ MonoBehaviour:
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114956627188656676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7731,6 +7757,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114961594000950750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7761,6 +7788,7 @@ MonoBehaviour:
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
   objectInfected: 0
+  awareOfInfected: 0
 --- !u!212 &212008700339138694
 SpriteRenderer:
   m_ObjectHideFlags: 1

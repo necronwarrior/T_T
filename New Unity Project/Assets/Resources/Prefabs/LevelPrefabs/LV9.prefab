@@ -749,7 +749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1370534579078152
 GameObject:
   m_ObjectHideFlags: 1
@@ -1468,6 +1468,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4557721740273718}
+  - component: {fileID: 114558214198195874}
   m_Layer: 8
   m_Name: WorldObjects
   m_TagString: Untagged
@@ -3578,7 +3579,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1370070250864114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 550, y: -9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4005971331876258}
@@ -7059,6 +7060,22 @@ MonoBehaviour:
   InputDegrees: 0
   branchLength: {x: 1, y: 3}
   PlayerColor: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &114558214198195874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651117105799214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCompletionPercentage: 10
+  progressUiBar: {fileID: 0}
+  progressIndicator: {fileID: 0}
+  objectList: []
+  levelComplete: 0
 --- !u!114 &114578739697531796
 MonoBehaviour:
   m_ObjectHideFlags: 1
