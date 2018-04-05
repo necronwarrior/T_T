@@ -939,39 +939,6 @@
 						<ActiveSource Name="FX_Human_Explosion (1)" ID="{DE764BA6-161B-452B-974B-BF812468872D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Fx_Building_Transition" ID="{CDAB267E-22DE-496C-8DAE-FC75C00F3CC7}" ShortID="131569079">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>6</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
-						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
-							<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Effects" ID="{A138F0AB-2055-4261-B920-F32407538031}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Fx_Building_Transition" ID="{B60F9879-B2FF-42B4-B0AF-4E27330CD90F}" ShortID="983936804">
-							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.616629464285715"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.711495535714286"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Fx_Building_Transition.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Fx_Building_Transition" ID="{B60F9879-B2FF-42B4-B0AF-4E27330CD90F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Fx_Infection_Trigger_3" ID="{9800E112-814B-4415-9939-1DEC3262D3BD}" ShortID="906323185">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1288,6 +1255,74 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Amb_CutScene_2 (1)" ID="{755D9309-AE5E-4290-964F-5DC6E6018D25}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Fx_Building_Transition" ID="{CDAB267E-22DE-496C-8DAE-FC75C00F3CC7}" ShortID="131569079">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{499C3FE9-82B5-48CB-BDB1-679513F963DD}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Fx_Building_Transition" ID="{B60F9879-B2FF-42B4-B0AF-4E27330CD90F}" ShortID="983936804">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.616629464285715"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.711495535714286"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Fx_Building_Transition.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Fx_Building_Transition" ID="{B60F9879-B2FF-42B4-B0AF-4E27330CD90F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Fx_Transition_Blimp" ID="{7F87CB95-CE05-4323-89E5-695A6CCBAA28}" ShortID="218347987">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Fx_Transition_Blimp" ID="{F29F5B8A-A5C5-4CD1-8292-500BA38EF4EE}" ShortID="29903907">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.635602678571429"/>
+								<Property Name="FadeInShape" Type="int16" Value="6"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.732366071428571"/>
+								<Property Name="FadeOutShape" Type="int16" Value="6"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Fx_Transition_Blimp.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Fx_Transition_Blimp" ID="{F29F5B8A-A5C5-4CD1-8292-500BA38EF4EE}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

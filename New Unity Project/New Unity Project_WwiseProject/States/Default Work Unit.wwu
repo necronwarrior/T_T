@@ -59,6 +59,13 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Transition" ID="{2C0C3D6C-E182-4393-9CAA-F6CB9FBF6CF2}">
+					<ChildrenList>
+						<State Name="None" ID="{2AE03F74-BD29-47FB-AE51-0B814B2E5236}"/>
+						<State Name="Building" ID="{4B05E852-4403-4E0F-AAF0-3BEED99AB9A4}"/>
+						<State Name="Blimp" ID="{F5E730A5-63B9-4411-8805-7D40FD3AA500}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

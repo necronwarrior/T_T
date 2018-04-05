@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5B0038B4-16B0-40E8-A331-7AFD87428E6B}'
-    m_lastTimePsrt1: 1691812880
-    m_lastTimePart2: -1999267106
+    m_lastTimePsrt1: -521323985
+    m_lastTimePart2: -1999267088
     List:
     - Name: Buzz
       Path: Default Work Unit\Buzz
@@ -231,8 +231,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{93E8A01C-2BC2-4D24-87C0-D98900162F40}'
-    m_lastTimePsrt1: 1258425333
-    m_lastTimePart2: -1999267113
+    m_lastTimePsrt1: -521011433
+    m_lastTimePart2: -1999267088
     List:
     - Name: Intensity
       Path: Default Work Unit\Intensity
@@ -267,6 +267,31 @@ MonoBehaviour:
       - bytes: 4e9ba02258251e4382c95ba839b5e544
       - bytes: d4bef982ad04ae4cb87cd9e23abc6b25
       - bytes: 16c54e05affb2d4f9f34efbce406ddfe
+    - Name: Transition
+      Path: Default Work Unit\Transition
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Transition
+        ObjectType: 9
+      ID: 1865857008
+      Guid: 6c3d0c2c82e193439caaf6cb9fbf6cf2
+      values:
+      - Blimp
+      - Building
+      - None
+      ValueIcons:
+      - ElementName: Blimp
+        ObjectType: 8
+      - ElementName: Building
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 0f9475c8e9b610c7db3ba32c
+      ValueGuids:
+      - bytes: a530e7f5b963114488057d40fd3aa500
+      - bytes: 52e8054b03440f4eaaf03beed99ab9a4
+      - bytes: 743fe02a29bdfb47ae510b814b2e5236
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 

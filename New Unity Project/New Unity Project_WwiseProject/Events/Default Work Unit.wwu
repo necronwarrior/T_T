@@ -153,6 +153,16 @@
 				</Event>
 				<Event Name="Play_Dance" ID="{F2DA64F7-0768-4A31-B0A7-04FBF21D45C4}">
 					<ChildrenList>
+						<Action Name="" ID="{F4CED1B5-FCB5-4651-8C12-26000070A952}" ShortID="1053587331">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fx_Transition_Blimp" ID="{7F87CB95-CE05-4323-89E5-695A6CCBAA28}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{E149E799-6FCE-4A03-BE01-835DBDCD1CA8}" ShortID="643390363">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
