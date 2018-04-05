@@ -40,7 +40,6 @@ public class SCR_MoveCamera : MonoBehaviour
 
 	void StartLerping()
 	{
-		//LevelCounter = 0;
 		_isLerping = true;
 		_timeStartedLerping = Time.time;
 
@@ -64,7 +63,7 @@ public class SCR_MoveCamera : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		Debug.Log ("levelcounter: " + LevelCounter);
+		//Debug.Log ("levelcounter: " + LevelCounter);
 		//GetNextLevel ();
 
 		if (Input.GetKeyDown (KeyCode.Space))
