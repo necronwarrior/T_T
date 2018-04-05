@@ -27,7 +27,7 @@ public class SCR_MoveCamera : MonoBehaviour
 
 	//public GameObject scrollPanel;
 	public GameObject[] LevelList;
-	int LevelCounter;
+	public int LevelCounter;
 	public GameObject level1;
 	public GameObject level2;
 
@@ -88,6 +88,8 @@ public class SCR_MoveCamera : MonoBehaviour
 	{
 		//level count would equal the next level to go to
 		//i.e if i beat level one and i want to go to level 2 then
+
+		Debug.Log ("the level should be: " + levelCount);
 
 		//levelCount = next level to go to
 		LevelCounter++;

@@ -11,6 +11,6 @@ public class ResolutionChanger : MonoBehaviour {
 	void Start () {
 		//Screen.SetResolution ((int)resolutionNew.x, (int)resolutionNew.y, false);
 		//Screen.orientation = OrientationSwitch;
-		AkSoundEngine.PostEvent ("Play_Ambient", gameObject);
+		AkSoundEngine.PostEvent ("Play_Music", gameObject);
 	}
 }
