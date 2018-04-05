@@ -16,7 +16,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5B0038B4-16B0-40E8-A331-7AFD87428E6B}'
-    m_lastTimePsrt1: 1945694418
+    m_lastTimePsrt1: -1099675651
     m_lastTimePart2: -1999267091
     List:
     - Name: Buzz
@@ -213,7 +213,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{60FF7F50-F037-4B34-9CD1-62B378C47611}'
-    m_lastTimePsrt1: 1959408377
+    m_lastTimePsrt1: -1055612183
     m_lastTimePart2: -1999267091
     List:
     - Name: SideChain
@@ -231,7 +231,7 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{93E8A01C-2BC2-4D24-87C0-D98900162F40}'
-    m_lastTimePsrt1: 1961368891
+    m_lastTimePsrt1: -1047486992
     m_lastTimePart2: -1999267091
     List:
     - Name: Intensity
@@ -278,7 +278,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{390E766B-8A69-4B0E-8B8E-6E76DDA66044}'
-    m_lastTimePsrt1: 1961240678
+    m_lastTimePsrt1: -1048424486
     m_lastTimePart2: -1999267091
     List:
     - Name: Main_Game
@@ -303,7 +303,7 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BB34C5B9-E87E-4611-93FD-9DC04933AEF4}'
-    m_lastTimePsrt1: 1945882776
+    m_lastTimePsrt1: -1099363069
     m_lastTimePart2: -1999267091
     List:
     - Name: Ambient_Fade
