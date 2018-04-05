@@ -28,6 +28,11 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 		TimingDeltatime = 0.0f;
 		//Calculate and store the offset value by getting the distance between the player's position and camera's position.
 		offset = new Vector3(0.0f,0.0f,-10.0f);
+
+        AkSoundEngine.PostEvent("Cutscene_audio", gameObject);
+        AkSoundEngine.PostEvent("Set_Chill", gameObject);
+        AkSoundEngine.PostEvent("Play_Music", gameObject);
+        AkSoundEngine.SetRTPCValue("Level_Start", 14f, null, 14000);
 	}
 
 	// LateUpdate is called after Update each frame

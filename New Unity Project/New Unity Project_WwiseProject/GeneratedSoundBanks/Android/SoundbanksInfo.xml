@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ProjectRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Android\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Android\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,13 +21,15 @@
 				<Event Id="1706939946" Name="Cutscene_audio" ObjectPath="\Events\Default Work Unit\Cutscene_audio"/>
 				<Event Id="3663096569" Name="Human_Contraction" ObjectPath="\Events\Default Work Unit\Human_Contraction"/>
 				<Event Id="1221751492" Name="Human_Explosion" ObjectPath="\Events\Default Work Unit\Human_Explosion"/>
+				<Event Id="2732373873" Name="Machine_Contraction" ObjectPath="\Events\Default Work Unit\Machine_Contraction"/>
 				<Event Id="3213995980" Name="Machine_Explosion" ObjectPath="\Events\Default Work Unit\Machine_Explosion"/>
 				<Event Id="3862065186" Name="Menu_Option_Back" ObjectPath="\Events\Default Work Unit\Menu_Option_Back"/>
 				<Event Id="2867641175" Name="Menu_Option_Open" ObjectPath="\Events\Default Work Unit\Menu_Option_Open"/>
 				<Event Id="2747536169" Name="Open_Menu" ObjectPath="\Events\Default Work Unit\Open_Menu"/>
-				<Event Id="3654422659" Name="Play_Dance" ObjectPath="\Events\Default Work Unit\Play_Dance"/>
+				<Event Id="3654422659" Name="Play_Dance" ObjectPath="\Events\Default Work Unit\Play_Dance" MaxAttenuation="0.000000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="895718239" Name="Play_Transition" ObjectPath="\Events\Default Work Unit\Play_Transition"/>
+				<Event Id="3092854060" Name="Set_Chill" ObjectPath="\Events\Default Work Unit\Set_Chill" MaxAttenuation="0.000000"/>
 				<Event Id="3126511263" Name="VirusTap" ObjectPath="\Events\Default Work Unit\VirusTap"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -42,6 +44,10 @@
 				<File Id="19248964" Language="SFX">
 					<ShortName>FX_Electricity_Glitch.wav</ShortName>
 					<Path>SFX\FX_Electricity_Glitch_88149D53.wem</Path>
+				</File>
+				<File Id="133896715" Language="SFX">
+					<ShortName>TTx_Evolution_DarkPulse.wav</ShortName>
+					<Path>SFX\TTx_Evolution_DarkPulse_F17FB28C.wem</Path>
 				</File>
 				<File Id="150507278" Language="SFX">
 					<ShortName>FX_Electricity_Glitch_2.wav</ShortName>
@@ -59,13 +65,17 @@
 					<ShortName>Music_Pulse.wav</ShortName>
 					<Path>SFX\Music_Pulse_F17FB28C.wem</Path>
 				</File>
-				<File Id="211892836" Language="SFX">
-					<ShortName>Amb_Cutscene_1.wav</ShortName>
-					<Path>SFX\Amb_Cutscene_1_1C9C67B2.wem</Path>
+				<File Id="206069990" Language="SFX">
+					<ShortName>Amb_CutScene_2 (1).wav</ShortName>
+					<Path>SFX\Amb_CutScene_2 (1)_1C9C67B2.wem</Path>
 				</File>
 				<File Id="279186119" Language="SFX">
 					<ShortName>FX_Electricity_Spark_1.wav</ShortName>
 					<Path>SFX\FX_Electricity_Spark_1_6B493127.wem</Path>
+				</File>
+				<File Id="283050909" Language="SFX">
+					<ShortName>Chill_beat.wav</ShortName>
+					<Path>SFX\Chill_beat_F17FB28C.wem</Path>
 				</File>
 				<File Id="375130664" Language="SFX">
 					<ShortName>FX_Electricity_Spark_2.wav</ShortName>
@@ -74,6 +84,10 @@
 				<File Id="413381470" Language="SFX">
 					<ShortName>FX_UI_Open_1.wav</ShortName>
 					<Path>SFX\FX_UI_Open_1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="432947213" Language="SFX">
+					<ShortName>FX_Machine_Contraction.wav</ShortName>
+					<Path>SFX\FX_Machine_Contraction_1C9C67B2.wem</Path>
 				</File>
 				<File Id="473504590" Language="SFX">
 					<ShortName>TTx_Evolution_StringsArp.wav</ShortName>

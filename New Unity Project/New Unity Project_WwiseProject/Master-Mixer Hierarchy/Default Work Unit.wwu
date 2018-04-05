@@ -14,7 +14,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
@@ -36,7 +36,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>-10</XPos>
+														<XPos>-15</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log3</SegmentShape>
@@ -64,7 +64,7 @@
 									<Custom>
 										<Effect Name="Wwise Meter (Custom)" ID="{A7470577-D085-4A7C-BD0E-D6A318B3775C}" ShortID="173735246" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 											<PropertyList>
-												<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+												<Property Name="AttackTime" Type="Real32" Value="0.005"/>
 												<Property Name="MeterMode" Type="int32" Value="1"/>
 												<Property Name="MeterScope" Type="int32" Value="1"/>
 												<Property Name="ReleaseTime" Type="Real32" Value="1"/>

@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5B0038B4-16B0-40E8-A331-7AFD87428E6B}'
-    m_lastTimePsrt1: 1652130523
-    m_lastTimePart2: -1999267263
+    m_lastTimePsrt1: 1691812880
+    m_lastTimePart2: -1999267106
     List:
     - Name: Buzz
       Path: Default Work Unit\Buzz
@@ -88,6 +88,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1221751492
       Guid: 73a1546a1c605348a3c677eb8597117f
+      maxAttenuation: 0
+    - Name: Machine_Contraction
+      Path: Default Work Unit\Machine_Contraction
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Machine_Contraction
+        ObjectType: 3
+      ID: -1562593423
+      Guid: ea65aaa3bcdc7a47a51325a65ef9c90a
       maxAttenuation: 0
     - Name: Machine_Explosion
       Path: Default Work Unit\Machine_Explosion
@@ -169,6 +179,16 @@ MonoBehaviour:
       ID: 895718239
       Guid: 4ff93b4ca2588449bf86ba4951258a22
       maxAttenuation: 0
+    - Name: Set_Chill
+      Path: Default Work Unit\Set_Chill
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_Chill
+        ObjectType: 3
+      ID: -1202113236
+      Guid: d823d367d078584683a1afa7c3ed73a4
+      maxAttenuation: 0
     - Name: Stop_Theme
       Path: Default Work Unit\Stop_Theme
       PathAndIcons:
@@ -193,8 +213,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{60FF7F50-F037-4B34-9CD1-62B378C47611}'
-    m_lastTimePsrt1: 1679465076
-    m_lastTimePart2: -1999267263
+    m_lastTimePsrt1: 1526152227
+    m_lastTimePart2: -1999267105
     List:
     - Name: SideChain
       Path: Default Work Unit\Master Audio Bus\SideChain
@@ -211,8 +231,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{93E8A01C-2BC2-4D24-87C0-D98900162F40}'
-    m_lastTimePsrt1: 1694529686
-    m_lastTimePart2: -1999267263
+    m_lastTimePsrt1: 1258425333
+    m_lastTimePart2: -1999267113
     List:
     - Name: Intensity
       Path: Default Work Unit\Intensity
@@ -224,11 +244,14 @@ MonoBehaviour:
       ID: -1824638732
       Guid: 5f70d969ea18a3498a76bd2a79be8b8f
       values:
+      - Chill
       - Dance
       - Hard
       - None
       - Soft
       ValueIcons:
+      - ElementName: Chill
+        ObjectType: 8
       - ElementName: Dance
         ObjectType: 8
       - ElementName: Hard
@@ -237,8 +260,9 @@ MonoBehaviour:
         ObjectType: 8
       - ElementName: Soft
         ObjectType: 8
-      valueIDs: 4efcb9728e8691d6db3ba32c4195f827
+      valueIDs: 9d5af7ff4efcb9728e8691d6db3ba32c4195f827
       ValueGuids:
+      - bytes: aa3d08d6a8be3f4db64fbb7c232673c1
       - bytes: e789d9676db5ff409e5f04b4127897e3
       - bytes: 4e9ba02258251e4382c95ba839b5e544
       - bytes: d4bef982ad04ae4cb87cd9e23abc6b25
@@ -254,8 +278,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{390E766B-8A69-4B0E-8B8E-6E76DDA66044}'
-    m_lastTimePsrt1: 1694499673
-    m_lastTimePart2: -1999267263
+    m_lastTimePsrt1: 1691969138
+    m_lastTimePart2: -1999267106
     List:
     - Name: Main_Game
       Path: Default Work Unit\Main_Game
@@ -279,8 +303,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BB34C5B9-E87E-4611-93FD-9DC04933AEF4}'
-    m_lastTimePsrt1: 1652140427
-    m_lastTimePart2: -1999267263
+    m_lastTimePsrt1: 2009162843
+    m_lastTimePart2: -1999267112
     List:
     - Name: Ambient_Fade
       Path: Default Work Unit\Ambient_Fade
@@ -327,6 +351,15 @@ MonoBehaviour:
         ObjectType: 13
       ID: -1512254331
       Guid: b25f817adb6eae42a6b70d4ea63d1024
+    - Name: Level_Start
+      Path: Default Work Unit\Level_Start
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level_Start
+        ObjectType: 13
+      ID: 352576276
+      Guid: cba2bd9b36fe5944ad03a5b640ee80b2
     - Name: Menu
       Path: Default Work Unit\Menu
       PathAndIcons:

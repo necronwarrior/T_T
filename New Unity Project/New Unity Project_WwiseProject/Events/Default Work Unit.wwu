@@ -114,12 +114,6 @@
 				</Event>
 				<Event Name="Play_Music" ID="{C6EDBD79-B23F-4608-BE22-BE0A7F083685}">
 					<ChildrenList>
-						<Action Name="" ID="{1F862D02-A85E-4B7E-85EA-0F4011203A50}" ShortID="364809820">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="3"/>
-							</PropertyList>
-							<ReferenceList/>
-						</Action>
 						<Action Name="" ID="{1D4178A7-90F0-4DB8-BE22-754DCE03B553}" ShortID="692794892">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -311,7 +305,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Amb_Cutscene_1" ID="{47A36E19-AB0F-42B6-A73D-451C40DC110E}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
+									<ObjectRef Name="Amb_CutScene_2" ID="{72A030B7-639C-425F-8B99-0EBBD372B140}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -340,6 +334,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Fx_Close_Option" ID="{0961D130-9089-4CBB-A83D-C138C972D7CC}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Chill" ID="{67D323D8-78D0-4658-83A1-AFA7C3ED73A4}">
+					<ChildrenList>
+						<Action Name="" ID="{9EFD84C6-18EB-49FA-9D5D-B06AB186A7DB}" ShortID="830240154">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chill" ID="{D6083DAA-BEA8-4D3F-B64F-BB7C232673C1}" WorkUnitID="{93E8A01C-2BC2-4D24-87C0-D98900162F40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Machine_Contraction" ID="{A3AA65EA-DCBC-477A-A513-25A65EF9C90A}">
+					<ChildrenList>
+						<Action Name="" ID="{C07B7AC6-697E-498F-A9C1-432B9B497173}" ShortID="688255180">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FX_Machine_Contraction" ID="{54894BF1-10E9-4223-9CB0-A15E63C3CC26}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

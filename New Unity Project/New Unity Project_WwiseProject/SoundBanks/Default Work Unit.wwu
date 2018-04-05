@@ -22,7 +22,9 @@
 						<ObjectRef Name="Human_Contraction" ID="{B357CEAD-72ED-4585-81B9-F1E275DCC9DA}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Machine_Explosion" ID="{D0BC9324-7A85-45E0-A338-29785FF494D9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Music" ID="{C6EDBD79-B23F-4608-BE22-BE0A7F083685}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_Chill" ID="{67D323D8-78D0-4658-83A1-AFA7C3ED73A4}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Click_Start" ID="{BD3D59D7-D21D-4700-A2EB-D1E54D68BD25}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Machine_Contraction" ID="{A3AA65EA-DCBC-477A-A513-25A65EF9C90A}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Click_Other" ID="{70E003A4-0817-4806-89BB-937E924384E7}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Human_Explosion" ID="{6A54A173-601C-4853-A3C6-77EB8597117F}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Transition" ID="{4C3BF94F-58A2-4984-BF86-BA4951258A22}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}" Filter="7" Origin="Manual"/>

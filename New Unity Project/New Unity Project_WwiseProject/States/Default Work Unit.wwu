@@ -12,6 +12,7 @@
 						<State Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
 						<State Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
 						<State Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
+						<State Name="Chill" ID="{D6083DAA-BEA8-4D3F-B64F-BB7C232673C1}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
@@ -48,6 +49,12 @@
 							<StartState Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
 							<EndState Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
 							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Chill" ID="{D6083DAA-BEA8-4D3F-B64F-BB7C232673C1}"/>
+							<EndState Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+							<Time>0.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>

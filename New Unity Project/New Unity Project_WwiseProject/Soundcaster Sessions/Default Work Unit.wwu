@@ -38,7 +38,7 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Machine_Explosion" ID="{D0BC9324-7A85-45E0-A338-29785FF494D9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<ObjectRef Name="Machine_Contraction" ID="{A3AA65EA-DCBC-477A-A513-25A65EF9C90A}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
@@ -49,6 +49,10 @@
 							<ObjectRef Name="Close_Menu" ID="{C0422EA6-E6A9-4618-8BA1-C4975E759BE9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
 							<Position X="3" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Machine_Explosion" ID="{D0BC9324-7A85-45E0-A338-29785FF494D9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -57,7 +61,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}"/>
-							<Value>9.1</Value>
+							<Value>3.1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Level_Start" ID="{9BBDA2CB-FE36-4459-AD03-A5B640EE80B2}"/>
+							<Value>13.7</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ThemeMusicFade" ID="{7806378C-401B-4742-9287-07BF8AEB5FC8}"/>
@@ -77,7 +85,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+						<CurrentStateRef Name="Chill" ID="{D6083DAA-BEA8-4D3F-B64F-BB7C232673C1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

@@ -3,10 +3,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	1033885944	Click_Other			\Default Work Unit\Click_Other	
 	1221751492	Human_Explosion			\Default Work Unit\Human_Explosion	
 	1706939946	Cutscene_audio			\Default Work Unit\Cutscene_audio	
+	2732373873	Machine_Contraction			\Default Work Unit\Machine_Contraction	
 	2747536169	Open_Menu			\Default Work Unit\Open_Menu	
 	2867641175	Menu_Option_Open			\Default Work Unit\Menu_Option_Open	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2996780470	Click_Start			\Default Work Unit\Click_Start	
+	3092854060	Set_Chill			\Default Work Unit\Set_Chill	
 	3126511263	VirusTap			\Default Work Unit\VirusTap	
 	3213995980	Machine_Explosion			\Default Work Unit\Machine_Explosion	
 	3654422659	Play_Dance			\Default Work Unit\Play_Dance	
@@ -20,10 +22,13 @@ State	ID	Name	State Group			Notes
 	670602561	Soft	Intensity			
 	748895195	None	Intensity			
 	1924791374	Dance	Intensity			
-	2607556080	Menu	Intensity			
 	3599861390	Hard	Intensity			
+	4294400669	Chill	Intensity			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	352576276	Level_Start			\Default Work Unit\Level_Start	
+	2607556080	Menu			\Default Work Unit\Menu	
+	2782712965	Level			\Default Work Unit\Level	
 	2970210140	Ambient_Fade			\Default Work Unit\Ambient_Fade	
 	3710358763	Dance_Fade			\Default Work Unit\Dance_Fade	
 
@@ -33,43 +38,49 @@ Trigger	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	59662939	Dialog_Too_Quiet	Wwise Compressor			
 	468882879	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	701863527	Inside_My_Head	Wwise RoomVerb			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2652646462	Dialog_Leveler_Soft	Wwise Compressor			
+	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1105394	TerminalTransmissionUI_Back	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TerminalTransmissionUI_Back_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Back		176464
-	16967664	Vox_Scream_Male_3	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_3		132540
-	19248964	FX_Electricity_Glitch	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_88149D53.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch		48132
-	150507278	FX_Electricity_Glitch_2	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_2_1BFCB0FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch_2		42340
-	169179554	Vox_Scream_Male_2	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_2		132540
-	199326064	Fx_Infection_Trigger_3	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Infection_Trigger_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Infection_Trigger_3		435904
-	203821308	Music_Pulse	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Pulse_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_Pulse		4096064
-	211892836	Amb_Cutscene_1	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Amb_Cutscene_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb_Cutscene_1		3068224
-	279186119	FX_Electricity_Spark_1	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_1_6B493127.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark_1		61452
-	375130664	FX_Electricity_Spark_2	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_2_A42C6024.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark_2		61452
-	413381470	FX_UI_Open_1	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_UI_Open_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX_UI_Open_1		192064
-	473504590	TTx_Evolution_StringsArp	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_StringsArp_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_StringsArp		4096064
-	481235395	FX_Electricity_Glitch_1	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch_1		48134
-	527295018	FX_Crush_1	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Crush_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Crush\FX_Crush_1		82618
-	577882451	TerminalTransmissionUI_Select	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TerminalTransmissionUI_Select_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Select		176464
-	582402812	TTx_Evolution_DistoBass	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_DistoBass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_DistoBass		4096064
-	594685120	FX_Human_Explosion (1)	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Human_Explosion (1)_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX_Human_Explosion (1)		88264
-	680213851	FX_Electricity_Spark	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_1030B142.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark		61452
-	695436660	Fx_Machine_Explosion	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Machine_Explosion_B3001A13.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Machine_Explosion		172864
-	705553081	Music_DrumBus	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_DrumBus_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_DrumBus		4096064
-	716758116	TTx_Evolution_HeavyKit	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_HeavyKit_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_HeavyKit		4096064
-	722227667	Music_Arp	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Arp_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_Arp		4096064
-	788998490	Vox_Scream_Male	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male		132540
-	792414014	Music_Hats	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Hats_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_Hats		4096064
-	857399479	TTx_Evolution_DamageKit	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_DamageKit_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_DamageKit		4096064
-	879444882	Fx_Open_Option	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Open_Option_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Open_Option		142400
-	918395920	Music_SlowBass	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_SlowBass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_SlowBass		4096064
-	936187152	Music_Ambient_Loop	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Ambient_Loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Music_Ambient_Loop\Music_Ambient_Loop		10936864
-	938190122	Vox_Scream_Male_1	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_1		132540
-	942036279	FX_Crush	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Crush_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Crush\FX_Crush		83500
-	983936804	Fx_Building_Transition	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Building_Transition_6BB3D881.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Building_Transition		326464
-	985965105	Fx_Close_Option	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Close_Option_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Close_Option		139328
-	987468052	Music_Level_Dance	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Level_Dance_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level_Dance\Music_Level_Dance\Music_Level_Dance		5806144
-	1015136542	Vox_Scream_Female	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Female_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Female		132540
-	1061907403	Vox_Scream_Female_2	C:\Users\1502419\Downloads\JACKTT\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Female_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Female_2		132540
+	1105394	TerminalTransmissionUI_Back	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TerminalTransmissionUI_Back_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Back		176464
+	16967664	Vox_Scream_Male_3	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_3		132540
+	19248964	FX_Electricity_Glitch	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_88149D53.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch		48132
+	133896715	TTx_Evolution_DarkPulse	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_DarkPulse_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_DarkPulse		4096064
+	150507278	FX_Electricity_Glitch_2	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_2_1BFCB0FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch_2		42340
+	169179554	Vox_Scream_Male_2	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_2		132540
+	199326064	Fx_Infection_Trigger_3	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Infection_Trigger_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Infection_Trigger_3		435904
+	203821308	Music_Pulse	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Pulse_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_Pulse		4096064
+	206069990	Amb_CutScene_2	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Amb_CutScene_2 (1)_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb_CutScene_2		2853760
+	279186119	FX_Electricity_Spark_1	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_1_6B493127.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark_1		61452
+	283050909	Chill_beat	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Chill_beat_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Chill\Chill_beat\Chill_beat		996206
+	375130664	FX_Electricity_Spark_2	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_2_A42C6024.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark_2		61452
+	413381470	FX_UI_Open_1	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_UI_Open_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX_UI_Open_1		192064
+	432947213	FX_Machine_Contraction	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Machine_Contraction_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX_Machine_Contraction		31852
+	473504590	TTx_Evolution_StringsArp	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_StringsArp_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_StringsArp		4096064
+	481235395	FX_Electricity_Glitch_1	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch_1		48134
+	527295018	FX_Crush_1	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Crush_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Crush\FX_Crush_1		82618
+	577882451	TerminalTransmissionUI_Select	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TerminalTransmissionUI_Select_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Select		176464
+	582402812	TTx_Evolution_DistoBass	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_DistoBass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_DistoBass		4096064
+	594685120	FX_Human_Explosion (1)	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Human_Explosion (1)_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX_Human_Explosion (1)		88264
+	680213851	FX_Electricity_Spark	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Spark_1030B142.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Spark\FX_Electricity_Spark		61452
+	695436660	Fx_Machine_Explosion	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Machine_Explosion_B3001A13.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Machine_Explosion		172864
+	705553081	Music_DrumBus	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_DrumBus_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_DrumBus		4096064
+	716758116	TTx_Evolution_HeavyKit	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_HeavyKit_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_HeavyKit		4096064
+	722227667	Music_Arp	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Arp_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_Arp		4096064
+	788998490	Vox_Scream_Male	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male		132540
+	792414014	Music_Hats	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Hats_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_Hats		4096064
+	857399479	TTx_Evolution_DamageKit	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_DamageKit_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_DamageKit		4096064
+	879444882	Fx_Open_Option	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Open_Option_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Open_Option		142400
+	918395920	Music_SlowBass	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_SlowBass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Soft\SoftElements\Music_SlowBass		4096064
+	936187152	Music_Ambient_Loop	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Ambient_Loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\Music_Ambient_Loop\Music_Ambient_Loop		10936864
+	938190122	Vox_Scream_Male_1	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_1		132540
+	942036279	FX_Crush	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Crush_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Crush\FX_Crush		83500
+	983936804	Fx_Building_Transition	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Building_Transition_6BB3D881.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Building_Transition		326464
+	985965105	Fx_Close_Option	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Close_Option_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Close_Option		139328
+	987468052	Music_Level_Dance	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Music_Level_Dance_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level_Dance\Music_Level_Dance\Music_Level_Dance		5806144
+	1015136542	Vox_Scream_Female	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Female_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Female		132540
+	1061907403	Vox_Scream_Female_2	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Female_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Female_2		132540
 

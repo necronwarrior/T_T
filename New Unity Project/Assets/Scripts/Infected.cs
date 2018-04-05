@@ -358,7 +358,7 @@ public class Infected : MonoBehaviour
 			//set bool
 			Scorepoints.firstTouch = true;
 			//play dynamic action music
-			AkSoundEngine.StopAll ();
+			//AkSoundEngine.StopAll ();
 			AkSoundEngine.PostEvent ("VirusTap", gameObject);
 		}
 	}

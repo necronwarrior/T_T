@@ -61,10 +61,29 @@
 				</Sound>
 				<Sound Name="FX_Machine_Contraction" ID="{54894BF1-10E9-4223-9CB0-A15E63C3CC26}" ShortID="915204708">
 					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1C6BD259-D60E-4DE6-8AA3-0386B42F2CAF}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="25"/>
+											<Property Name="Min" Type="Real64" Value="-25"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{F13B04ED-1521-4347-8962-0A6DE3DC8A7E}"/>
+									<Modifier Name="" ID="{F13B04ED-1521-4347-8962-0A6DE3DC8A7E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
@@ -72,6 +91,9 @@
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Inside_My_Head" ID="{94B53301-9AA1-468F-8419-92AEDAAE39DF}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Effects" ID="{A138F0AB-2055-4261-B920-F32407538031}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
@@ -894,6 +916,12 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Effects" ID="{A138F0AB-2055-4261-B920-F32407538031}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
 						</Reference>
@@ -977,6 +1005,9 @@
 									</PropertyList>
 								</Effect>
 							</Custom>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
@@ -1202,25 +1233,6 @@
 						<ActiveSource Name="FX_UI_Open_1" ID="{86709CC9-52E0-4CA4-8B76-193FAA454D89}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Amb_Cutscene_1" ID="{47A36E19-AB0F-42B6-A73D-451C40DC110E}" ShortID="302019466">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Amb_Cutscene_1" ID="{DDA3C27C-8C06-4D7E-8BE9-043244BBF4CC}" ShortID="211892836">
-							<Language>SFX</Language>
-							<AudioFile>Amb_Cutscene_1.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Amb_Cutscene_1" ID="{DDA3C27C-8C06-4D7E-8BE9-043244BBF4CC}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Fx_Close_Option" ID="{0961D130-9089-4CBB-A83D-C138C972D7CC}" ShortID="697141630">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1257,6 +1269,25 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Fx_Open_Option" ID="{E5087BED-A89A-46BB-A6DE-018CFC4320B1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Amb_CutScene_2" ID="{72A030B7-639C-425F-8B99-0EBBD372B140}" ShortID="1065217971">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8336A5AE-9ABE-4EF7-9A41-B35C630246B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{60FF7F50-F037-4B34-9CD1-62B378C47611}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Amb_CutScene_2 (1)" ID="{755D9309-AE5E-4290-964F-5DC6E6018D25}" ShortID="206069990">
+							<Language>SFX</Language>
+							<AudioFile>Amb_CutScene_2 (1).wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Amb_CutScene_2 (1)" ID="{755D9309-AE5E-4290-964F-5DC6E6018D25}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

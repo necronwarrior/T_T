@@ -3,14 +3,14 @@
 	<Platform GUID="{E6BA517B-EC17-42B0-B915-848E7A35F78A}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1919498126" Timestamp="131673060247137291"/>
-				<File Name="Main_Game" Hash="2037775680" Timestamp="131673101430757214"/>
+				<File Name="Init" Hash="499265495" Timestamp="131673974491081012"/>
+				<File Name="Main_Game" Hash="1750592045" Timestamp="131673993386009434"/>
 				<File Name="Start_Screen" Hash="1477360603" Timestamp="131671553376331804"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2241688347" Timestamp="131673101430827214"/>
+				<File Name="" Hash="3598998461" Timestamp="131673993389915783"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -45,14 +45,14 @@
 	<Platform GUID="{50B50A3D-5ED7-4CE5-8B09-6F1F2BC98F94}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="436547438" Timestamp="131673060243437291"/>
-				<File Name="Main_Game" Hash="2037775680" Timestamp="131673101429477214"/>
+				<File Name="Init" Hash="1023945255" Timestamp="131673974465455517"/>
+				<File Name="Main_Game" Hash="1750592045" Timestamp="131673993343039700"/>
 				<File Name="Start_Screen" Hash="1477360603" Timestamp="131671553374101804"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1770440673" Timestamp="131673101429577214"/>
+				<File Name="" Hash="244075531" Timestamp="131673993344758530"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
