@@ -1686,7 +1686,7 @@ Prefab:
     - target: {fileID: 114812737241924584, guid: 0c6a98f4f17d8384e9690e4b1f3e06ad,
         type: 2}
       propertyPath: levelCompletionPercentage
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c6a98f4f17d8384e9690e4b1f3e06ad, type: 2}
