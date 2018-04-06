@@ -9,20 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 614d83e458eceeb49832afe1fc65e2e0, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 16
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5B0038B4-16B0-40E8-A331-7AFD87428E6B}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: -521323985
-    m_lastTimePart2: -1999267088
-=======
-    m_lastTimePsrt1: -1099675651
-    m_lastTimePart2: -1999267091
->>>>>>> e24db6af97c30894330728b533be87ceadd5008b
+    m_lastTimePsrt1: 943133597
+    m_lastTimePart2: -1999266890
     List:
     - Name: Buzz
       Path: Default Work Unit\Buzz
@@ -236,13 +231,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{93E8A01C-2BC2-4D24-87C0-D98900162F40}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: -521011433
-    m_lastTimePart2: -1999267088
-=======
-    m_lastTimePsrt1: -1047486992
-    m_lastTimePart2: -1999267091
->>>>>>> e24db6af97c30894330728b533be87ceadd5008b
+    m_lastTimePsrt1: 1014385584
+    m_lastTimePart2: -1999266890
     List:
     - Name: Intensity
       Path: Default Work Unit\Intensity
@@ -306,8 +296,8 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8B31C3C3-562F-4575-959C-C3034ADF4AE1}'
-    m_lastTimePsrt1: -500824228
-    m_lastTimePart2: -1999267686
+    m_lastTimePsrt1: 533604864
+    m_lastTimePart2: -1999280107
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
@@ -417,8 +407,8 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8E69FEAA-B9D2-4730-870A-9A801B896377}'
-    m_lastTimePsrt1: -500694228
-    m_lastTimePart2: -1999267686
+    m_lastTimePsrt1: 1125274880
+    m_lastTimePart2: -1999275928
     List:
     - Name: ScreenTapped
       Path: Default Work Unit\ScreenTapped
@@ -429,10 +419,7 @@ MonoBehaviour:
         ObjectType: 14
       ID: 724142543
       Guid: 1795e142ccae2d47abb37fa4bb5c33b8
-  ExpandedItems:
-  - /New Unity Project_WwiseProject
-  - /New Unity Project_WwiseProject/SoundBanks
-  - /New Unity Project_WwiseProject/SoundBanks/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
