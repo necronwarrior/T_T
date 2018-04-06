@@ -101,21 +101,24 @@ public class SCR_ProgressBar : MonoBehaviour
 
 			} else
 			{
-				if (infectedPercentage < 100.0f)
+				if(GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().endTimer>2.5f)
 				{
-					Debug.Log ("level finished");
-					Debug.Log ("current bar percentage: " + infectedPercentage);
-					progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
-					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
-					levelComplete = true;
+					if (infectedPercentage < 100.0f)
+					{
+						Debug.Log ("level finished");
+						Debug.Log ("current bar percentage: " + infectedPercentage);
+						progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+						GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
+						levelComplete = true;
 
-				} else
-				{
-					progressUiBar.color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
+					} else
+					{
+						progressUiBar.color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
 
-					levelComplete = true;
+						levelComplete = true;
 
 
+					}
 				}
 			}
 

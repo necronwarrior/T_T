@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData 17
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
+<<<<<<< HEAD
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -489,6 +490,15 @@ MonoBehaviour:
         ObjectType: 14
       ID: 724142543
       Guid: 1795e142ccae2d47abb37fa4bb5c33b8
+=======
+  EventWwu: []
+  AuxBusWwu: []
+  StateWwu: []
+  SwitchWwu: []
+  BankWwu: []
+  RtpcWwu: []
+  TriggerWwu: []
+>>>>>>> 94bfcb40ea4f5cac8eccaf5a5741522cd45a238b
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0

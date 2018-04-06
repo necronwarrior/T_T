@@ -2095,18 +2095,11 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 4433011945166090}
-  - component: {fileID: 60954595901603792}
-  m_Layer: 2
-  m_Name: GameObject
-=======
   - component: {fileID: 4804116197871584}
   - component: {fileID: 212358190421690488}
   - component: {fileID: 61001341929739110}
   m_Layer: 0
   m_Name: Generic (80)
->>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2135,18 +2128,11 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 4723855446404172}
-  - component: {fileID: 60763679067293922}
-  m_Layer: 2
-  m_Name: GameObject
-=======
   - component: {fileID: 4167196914949246}
   - component: {fileID: 212441080414144734}
   - component: {fileID: 61943033726227642}
   m_Layer: 0
   m_Name: Generic (74)
->>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2280,16 +2266,9 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 4157877380905476}
-  - component: {fileID: 60358888427686418}
-  m_Layer: 2
-  m_Name: GameObject
-=======
   - component: {fileID: 4601097083482448}
   m_Layer: 0
   m_Name: PointB
->>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2912,17 +2891,11 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 4893841807645738}
-  - component: {fileID: 60633822333292102}
-  m_Layer: 2
-  m_Name: Colliderdetection
-=======
+  - component: {fileID: 4216147920440196}
   - component: {fileID: 4522613986020072}
   - component: {fileID: 212978233308975936}
-  m_Layer: 0
-  m_Name: Gradient 1
->>>>>>> origin/master
+  m_Layer: 2
+  m_Name: Colliderdetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5246,6 +5219,19 @@ Transform:
   m_Father: {fileID: 4147788601346468}
   m_RootOrder: 134
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4216147920440196
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641002129573878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4218143546234142
 Transform:
   m_ObjectHideFlags: 1
@@ -6258,7 +6244,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4522613986020072
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641002129573878}
@@ -7489,7 +7475,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4893841807645738
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 61
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1793659545037850}
@@ -8044,7 +8030,7 @@ PolygonCollider2D:
       - {x: -1.5534406, y: 1.5711784}
 --- !u!60 &60633822333292102
 PolygonCollider2D:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 61
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1793659545037850}
@@ -23819,7 +23805,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
 --- !u!212 &212978233308975936
 SpriteRenderer:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641002129573878}

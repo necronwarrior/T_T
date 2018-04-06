@@ -16,29 +16,9 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5B0038B4-16B0-40E8-A331-7AFD87428E6B}'
-    m_lastTimePsrt1: 66452006
-    m_lastTimePart2: -1999266898
+    m_lastTimePsrt1: 943133597
+    m_lastTimePart2: -1999266890
     List:
-    - Name: Button_Down
-      Path: Default Work Unit\Button_Down
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Button_Down
-        ObjectType: 3
-      ID: -209116268
-      Guid: 7073dd899edbd34882458531373b49c3
-      maxAttenuation: 0
-    - Name: Button_Up
-      Path: Default Work Unit\Button_Up
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Button_Up
-        ObjectType: 3
-      ID: 1972958575
-      Guid: 648af3bc3b6f1740bd6b5a2f0730d1d7
-      maxAttenuation: 0
     - Name: Buzz
       Path: Default Work Unit\Buzz
       PathAndIcons:
@@ -159,16 +139,6 @@ MonoBehaviour:
       ID: -1547431127
       Guid: 7780c0ee08a29e43b9c443aebdde2cfa
       maxAttenuation: 0
-    - Name: Play_Conveyor
-      Path: Default Work Unit\Play_Conveyor
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Conveyor
-        ObjectType: 3
-      ID: -1802033279
-      Guid: 1637b728e23b6541b384394aeb57231c
-      maxAttenuation: 0
     - Name: Play_Dance
       Path: Default Work Unit\Play_Dance
       PathAndIcons:
@@ -178,16 +148,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: -640544637
       Guid: f764daf26807314ab0a704fbf21d45c4
-      maxAttenuation: 0
-    - Name: Play_Magnet
-      Path: Default Work Unit\Play_Magnet
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Magnet
-        ObjectType: 3
-      ID: -1560212536
-      Guid: b5d97c1a262db749a47dc18eda53eed3
       maxAttenuation: 0
     - Name: Play_Music
       Path: Default Work Unit\Play_Music
@@ -229,26 +189,6 @@ MonoBehaviour:
       ID: -1202113236
       Guid: d823d367d078584683a1afa7c3ed73a4
       maxAttenuation: 0
-    - Name: Stop_Conveyor
-      Path: Default Work Unit\Stop_Conveyor
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Stop_Conveyor
-        ObjectType: 3
-      ID: -606569257
-      Guid: a3d6060ca88c524eaf34c67b68e7085c
-      maxAttenuation: 0
-    - Name: Stop_Magnet
-      Path: Default Work Unit\Stop_Magnet
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Stop_Magnet
-        ObjectType: 3
-      ID: -1450570850
-      Guid: 2f599e5c4ee21e41a6967cccd1ec1570
-      maxAttenuation: 0
     - Name: Stop_Theme
       Path: Default Work Unit\Stop_Theme
       PathAndIcons:
@@ -273,8 +213,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{60FF7F50-F037-4B34-9CD1-62B378C47611}'
-    m_lastTimePsrt1: 1526152227
-    m_lastTimePart2: -1999267105
+    m_lastTimePsrt1: -1055612183
+    m_lastTimePart2: -1999267091
     List:
     - Name: SideChain
       Path: Default Work Unit\Master Audio Bus\SideChain
@@ -291,8 +231,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{93E8A01C-2BC2-4D24-87C0-D98900162F40}'
-    m_lastTimePsrt1: -521011433
-    m_lastTimePart2: -1999267088
+    m_lastTimePsrt1: 1014385584
+    m_lastTimePart2: -1999266890
     List:
     - Name: Intensity
       Path: Default Work Unit\Intensity
@@ -356,15 +296,15 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8B31C3C3-562F-4575-959C-C3034ADF4AE1}'
-    m_lastTimePsrt1: -500824228
-    m_lastTimePart2: -1999267686
+    m_lastTimePsrt1: 533604864
+    m_lastTimePart2: -1999280107
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{390E766B-8A69-4B0E-8B8E-6E76DDA66044}'
-    m_lastTimePsrt1: 434115970
-    m_lastTimePart2: -1999266898
+    m_lastTimePsrt1: -1048424486
+    m_lastTimePart2: -1999267091
     List:
     - Name: Main_Game
       Path: Default Work Unit\Main_Game
@@ -388,8 +328,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BB34C5B9-E87E-4611-93FD-9DC04933AEF4}'
-    m_lastTimePsrt1: 2009162843
-    m_lastTimePart2: -1999267112
+    m_lastTimePsrt1: -1099363069
+    m_lastTimePart2: -1999267091
     List:
     - Name: Ambient_Fade
       Path: Default Work Unit\Ambient_Fade
@@ -467,8 +407,8 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8E69FEAA-B9D2-4730-870A-9A801B896377}'
-    m_lastTimePsrt1: -500694228
-    m_lastTimePart2: -1999267686
+    m_lastTimePsrt1: 1125274880
+    m_lastTimePart2: -1999275928
     List:
     - Name: ScreenTapped
       Path: Default Work Unit\ScreenTapped
