@@ -39,7 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4946154609566060}
   - component: {fileID: 60646896914815230}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,14 +136,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreValue: 11101
+  ExplosionRadius: 1
   IncubationPeriod: 1.5
-  Radius: 1
   InfectionSpritesheet: NULL
-  ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114570514353854012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,7 +153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42af9910d71058b4c996b27db5d17f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputDegrees: 0
   branchLength: {x: 1, y: 3}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!212 &212226255464336326
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -136,14 +136,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreValue: 1
+  ExplosionRadius: 1
   IncubationPeriod: 1.5
-  Radius: 1
   InfectionSpritesheet: NULL
-  ScoreValue: 13
-  soundHumanInfected: {fileID: 0}
-  soundMachineInfected: {fileID: 8300000, guid: e3b95beb3cb447940a2e4e877b08e7ca,
-    type: 3}
-  isInfected: 0
+  objectInfected: 0
+  awareOfInfected: 0
 --- !u!114 &114870932826858514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,7 +153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42af9910d71058b4c996b27db5d17f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputDegrees: 0
   branchLength: {x: 1, y: 3}
+  PlayerColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!212 &212968307214004170
 SpriteRenderer:
   m_ObjectHideFlags: 1
