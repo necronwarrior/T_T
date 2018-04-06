@@ -543,6 +543,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Reset_Level" ID="{D13DF829-B8E3-4425-8FE2-4F93073BF50A}">
+					<ChildrenList>
+						<Action Name="" ID="{CFF6E4D8-EAE9-4E43-B497-30CCE0C30BB0}" ShortID="203341877">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{4635273C-3BA1-41BA-89B3-C46A21940DDF}" WorkUnitID="{F63C755F-7584-4049-A316-165B84283D79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B8CD70B6-BEFC-4B68-A4CF-641D2D612C03}" ShortID="881476901">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fx_Rewind" ID="{7E4CBADC-9ABD-4A32-BB00-B6E51ED37803}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FFDD1FDC-AFC0-4AB5-8FE0-9685D99AD09F}" ShortID="832757705">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{4635273C-3BA1-41BA-89B3-C46A21940DDF}" WorkUnitID="{F63C755F-7584-4049-A316-165B84283D79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

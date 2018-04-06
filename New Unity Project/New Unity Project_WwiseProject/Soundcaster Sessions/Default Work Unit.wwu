@@ -65,6 +65,10 @@
 							<ObjectRef Name="Machine_Explosion" ID="{D0BC9324-7A85-45E0-A338-29785FF494D9}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
 							<Position X="3" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Reset_Level" ID="{D13DF829-B8E3-4425-8FE2-4F93073BF50A}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="3" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -98,7 +102,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Building" ID="{4B05E852-4403-4E0F-AAF0-3BEED99AB9A4}"/>
-						<CurrentStateRef Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
+						<CurrentStateRef Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
