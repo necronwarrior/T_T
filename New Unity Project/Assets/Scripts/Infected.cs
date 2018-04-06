@@ -304,7 +304,7 @@ public class Infected : MonoBehaviour
 			GameObject GExplosion = (GameObject)Instantiate ((Object)Resources.Load ("Prefabs/GreenExplosion"));
 			GExplosion.transform.position = transform.position;
 
-			//Play horrible screamng sound
+			//Play horrible screamng sound - ***This is currently playing after they explode***
 			//AkSoundEngine.PostEvent("Human_Contraction",gameObject);
 
 			//Determine how to handle explosion shape 

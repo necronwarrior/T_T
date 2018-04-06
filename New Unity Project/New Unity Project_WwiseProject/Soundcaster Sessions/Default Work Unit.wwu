@@ -61,7 +61,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}"/>
-							<Value>9.1</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Level_Start" ID="{9BBDA2CB-FE36-4459-AD03-A5B640EE80B2}"/>
@@ -86,7 +86,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Building" ID="{4B05E852-4403-4E0F-AAF0-3BEED99AB9A4}"/>
-						<CurrentStateRef Name="Dance" ID="{67D989E7-B56D-40FF-9E5F-04B4127897E3}"/>
+						<CurrentStateRef Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

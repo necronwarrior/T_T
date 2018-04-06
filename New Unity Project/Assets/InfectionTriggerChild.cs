@@ -31,5 +31,12 @@ public class InfectionTriggerChild : MonoBehaviour {
 				}
 			}
 		}
+		StartCoroutine (killSelf ());
+	}
+
+	IEnumerator killSelf()
+	{
+		yield return new WaitForSeconds (5);
+		Destroy (gameObject);
 	}
 }

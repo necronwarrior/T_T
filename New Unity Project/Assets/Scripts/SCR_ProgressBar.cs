@@ -104,8 +104,10 @@ public class SCR_ProgressBar : MonoBehaviour
 				if (infectedPercentage < 100.0f)
 				{
 					Debug.Log ("level finished");
+					Debug.Log ("current bar percentage: " + infectedPercentage);
 					progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
 					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
+					levelComplete = true;
 
 				} else
 				{

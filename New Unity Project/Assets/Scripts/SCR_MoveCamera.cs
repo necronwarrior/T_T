@@ -40,9 +40,9 @@ public class SCR_MoveCamera : MonoBehaviour
 
 	void StartLerping()
 	{
-		LevelCounter = 0;
 		_isLerping = true;
 		_timeStartedLerping = Time.time;
+        AkSoundEngine.PostEvent("Play_Transition", gameObject);
 
 		//set the start position to be the cameras current position
 		//and end position to be where we define
@@ -55,7 +55,7 @@ public class SCR_MoveCamera : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-
+		LevelCounter = 0;
 		_level1Pos = new Vector3 (level1.transform.position.x, level1.transform.position.y, Camera.main.transform.position.z);
 		_level2Pos = new Vector3 (level2.transform.position.x, level2.transform.position.y, Camera.main.transform.position.z);
 
@@ -64,7 +64,7 @@ public class SCR_MoveCamera : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-
+		//Debug.Log ("levelcounter: " + LevelCounter);
 		//GetNextLevel ();
 
 		if (Input.GetKeyDown (KeyCode.Space))
@@ -90,6 +90,7 @@ public class SCR_MoveCamera : MonoBehaviour
 		//i.e if i beat level one and i want to go to level 2 then
 
 		Debug.Log ("the level should be: " + levelCount);
+        AkSoundEngine.SetRTPCValue("Level", levelCount, null, 0);
 
 		//levelCount = next level to go to
 		LevelCounter++;

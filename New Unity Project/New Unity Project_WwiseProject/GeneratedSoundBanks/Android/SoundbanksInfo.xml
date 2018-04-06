@@ -26,7 +26,7 @@
 				<Event Id="3862065186" Name="Menu_Option_Back" ObjectPath="\Events\Default Work Unit\Menu_Option_Back"/>
 				<Event Id="2867641175" Name="Menu_Option_Open" ObjectPath="\Events\Default Work Unit\Menu_Option_Open"/>
 				<Event Id="2747536169" Name="Open_Menu" ObjectPath="\Events\Default Work Unit\Open_Menu"/>
-				<Event Id="3654422659" Name="Play_Dance" ObjectPath="\Events\Default Work Unit\Play_Dance" MaxAttenuation="0.000000"/>
+				<Event Id="3654422659" Name="Play_Dance" ObjectPath="\Events\Default Work Unit\Play_Dance"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="895718239" Name="Play_Transition" ObjectPath="\Events\Default Work Unit\Play_Transition"/>
 				<Event Id="3092854060" Name="Set_Chill" ObjectPath="\Events\Default Work Unit\Set_Chill" MaxAttenuation="0.000000"/>
@@ -44,6 +44,10 @@
 				<File Id="19248964" Language="SFX">
 					<ShortName>FX_Electricity_Glitch.wav</ShortName>
 					<Path>SFX\FX_Electricity_Glitch_88149D53.wem</Path>
+				</File>
+				<File Id="29903907" Language="SFX">
+					<ShortName>Fx_Transition_Blimp.wav</ShortName>
+					<Path>SFX\Fx_Transition_Blimp_1CF20B44.wem</Path>
 				</File>
 				<File Id="133896715" Language="SFX">
 					<ShortName>TTx_Evolution_DarkPulse.wav</ShortName>

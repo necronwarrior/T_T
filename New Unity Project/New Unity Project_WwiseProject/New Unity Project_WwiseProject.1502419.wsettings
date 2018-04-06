@@ -116,7 +116,7 @@
 				<Property Name="RTPC\GameParameterSimValue\{2E5168C7-8455-41B2-8D5A-59EEA5647FC4}" Type="Real64" Value="-20"/>
 				<Property Name="RTPC\GameParameterSimValue\{603CA9EC-5645-4824-815A-B9210ECED8F2}" Type="Real64" Value="0"/>
 				<Property Name="RTPC\GameParameterSimValue\{7806378C-401B-4742-9287-07BF8AEB5FC8}" Type="Real64" Value="50"/>
-				<Property Name="RTPC\GameParameterSimValue\{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}" Type="Real64" Value="9.1"/>
+				<Property Name="RTPC\GameParameterSimValue\{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}" Type="Real64" Value="1"/>
 				<Property Name="RTPC\GameParameterSimValue\{7E341B3E-ABFC-444B-8791-6F5E9A37A41F}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{9BBDA2CB-FE36-4459-AD03-A5B640EE80B2}" Type="Real64" Value="13"/>
 				<Property Name="RTPC\GameParameterSimValue\{CBFB496E-F436-4F7B-9277-54CDE77E783A}" Type="Real64" Value="100"/>

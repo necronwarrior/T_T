@@ -1,7 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1865857008	Transition			\Default Work Unit\Transition	
 	2470328564	Intensity			\Default Work Unit\Intensity	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Transition			
+	3339761385	Building	Transition			
+	3363148815	Blimp	Transition			
 	670602561	Soft	Intensity			
 	748895195	None	Intensity			
 	1924791374	Dance	Intensity			

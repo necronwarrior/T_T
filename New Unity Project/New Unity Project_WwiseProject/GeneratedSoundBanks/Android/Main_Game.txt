@@ -43,11 +43,13 @@ Effect plug-ins	ID	Name	Type				Notes
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2652646462	Dialog_Leveler_Soft	Wwise Compressor			
 	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
+	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1105394	TerminalTransmissionUI_Back	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TerminalTransmissionUI_Back_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TerminalTransmissionUI_Back		176464
 	16967664	Vox_Scream_Male_3	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_3		132540
 	19248964	FX_Electricity_Glitch	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_88149D53.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch		48132
+	29903907	Fx_Transition_Blimp	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Fx_Transition_Blimp_1CF20B44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fx_Transition_Blimp		326464
 	133896715	TTx_Evolution_DarkPulse	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\TTx_Evolution_DarkPulse_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Hard\Hard Elements\TTx_Evolution_DarkPulse		4096064
 	150507278	FX_Electricity_Glitch_2	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\FX_Electricity_Glitch_2_1BFCB0FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Glitch\FX_Electricity_Glitch_2		42340
 	169179554	Vox_Scream_Male_2	M:\GitHub\T_T\New Unity Project\New Unity Project_WwiseProject\.cache\Android\SFX\Vox_Scream_Male_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Human_Contraction\Scream\Vox_Scream_Male_2		132540
