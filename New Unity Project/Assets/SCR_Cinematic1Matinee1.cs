@@ -11,6 +11,7 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 	public GameObject Level1Position;
 	public GameObject Splatman;
 	public GameObject Level1Name;
+	public GameObject Starting_Object;
 
 	private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 	private Vector3 TempVec, TempVec2;
@@ -40,6 +41,7 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 	void LateUpdate () 
 	{
 		TimingDeltatime += Time.deltaTime;
+
 		switch(SceneSection)
 		{ 
 		case 0:
@@ -48,10 +50,11 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 			rumbleSpeed = 30.0f; //how fast it shakes
 			rumbleAmount = 0.03f; //how much it shakes
 
-			VirusContainer.transform.position = new Vector3(VirusContainer.transform.position.x+(Mathf.Sin(Time.time * rumbleSpeed) * rumbleAmount), VirusContainer.transform.position.y+(Mathf.Sin(Time.time * rumbleSpeed) * rumbleAmount), VirusContainer.transform.position.z );
+			VirusContainer.transform.position = new Vector3 (VirusContainer.transform.position.x + (Mathf.Sin (Time.time * rumbleSpeed) * rumbleAmount), VirusContainer.transform.position.y + (Mathf.Sin (Time.time * rumbleSpeed) * rumbleAmount), VirusContainer.transform.position.z);
 
 			VirusContainer.transform.position += Vector3.left * 0.2f;
 			JetBike.transform.position += Vector3.left * 0.2f;
+
 			break;
 		case 1:
 			if(ToHoverLerpBool){
@@ -111,7 +114,6 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 		case 4:
 			Destroy (Level1Name);
 
-			GameObject Starting_Object = GameObject.Find ("0 - Tutorial Monitor");
 			Starting_Object.GetComponent<Infected> ().StartHover ();
 			GameObject.FindGameObjectWithTag("ScoreManagerTag").transform.GetChild (0).gameObject.SetActive (true);
 			GameObject.FindGameObjectWithTag("ScoreManagerTag").transform.GetChild (1).gameObject.SetActive (true);

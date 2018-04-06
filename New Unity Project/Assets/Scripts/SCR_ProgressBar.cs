@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEditor;
 
@@ -20,7 +21,7 @@ public class SCR_ProgressBar : MonoBehaviour
 {
 	public float levelCompletionPercentage = 50.0f;
 
-	public Image progressUiBar;
+	public GameObject progressUiBar;
 	public GameObject progressIndicator;
 
 	public List<GameObject> objectList;
@@ -30,11 +31,22 @@ public class SCR_ProgressBar : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+
+		progressUiBar = GameObject.Find("TrapBarInner"); 
+
+		progressIndicator = GameObject.Find ("TrapGoalIndicator");
+
+		progressUiBar.GetComponent<Image>().color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+
 		setupUiComponents ();
 		//populateObjectList ();
 		AddDescendantsWithTag(transform, "Technology", objectList);
 		AddDescendantsWithTag (transform, "Human", objectList);
+		setupUiComponents ();
+
+		if(EventSystem.current.GetComponent<SCR_Cinematic1Matinee1>() !=null){
+			progressUiBar.transform.parent.gameObject.SetActive (false);
+		}
 	}
 	
 	// Update is called once per frame
@@ -73,7 +85,7 @@ public class SCR_ProgressBar : MonoBehaviour
 	void calculateObjectPercentages()
 	{
 		int infectedObject = 0;
-		progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+		progressUiBar.GetComponent<Image>().color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
 
 		for (int i = 0; i < objectList.Count; i++)
 		{
@@ -95,12 +107,17 @@ public class SCR_ProgressBar : MonoBehaviour
 				//update the UI text colour to illustrare if a goal has been met
 				if (infectedPercentage < levelCompletionPercentage)
 				{
-					progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+
+					GameObject NewLevel = (GameObject)Instantiate(Resources.Load("Prefabs/LevelPrefabs/"+transform.parent.gameObject.name));
+					NewLevel.name = transform.parent.gameObject.name;
+					EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelList [EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelCounter] = NewLevel;
+					progressUiBar.GetComponent<Image>().color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
 					levelComplete = false;
-					progressUiBar.fillAmount = 0.0f;
+					progressUiBar.GetComponent<Image>().fillAmount = 0.0f;
 					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().firstTouch = false;
+					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().endTimer = 0.0f;
+					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().ScoreNumber.text = "0";
 					Destroy (transform.parent.gameObject);
-					Instantiate(Resources.Load("Prefabs/LevelPrefabs/" +transform.parent.gameObject.name));
 
 				} else
 				{
@@ -109,13 +126,13 @@ public class SCR_ProgressBar : MonoBehaviour
 						{
 							Debug.Log ("level finished");
 							Debug.Log ("current bar percentage: " + infectedPercentage);
-							progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+						progressUiBar.GetComponent<Image>().color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
 							levelComplete = true;
 
 							GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
 						} else
 						{
-							progressUiBar.color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
+						progressUiBar.GetComponent<Image>().color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
 
 							levelComplete = true;
 
@@ -126,7 +143,7 @@ public class SCR_ProgressBar : MonoBehaviour
 			}
 
 			//update the progress ui bar
-			progressUiBar.fillAmount = (infectedPercentage / 100.0f);
+			progressUiBar.GetComponent<Image>().fillAmount = (infectedPercentage / 100.0f);
 		}
 
 
@@ -139,7 +156,7 @@ public class SCR_ProgressBar : MonoBehaviour
 		if (levelComplete)
 		{
 			//next level or whatever
-			progressUiBar.fillAmount = 0.0f;
+			progressUiBar.GetComponent<Image>().fillAmount = 0.0f;
 		}
 	}
 

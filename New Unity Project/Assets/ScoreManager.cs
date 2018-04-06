@@ -76,6 +76,8 @@ public class ScoreManager : MonoBehaviour {
 			EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelCounter);
 
 			firstTouch = false;
+			endTimer = 0.0f;
+			ScoreNumber.text = "0";
 	}
 
 }
