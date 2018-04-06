@@ -81,10 +81,6 @@ public class ScoreManager : MonoBehaviour {
 
 	public void EndLevel()
 	{
-
-
-
-		//endLevelImage.GetComponent<RawImage> ().enabled = true;
 		for (int i = 0; i < 5; ++i) {
 			if (int.Parse (ScoreNumber.text) >= ScoreArrayBestToWorst [i]) {
 				endLevelImage.GetComponent<RawImage>().texture = (Texture)Resources.Load ("Score/" + (i+1));
@@ -92,24 +88,10 @@ public class ScoreManager : MonoBehaviour {
 			} 
 		}
 
-		//no longer needed?
-		//endLevelImage.gameObject.SetActive (true);
-
-		GameObject progress = GameObject.FindGameObjectWithTag ("WorldObjects");
-
-		//if (progress.GetComponent<SCR_ProgressBar> ().levelComplete == true)
-		//{
-//			Debug.Log ("helllllllllllllllllllll yes");
-			//testing, will need to add a check to see what level is currently active
-
 		EventSystem.current.GetComponent<SCR_MoveCamera> ().GetNextLevel (
 			EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelCounter);
 
 			firstTouch = false;
-
-			//gameObject.GetComponent<SCR_MoveCamera> ().GetNextLevel (1);
-
-		//}
 	}
 
 }
