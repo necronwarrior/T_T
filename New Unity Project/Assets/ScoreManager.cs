@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class ScoreManager : MonoBehaviour {
 
 	public Image ScoreHolder;
-	Text ScoreNumber;
+	//Text ScoreNumber;
 
 	public int[] ScoreArrayBestToWorst = new int[5];
 
@@ -18,9 +18,7 @@ public class ScoreManager : MonoBehaviour {
 
 	public float endTimer;
 
-	public RawImage endLevelImage;
-
-
+	public Text ScoreNumber;
 
 	//determination of whether the level has been completed
 	public void SetLevelUnlock(int value){
@@ -30,24 +28,16 @@ public class ScoreManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		TextPrefab = (GameObject)Resources.Load ("Prefabs/TextPrefab");
-		ScoreNumber = ScoreHolder.GetComponentInChildren<Text> ();
-		//endLevelImage.GetComponent<RawImage> ().enabled = false;
-
-		endLevelImage.gameObject.SetActive (false);
+		//ScoreNumber = ScoreHolder.GetComponentInChildren<Text> ();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
 		//Debug.Log (endTimer);
-		if (int.Parse (ScoreNumber.text) != 0 && endTimer <= 2.2)
+		if (int.Parse (ScoreNumber.text) != 0 && endTimer <= 2.6)
 		{
 			endTimer += Time.deltaTime;
-		}
-
-		if (endTimer >= 2.2)
-		{
-			//EndLevel ();
 		}
 	}
 
@@ -81,12 +71,6 @@ public class ScoreManager : MonoBehaviour {
 
 	public void EndLevel()
 	{
-		for (int i = 0; i < 5; ++i) {
-			if (int.Parse (ScoreNumber.text) >= ScoreArrayBestToWorst [i]) {
-				endLevelImage.GetComponent<RawImage>().texture = (Texture)Resources.Load ("Score/" + (i+1));
-				break;
-			} 
-		}
 
 		EventSystem.current.GetComponent<SCR_MoveCamera> ().GetNextLevel (
 			EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelCounter);

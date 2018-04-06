@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEditor;
 
 /*
 	 * created 28/03/18
@@ -18,22 +18,19 @@ using UnityEngine.UI;
 
 public class SCR_ProgressBar : MonoBehaviour 
 {
-
 	public float levelCompletionPercentage = 50.0f;
 
 	public Image progressUiBar;
 	public GameObject progressIndicator;
 
-
 	public List<GameObject> objectList;
 
 	public bool levelComplete;
 
-
-
 	// Use this for initialization
 	void Start () 
 	{
+		progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
 		setupUiComponents ();
 		//populateObjectList ();
 		AddDescendantsWithTag(transform, "Technology", objectList);
@@ -49,7 +46,6 @@ public class SCR_ProgressBar : MonoBehaviour
 	void setupUiComponents()
 	{
 		progressIndicator.transform.Translate (new Vector3 ((69.0f / 100.0f) * levelCompletionPercentage, 0.0f, 0.0f));
-
 	}
 
 	void populateObjectList()
@@ -77,15 +73,16 @@ public class SCR_ProgressBar : MonoBehaviour
 	void calculateObjectPercentages()
 	{
 		int infectedObject = 0;
+		progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
 
 		for (int i = 0; i < objectList.Count; i++)
 		{
-			if(objectList[i].GetComponent<Infected>().objectInfected) // when score is added 
-			{
-				infectedObject += 1;
-				//Debug.Log ("stuff:" + infectedObject);
+			if (objectList [i] != null) {
+				if (objectList [i].GetComponent<Infected> ().objectInfected) { // when score is added 
+					infectedObject += 1;
+					//Debug.Log ("stuff:" + infectedObject);
+				}
 			}
-
 		}
 
 		if (levelComplete == false)
@@ -93,33 +90,39 @@ public class SCR_ProgressBar : MonoBehaviour
 			//calculate the percentage of objects infected
 			float infectedPercentage = ((float)infectedObject / objectList.Count) *100.0f;
 
-			//update the UI text colour to illustrare if a goal has been met
-			if (infectedPercentage < levelCompletionPercentage)
+			if(GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().endTimer>2.5f)
 			{
-				progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
-				levelComplete = false;
-
-			} else
-			{
-				if(GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().endTimer>2.5f)
+				//update the UI text colour to illustrare if a goal has been met
+				if (infectedPercentage < levelCompletionPercentage)
 				{
-					if (infectedPercentage < 100.0f)
-					{
-						Debug.Log ("level finished");
-						Debug.Log ("current bar percentage: " + infectedPercentage);
-						progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
-						GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
-						levelComplete = true;
+					progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+					levelComplete = false;
+					progressUiBar.fillAmount = 0.0f;
+					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().firstTouch = false;
+					Destroy (transform.parent.gameObject);
+					Instantiate(Resources.Load("Prefabs/LevelPrefabs/" +transform.parent.gameObject.name));
 
-					} else
-					{
-						progressUiBar.color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
+				} else
+				{
+					
+						if (infectedPercentage < 100.0f)
+						{
+							Debug.Log ("level finished");
+							Debug.Log ("current bar percentage: " + infectedPercentage);
+							progressUiBar.color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+							levelComplete = true;
 
-						levelComplete = true;
+							GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
+						} else
+						{
+							progressUiBar.color = new Color (0.368f, 0.717f, 0.858f, 1.0f);	
 
+							levelComplete = true;
 
+							GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().EndLevel ();
+
+						}
 					}
-				}
 			}
 
 			//update the progress ui bar

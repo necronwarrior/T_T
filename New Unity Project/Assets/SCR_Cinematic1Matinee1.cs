@@ -115,6 +115,8 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 			Starting_Object.GetComponent<Infected> ().StartHover ();
 			GameObject.FindGameObjectWithTag("ScoreManagerTag").transform.GetChild (0).gameObject.SetActive (true);
 			GameObject.FindGameObjectWithTag("ScoreManagerTag").transform.GetChild (1).gameObject.SetActive (true);
+			
+			GameObject.FindGameObjectWithTag("ScoreManagerTag").transform.GetChild (2).gameObject.SetActive (true);
 			Destroy (this);
 			break;
 		}
