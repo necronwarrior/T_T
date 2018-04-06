@@ -313,7 +313,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{60FF7F50-F037-4B34-9CD1-62B378C47611}'
-    m_lastTimePsrt1: 1959408377
+    m_lastTimePsrt1: -1055612183
     m_lastTimePart2: -1999267091
     List:
     - Name: SideChain

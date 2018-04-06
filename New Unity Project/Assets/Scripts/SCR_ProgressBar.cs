@@ -36,7 +36,7 @@ public class SCR_ProgressBar : MonoBehaviour
 
 		progressIndicator = GameObject.Find ("TrapGoalIndicator");
 
-		progressUiBar.GetComponent<Image>().color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
+		progressUiBar.GetComponent<Image>().color = new Color (0.0f, 1.0f, 0.0f, 1.0f);
 
 		setupUiComponents ();
 		//populateObjectList ();
