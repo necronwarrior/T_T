@@ -16,9 +16,12 @@
 			<ShortName>Main_Game</ShortName>
 			<Path>Main_Game.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4085851028" Name="Button_Down" ObjectPath="\Events\Default Work Unit\Button_Down"/>
+				<Event Id="1972958575" Name="Button_Up" ObjectPath="\Events\Default Work Unit\Button_Up"/>
 				<Event Id="1033885944" Name="Click_Other" ObjectPath="\Events\Default Work Unit\Click_Other"/>
 				<Event Id="2996780470" Name="Click_Start" ObjectPath="\Events\Default Work Unit\Click_Start"/>
 				<Event Id="1706939946" Name="Cutscene_audio" ObjectPath="\Events\Default Work Unit\Cutscene_audio"/>
+				<Event Id="2420797771" Name="Game_Reset" ObjectPath="\Events\Default Work Unit\Game_Reset"/>
 				<Event Id="3663096569" Name="Human_Contraction" ObjectPath="\Events\Default Work Unit\Human_Contraction"/>
 				<Event Id="1221751492" Name="Human_Explosion" ObjectPath="\Events\Default Work Unit\Human_Explosion"/>
 				<Event Id="2732373873" Name="Machine_Contraction" ObjectPath="\Events\Default Work Unit\Machine_Contraction"/>
@@ -26,10 +29,16 @@
 				<Event Id="3862065186" Name="Menu_Option_Back" ObjectPath="\Events\Default Work Unit\Menu_Option_Back"/>
 				<Event Id="2867641175" Name="Menu_Option_Open" ObjectPath="\Events\Default Work Unit\Menu_Option_Open"/>
 				<Event Id="2747536169" Name="Open_Menu" ObjectPath="\Events\Default Work Unit\Open_Menu"/>
+				<Event Id="2492934017" Name="Play_Conveyor" ObjectPath="\Events\Default Work Unit\Play_Conveyor"/>
 				<Event Id="3654422659" Name="Play_Dance" ObjectPath="\Events\Default Work Unit\Play_Dance"/>
+				<Event Id="2734754760" Name="Play_Magnet" ObjectPath="\Events\Default Work Unit\Play_Magnet"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="895718239" Name="Play_Transition" ObjectPath="\Events\Default Work Unit\Play_Transition"/>
+				<Event Id="1020223172" Name="Play_Wind" ObjectPath="\Events\Default Work Unit\Play_Wind"/>
+				<Event Id="3485336523" Name="Reset_Game" ObjectPath="\Events\Default Work Unit\Reset_Game"/>
 				<Event Id="3092854060" Name="Set_Chill" ObjectPath="\Events\Default Work Unit\Set_Chill" MaxAttenuation="0.000000"/>
+				<Event Id="3688398039" Name="Stop_Conveyor" ObjectPath="\Events\Default Work Unit\Stop_Conveyor" MaxAttenuation="0.000000"/>
+				<Event Id="2844396446" Name="Stop_Magnet" ObjectPath="\Events\Default Work Unit\Stop_Magnet" MaxAttenuation="0.000000"/>
 				<Event Id="3126511263" Name="VirusTap" ObjectPath="\Events\Default Work Unit\VirusTap"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -53,6 +62,10 @@
 					<ShortName>TTx_Evolution_DarkPulse.wav</ShortName>
 					<Path>SFX\TTx_Evolution_DarkPulse_F17FB28C.wem</Path>
 				</File>
+				<File Id="136538230" Language="SFX">
+					<ShortName>Fx_ElectroMagnet_2.wav</ShortName>
+					<Path>SFX\Fx_ElectroMagnet_2_1C9C67B2.wem</Path>
+				</File>
 				<File Id="150507278" Language="SFX">
 					<ShortName>FX_Electricity_Glitch_2.wav</ShortName>
 					<Path>SFX\FX_Electricity_Glitch_2_1BFCB0FB.wem</Path>
@@ -73,6 +86,14 @@
 					<ShortName>Amb_CutScene_2 (1).wav</ShortName>
 					<Path>SFX\Amb_CutScene_2 (1)_1C9C67B2.wem</Path>
 				</File>
+				<File Id="213976331" Language="SFX">
+					<ShortName>Amb_Wind_Random_3.wav</ShortName>
+					<Path>SFX\Amb_Wind_Random_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="249163846" Language="SFX">
+					<ShortName>Fx_ElectroMagnet.wav</ShortName>
+					<Path>SFX\Fx_ElectroMagnet_1C9C67B2.wem</Path>
+				</File>
 				<File Id="279186119" Language="SFX">
 					<ShortName>FX_Electricity_Spark_1.wav</ShortName>
 					<Path>SFX\FX_Electricity_Spark_1_6B493127.wem</Path>
@@ -81,9 +102,29 @@
 					<ShortName>Chill_beat.wav</ShortName>
 					<Path>SFX\Chill_beat_F17FB28C.wem</Path>
 				</File>
+				<File Id="302939561" Language="SFX">
+					<ShortName>Fx_Conveyor_3.wav</ShortName>
+					<Path>SFX\Fx_Conveyor_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="308892179" Language="SFX">
+					<ShortName>Fx_Conveyor_2.wav</ShortName>
+					<Path>SFX\Fx_Conveyor_2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="311339516" Language="SFX">
+					<ShortName>Fx_Button_up.wav</ShortName>
+					<Path>SFX\Fx_Button_up_1C9C67B2.wem</Path>
+				</File>
+				<File Id="340577145" Language="SFX">
+					<ShortName>Amb_Wind_Random_1.wav</ShortName>
+					<Path>SFX\Amb_Wind_Random_1_1C9C67B2.wem</Path>
+				</File>
 				<File Id="375130664" Language="SFX">
 					<ShortName>FX_Electricity_Spark_2.wav</ShortName>
 					<Path>SFX\FX_Electricity_Spark_2_A42C6024.wem</Path>
+				</File>
+				<File Id="380166645" Language="SFX">
+					<ShortName>FX_UI_Close.wav</ShortName>
+					<Path>SFX\FX_UI_Close_1C9C67B2.wem</Path>
 				</File>
 				<File Id="413381470" Language="SFX">
 					<ShortName>FX_UI_Open_1.wav</ShortName>
@@ -93,9 +134,17 @@
 					<ShortName>FX_Machine_Contraction.wav</ShortName>
 					<Path>SFX\FX_Machine_Contraction_1C9C67B2.wem</Path>
 				</File>
+				<File Id="467799654" Language="SFX">
+					<ShortName>Fx_Button_Down.wav</ShortName>
+					<Path>SFX\Fx_Button_Down_1C9C67B2.wem</Path>
+				</File>
 				<File Id="473504590" Language="SFX">
 					<ShortName>TTx_Evolution_StringsArp.wav</ShortName>
 					<Path>SFX\TTx_Evolution_StringsArp_F17FB28C.wem</Path>
+				</File>
+				<File Id="475981522" Language="SFX">
+					<ShortName>Amb_Wind_Random_4.wav</ShortName>
+					<Path>SFX\Amb_Wind_Random_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="481235395" Language="SFX">
 					<ShortName>FX_Electricity_Glitch_1.wav</ShortName>
@@ -116,6 +165,10 @@
 				<File Id="594685120" Language="SFX">
 					<ShortName>FX_Human_Explosion (1).wav</ShortName>
 					<Path>SFX\FX_Human_Explosion (1)_1C9C67B2.wem</Path>
+				</File>
+				<File Id="619373856" Language="SFX">
+					<ShortName>Amb_Wind_Random_2.wav</ShortName>
+					<Path>SFX\Amb_Wind_Random_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="680213851" Language="SFX">
 					<ShortName>FX_Electricity_Spark.wav</ShortName>
@@ -148,6 +201,10 @@
 				<File Id="857399479" Language="SFX">
 					<ShortName>TTx_Evolution_DamageKit.wav</ShortName>
 					<Path>SFX\TTx_Evolution_DamageKit_F17FB28C.wem</Path>
+				</File>
+				<File Id="879265839" Language="SFX">
+					<ShortName>Fx_Conveyor_1.wav</ShortName>
+					<Path>SFX\Fx_Conveyor_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="879444882" Language="SFX">
 					<ShortName>Fx_Open_Option.wav</ShortName>
@@ -185,9 +242,21 @@
 					<ShortName>Vox_Scream_Female.wav</ShortName>
 					<Path>SFX\Vox_Scream_Female_1C9C67B2.wem</Path>
 				</File>
+				<File Id="1049786069" Language="SFX">
+					<ShortName>Fx_ElectroMagnet_3.wav</ShortName>
+					<Path>SFX\Fx_ElectroMagnet_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1051727261" Language="SFX">
+					<ShortName>Fx_Conveyor_4.wav</ShortName>
+					<Path>SFX\Fx_Conveyor_4_1C9C67B2.wem</Path>
+				</File>
 				<File Id="1061907403" Language="SFX">
 					<ShortName>Vox_Scream_Female_2.wav</ShortName>
 					<Path>SFX\Vox_Scream_Female_2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1069181651" Language="SFX">
+					<ShortName>Fx_ElectroMagnet_4.wav</ShortName>
+					<Path>SFX\Fx_ElectroMagnet_4_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

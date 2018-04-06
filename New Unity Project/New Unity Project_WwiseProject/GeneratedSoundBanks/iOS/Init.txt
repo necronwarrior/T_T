@@ -1,12 +1,16 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1865857008	Transition			\Default Work Unit\Transition	
 	2470328564	Intensity			\Default Work Unit\Intensity	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Transition			
+	3339761385	Building	Transition			
+	3363148815	Blimp	Transition			
 	670602561	Soft	Intensity			
 	748895195	None	Intensity			
 	1924791374	Dance	Intensity			
-	2607556080	Menu	Intensity			
 	3599861390	Hard	Intensity			
+	4294400669	Chill	Intensity			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3000026391	Critical_Effect_Volume			\Default Work Unit\Critical_Effect_Volume	

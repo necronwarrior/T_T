@@ -31,6 +31,7 @@ public class SCR_Cinematic1Matinee1 : MonoBehaviour {
 
         AkSoundEngine.PostEvent("Cutscene_audio", gameObject);
         AkSoundEngine.PostEvent("Set_Chill", gameObject);
+        AkSoundEngine.PostEvent("Play_Wind", gameObject);
         AkSoundEngine.PostEvent("Play_Music", gameObject);
         AkSoundEngine.SetRTPCValue("Level_Start", 14f, null, 14000);
 	}

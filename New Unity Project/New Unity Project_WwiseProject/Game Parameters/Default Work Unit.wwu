@@ -26,9 +26,8 @@
 				</GameParameter>
 				<GameParameter Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="10"/>
-						<Property Name="Min" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Level_Start" ID="{9BBDA2CB-FE36-4459-AD03-A5B640EE80B2}">

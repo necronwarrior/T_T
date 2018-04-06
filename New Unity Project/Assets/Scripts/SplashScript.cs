@@ -41,8 +41,9 @@ public class SplashScript : MonoBehaviour
 	//restart the current level
 	public void restartGame()
 	{
-		AkSoundEngine.PostEvent ("Click_Other", gameObject);
-		AkSoundEngine.StopAll ();
+        //AkSoundEngine.PostEvent ("Click_Other", gameObject);
+        AkSoundEngine.StopAll ();
+        AkSoundEngine.PostEvent("Reset_Game", gameObject);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 }

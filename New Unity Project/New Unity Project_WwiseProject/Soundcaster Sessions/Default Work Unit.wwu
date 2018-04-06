@@ -18,6 +18,10 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Conveyor" ID="{D5BADA6A-4B67-4DA9-AD01-059945781EA5}" WorkUnitID="{C0C66F87-7CEE-4020-8ABE-72D2A3AFBF24}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Dance" ID="{F2DA64F7-0768-4A31-B0A7-04FBF21D45C4}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -30,6 +34,10 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Wind" ID="{96632769-2309-4BAC-BA0C-FABE5545B200}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="VirusTap" ID="{0BBDBEF7-29B4-4373-9778-C0850427D501}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -40,6 +48,10 @@
 						<Module>
 							<ObjectRef Name="Machine_Contraction" ID="{A3AA65EA-DCBC-477A-A513-25A65EF9C90A}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
 							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Cutscene_audio" ID="{EE089EC7-D614-4F7E-A5C2-9A45DD9C631D}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
+							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Transition" ID="{4C3BF94F-58A2-4984-BF86-BA4951258A22}" WorkUnitID="{5B0038B4-16B0-40E8-A331-7AFD87428E6B}"/>
@@ -61,11 +73,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Level" ID="{7A815FB2-6EDB-42AE-A6B7-0D4EA63D1024}"/>
-							<Value>1</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Level_Start" ID="{9BBDA2CB-FE36-4459-AD03-A5B640EE80B2}"/>
-							<Value>13.7</Value>
+							<Value>14</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ThemeMusicFade" ID="{7806378C-401B-4742-9287-07BF8AEB5FC8}"/>
@@ -86,7 +98,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Building" ID="{4B05E852-4403-4E0F-AAF0-3BEED99AB9A4}"/>
-						<CurrentStateRef Name="Hard" ID="{22A09B4E-2558-431E-82C9-5BA839B5E544}"/>
+						<CurrentStateRef Name="Soft" ID="{054EC516-FBAF-4F2D-9F34-EFBCE406DDFE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

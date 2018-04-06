@@ -32,6 +32,7 @@ public class SCR_MoveCamera : MonoBehaviour
 	void StartLerping()
 	{
 		_isLerping = true;
+        AkSoundEngine.PostEvent("Play_Transition", gameObject);
 	}
 
 	// Use this for initialization
