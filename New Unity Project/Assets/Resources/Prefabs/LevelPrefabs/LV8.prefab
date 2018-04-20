@@ -2906,7 +2906,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1658602576953932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8049927, y: -5.5890007, z: 0}
+  m_LocalPosition: {x: -0.8049927, y: -5.5890007, z: 2.1}
   m_LocalScale: {x: 1.6205754, y: 2.981464, z: 1.6373532}
   m_Children: []
   m_Father: {fileID: 4286036065552728}
@@ -3098,7 +3098,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795142813493708}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5549927, y: 8.497, z: 0.61}
+  m_LocalPosition: {x: -1.5549927, y: 8.497, z: 2.1}
   m_LocalScale: {x: 1.276684, y: 2.4425428, z: 1.5470684}
   m_Children: []
   m_Father: {fileID: 4286036065552728}
@@ -3386,7 +3386,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1543609165526514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 487, y: -26, z: 0}
+  m_LocalPosition: {x: 393.6, y: -38.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4286036065552728}
@@ -4431,13 +4431,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.86478305, y: 2.4115672}
+    - - {x: 0.93969727, y: 2.9734573}
       - {x: 0.14551306, y: 0.6503663}
-      - {x: -1.4167347, y: 0.3907137}
-      - {x: 0.20376015, y: 0.35071945}
-      - {x: 0.33606267, y: -0.82494545}
-      - {x: 0.7139337, y: 0.46269417}
-      - {x: 2.5947654, y: 1.4368889}
+      - {x: 2.7884521, y: -1.9342957}
 --- !u!60 &60247026719064210
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4462,10 +4458,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.36040425, y: 0.15900409}
+    - - {x: 3.123291, y: -1.1520729}
+      - {x: -2.2524414, y: 3.6466026}
       - {x: -1.6156352, y: 0.23781204}
       - {x: -1.0508202, y: -2.1625369}
-      - {x: -0.4860053, y: -4.5628858}
+      - {x: 1.4244385, y: -5.5742836}
 --- !u!60 &60335506830478502
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4490,8 +4487,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.53695154, y: 0.4459176}
-      - {x: 1.0629439, y: 0.42378998}
+    - - {x: -0.39187986, y: 2.259308}
+      - {x: 1.1717497, y: 4.123139}
+      - {x: -1.6622422, y: 6.866334}
       - {x: -1.5534406, y: 1.5711784}
 --- !u!60 &60344552394592472
 PolygonCollider2D:
@@ -4517,8 +4515,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.59907174, y: 3.1499739}
-      - {x: -1.4761734, y: 0.47750187}
+    - - {x: -1.7197266, y: 3.3397102}
+      - {x: -1.6881409, y: 7.4285583}
+      - {x: 3.6685486, y: 3.0013618}
       - {x: 1.0988886, y: 1.0056543}
 --- !u!60 &60387280508297612
 PolygonCollider2D:
@@ -4544,10 +4543,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5589174, y: -1.5069687}
-      - {x: 0.84434605, y: -1.5802627}
-      - {x: 0.4465115, y: 2.866695}
-      - {x: 3.0350723, y: 2.9042196}
+    - - {x: 1.7295532, y: -1.6713104}
+      - {x: -2.4257202, y: -1.7715759}
+      - {x: 0.4465027, y: 1.4421577}
+      - {x: 2.9580688, y: 1.7491913}
 --- !u!60 &60387306894998792
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4572,9 +4571,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.0070352554, y: 0.6159134}
+    - - {x: -6.448678, y: 2.9733593}
       - {x: 1.5729313, y: 1.4777637}
-      - {x: 0.52050734, y: 4.597102}
+      - {x: 0.3029032, y: 6.736909}
 --- !u!60 &60481510538208200
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4601,7 +4600,7 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -0.41272068, y: 1.0856136}
       - {x: -1.6273708, y: -0.6581297}
-      - {x: 0.7714639, y: 0.3638687}
+      - {x: 5.004364, y: -2.5204926}
 --- !u!60 &60561174571400768
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4626,13 +4625,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.388856, y: -0.2729205}
-      - {x: 0.98153454, y: 1.5661721}
-      - {x: 0.20371594, y: 2.8798845}
-      - {x: -0.41526508, y: 1.5476589}
-      - {x: -1.3881106, y: -0.24372734}
-      - {x: -0.71779513, y: -1.4191333}
-      - {x: 0.6015565, y: -1.4332509}
+    - - {x: 3.2429886, y: 1.6033965}
+      - {x: -0.34503937, y: 3.4740365}
+      - {x: -5.2173805, y: 3.8556523}
+      - {x: -0.7177925, y: -1.7169379}
+      - {x: 1.1320114, y: -1.54493}
 --- !u!60 &60562710156448488
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4657,9 +4654,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5589174, y: -1.5069687}
+    - - {x: 0.99838257, y: -1.0412483}
       - {x: 0.84434605, y: -1.5802627}
-      - {x: 0.4465115, y: 2.866695}
+      - {x: -1.5170288, y: 4.137226}
+      - {x: 3.3045654, y: 3.866745}
       - {x: 3.0350723, y: 2.9042196}
 --- !u!60 &60619609975505718
 PolygonCollider2D:
@@ -4686,11 +4684,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 1.388856, y: -0.2729205}
-      - {x: 0.98153454, y: 1.5661721}
-      - {x: 0.20371594, y: 2.8798845}
-      - {x: -0.41526508, y: 1.5476589}
-      - {x: -1.3881106, y: -0.24372734}
-      - {x: -0.71779513, y: -1.4191333}
+      - {x: 1.8894005, y: 2.8798833}
+      - {x: -3.0971909, y: 1.5043702}
+      - {x: -0.881691, y: -1.7937245}
       - {x: 0.6015565, y: -1.4332509}
 --- !u!60 &60798898434560074
 PolygonCollider2D:
@@ -4717,8 +4713,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.7194967, y: 1.7659152}
-      - {x: 0.5030637, y: -1.551723}
-      - {x: 2.5373883, y: -0.62334085}
+      - {x: 0.2783203, y: -2.7504196}
+      - {x: 4.4852905, y: -3.8822937}
 --- !u!60 &60822181173580072
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4743,12 +4739,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.29536438, y: 6.8714256}
-      - {x: 0.40653038, y: 2.8248863}
-      - {x: -1.562607, y: 3.4767995}
-      - {x: 0.14399815, y: 1.5285044}
-      - {x: -1.7793336, y: 0.46830106}
-      - {x: 2.7003832, y: 0.55760455}
+    - - {x: -1.5335388, y: 3.1215096}
+      - {x: 0.29536438, y: 6.8714256}
+      - {x: -0.7550049, y: -2.7418518}
+      - {x: -5.8249207, y: -1.5170403}
 --- !u!60 &60894596707822962
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4773,9 +4767,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.10891175, y: -1.4741774}
-      - {x: 1.9570751, y: 0.4457159}
-      - {x: -0.49547684, y: 1.3223801}
+    - - {x: 3.1018372, y: -4.8691597}
+      - {x: 2.9398193, y: 2.0538673}
+      - {x: -0.18276978, y: 2.3944778}
 --- !u!61 &61004446040177010
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -7519,7 +7513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7565,7 +7559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7627,7 +7621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7671,7 +7665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7702,7 +7696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7781,7 +7775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7845,7 +7839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7862,7 +7856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7894,7 +7888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7928,7 +7922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7945,7 +7939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7962,7 +7956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCompletionPercentage: 10
+  levelCompletionPercentage: 60
   progressUiBar: {fileID: 0}
   progressIndicator: {fileID: 0}
   objectList: []

@@ -519,7 +519,8 @@ MonoBehaviour:
         ObjectType: 14
       ID: 724142543
       Guid: 1795e142ccae2d47abb37fa4bb5c33b8
-  ExpandedItems: []
+  ExpandedItems:
+  - /New Unity Project_WwiseProject
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

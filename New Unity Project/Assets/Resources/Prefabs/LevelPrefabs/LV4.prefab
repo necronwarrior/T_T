@@ -2269,7 +2269,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1122789089958976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4785022843193080}
@@ -3408,7 +3408,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1061473217004348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4176682197273232}
@@ -3642,7 +3642,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1073675169089262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4176682197273232}
@@ -3694,7 +3694,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1594956661910756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4785022843193080}
@@ -7286,7 +7286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7320,7 +7320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7337,7 +7337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7354,7 +7354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7417,7 +7417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7449,7 +7449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7494,7 +7494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7511,7 +7511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7542,7 +7542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7559,7 +7559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCompletionPercentage: 10
+  levelCompletionPercentage: 60
   progressUiBar: {fileID: 0}
   progressIndicator: {fileID: 0}
   objectList: []
@@ -7659,7 +7659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL

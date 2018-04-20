@@ -1055,7 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4616802340682268}
   - component: {fileID: 60767501728097130}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1493,7 +1493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4829181544171250}
   - component: {fileID: 60880443855304164}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,7 +1577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4508509041411316}
   - component: {fileID: 60537040205318524}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5526,7 +5526,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121336157833090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 358, y: -65, z: 0}
+  m_LocalPosition: {x: 294.2, y: -63.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4867696451574094}
@@ -10241,7 +10241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
@@ -10329,7 +10329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
@@ -10361,7 +10361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCompletionPercentage: 10
+  levelCompletionPercentage: 60
   progressUiBar: {fileID: 0}
   progressIndicator: {fileID: 0}
   objectList: []
@@ -10394,7 +10394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
@@ -10484,7 +10484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
@@ -10501,7 +10501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
@@ -10518,7 +10518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
@@ -10535,7 +10535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 0.5
   InfectionSpritesheet: NULL
@@ -10552,7 +10552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1
   InfectionSpritesheet: NULL
@@ -10583,7 +10583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1
   InfectionSpritesheet: NULL

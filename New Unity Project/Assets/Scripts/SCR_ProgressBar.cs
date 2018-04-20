@@ -107,9 +107,14 @@ public class SCR_ProgressBar : MonoBehaviour
 				//update the UI text colour to illustrare if a goal has been met
 				if (infectedPercentage < levelCompletionPercentage)
 				{
-
-					GameObject NewLevel = (GameObject)Instantiate(Resources.Load("Prefabs/LevelPrefabs/"+transform.parent.gameObject.name));
-					NewLevel.name = transform.parent.gameObject.name;
+					GameObject NewLevel = new GameObject ();
+					if (transform.parent.gameObject.name == "mover") {
+						NewLevel = (GameObject)Instantiate (Resources.Load ("Prefabs/LevelPrefabs/" + transform.parent.parent.gameObject.name));
+						NewLevel.name = transform.parent.parent.gameObject.name;
+					}else{
+						NewLevel = (GameObject)Instantiate (Resources.Load ("Prefabs/LevelPrefabs/" + transform.parent.gameObject.name));
+						NewLevel.name = transform.parent.gameObject.name;
+					}
 					EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelList [EventSystem.current.GetComponent<SCR_MoveCamera> ().LevelCounter] = NewLevel;
 					progressUiBar.GetComponent<Image>().color = new Color (0.486f, 0.819f, 0.290f, 1.0f);
 					levelComplete = false;
@@ -117,7 +122,12 @@ public class SCR_ProgressBar : MonoBehaviour
 					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().firstTouch = false;
 					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().endTimer = 0.0f;
 					GameObject.FindGameObjectWithTag ("ScoreManagerTag").GetComponent<ScoreManager> ().ScoreNumber.text = "0";
-					Destroy (transform.parent.gameObject);
+
+					if (transform.parent.gameObject.name == "mover") {
+						Destroy (transform.parent.parent.gameObject);
+					} else {
+						Destroy (transform.parent.gameObject);
+					}
 
 				} else
 				{

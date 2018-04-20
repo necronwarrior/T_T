@@ -2306,7 +2306,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229363501431696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.75, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4902234446942196}
@@ -2319,7 +2319,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1891065134920166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.25, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4778927826530268}
@@ -2713,7 +2713,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1801510209200808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4902234446942196}
@@ -3327,7 +3327,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204506196887126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4778927826530268}
@@ -4138,9 +4138,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5120816, y: 8.747813}
-      - {x: 0.53370714, y: 8.048382}
-      - {x: 2.9560337, y: 8.795339}
+    - - {x: 1.1875305, y: 0.7135849}
+      - {x: 2.4889374, y: -1.9055252}
+      - {x: 2.6360931, y: 0.54782104}
 --- !u!60 &60204268843738356
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4166,8 +4166,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.53695154, y: 0.4459176}
-      - {x: 1.7547786, y: 1.7763736}
-      - {x: -1.5534406, y: 1.5711784}
+      - {x: 1.9214478, y: 3.842987}
+      - {x: -0.45347595, y: 3.8711243}
 --- !u!60 &60367425669993086
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -4275,9 +4275,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.10891175, y: -1.4741774}
-      - {x: 1.9570751, y: 0.4457159}
-      - {x: -0.49547684, y: 1.3223801}
+    - - {x: 0.56036377, y: 0.6401901}
+      - {x: 2.151184, y: -0.09777832}
+      - {x: 5.645096, y: 0.63983154}
 --- !u!60 &60577477510552838
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -7183,7 +7183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7273,7 +7273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7304,7 +7304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7321,7 +7321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7338,7 +7338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3657688f8cb116a4c9c8c35a56d53478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCompletionPercentage: 10
+  levelCompletionPercentage: 60
   progressUiBar: {fileID: 0}
   progressIndicator: {fileID: 0}
   objectList: []
@@ -7354,7 +7354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7403,7 +7403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
@@ -7420,7 +7420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2890cba09bb0a7c4f997e1c7a7391270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 13
+  ScoreValue: 101010101
   ExplosionRadius: 1
   IncubationPeriod: 1.5
   InfectionSpritesheet: NULL
