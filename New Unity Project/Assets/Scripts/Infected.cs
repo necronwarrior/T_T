@@ -159,6 +159,7 @@ public class Infected : MonoBehaviour
 		if (gameObject.tag =="Human") {
 			GetComponent<Move> ().enabled = false;
 			GetComponent<Animator> ().enabled = false;
+			AkSoundEngine.PostEvent("Human_Contraction", gameObject);
 		}
 
 		//Disable own boxcollider to prevent accidental collisions.
